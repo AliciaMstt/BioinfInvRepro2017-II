@@ -1,6 +1,6 @@
 # Unidad 6 Introducción a R con un enfoque bioinformático
 
-## 7.1. R y RStudio 		
+## 6.1. R y RStudio 		
 
 ### ¿Qué es R?
 * R es un lenguaje de programación y un ambiente de cómputo estadístico
@@ -129,7 +129,7 @@ Para una versión un poco más amplia del anterior resumen veamos estas [notas s
 * Cargar a R un archivo de texto con filas y columnas (separado por tabs o comas): `read.delim`.
 * "Pegar" texto uno detrás de otro: `paste()` y `paste0()`.
 
-**Ejercicio:** Carga en R el archivo `Unidad7/Prac_Uni7/meta/maizteocintle_SNP50k_meta_extended.txt` y utiliza un script de R, que debe estar guardado en `Practicas/Uni7/bin`, para responder lo siguiente:
+**Ejercicio:** Carga en R el archivo `Unidad6/Prac_Uni6/meta/maizteocintle_SNP50k_meta_extended.txt` y utiliza un script de R, que debe estar guardado en `Unidad6/Prac_Uni6/bin`, para responder lo siguiente:
 
 * ¿Qué tipo de objeto creamos al cargar la base?
 
@@ -226,7 +226,7 @@ res<-s$content$`search-results`$`opensearch:totalResults`
 ```
 
 
-Con base en el código anterior, utiliza un loop para repetir la búsqueda para todos los indicadores del archivo `/data/indicadores.txt` (se encuentra en el repo de Practicas de la Uni7) y para tres países: México, Estados Unidos y Ecuador. Los resultados deben guardarse en un una df única y escribirse a un archivo que esté en una carpeta `out` que se llame `busquedaScopus.txt`. 
+Con base en el código anterior, utiliza un loop para repetir la búsqueda para todos los indicadores del archivo `/data/indicadores.txt` (se encuentra en el repo de Practicas de la Uni6) y para tres países: México, Estados Unidos y Ecuador. Los resultados deben guardarse en un una df única y escribirse a un archivo que esté en una carpeta `out` que se llame `busquedaScopus.txt`. 
 
 Tu código para este ejercicio debe estar guardado en un script llamado `Ejercicio_rscopusloop.R`.
 
@@ -275,7 +275,7 @@ give_i_line<- function(file, i){
 
 ```
 
-Si guardamos la función como un script llamado [`give_i_line.r`](/Unidad7/Prac_Uni7/bin/give_i_line.r) después podemos correrlo desde otro script:
+Si guardamos la función como un script llamado [`give_i_line.r`](/Unidad6/Prac_Uni6/bin/give_i_line.r) después podemos correrlo desde otro script:
 
 ```{r} 
 source("give_i_line.r")
