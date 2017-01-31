@@ -4,7 +4,7 @@
 
 ## Posgrado en Ciencias Biológicas de la Universidad Nacional Autónoma de México
 
-Profesoras: Dra. Alicia Mastretta Yanes y Azalea Guerra
+Profesoras: Dra. Alicia Mastretta Yanes y M. en C. Azalea Guerra García
 
 
 ### Objetivo general:
@@ -35,20 +35,21 @@ El curso **no** se enfocará en ningún software especializado particular (e.g. 
 | 2.1. Introducción a la Consola y Línea de Comando                           |                |                 |
 | 2.2. Funciones básicas de navegación y manejo de archivos                   |                |                 |
 | 2.3. Funciones básicas de exploración de archivos                           |                |                 |
+| 2.4. Github                                                                 |                |                 |
 | 2.4. Redirección                                                            |                |                 |
 | 2.5. Loops                                                                  |                |                 |
 | **Unidad 3 Algoritmos y programación**                                      |        1       |        2        |
 | 3.1. Lógica de la ejecución de un algoritmo                                 |                |                 |
 | 3.2. Modularidad                                                            |                |                 |
 | 3.3. Cómo organizar un script                                               |                |                 |
-| **Unidad 4 Uso general de software especializado y organización de un proyecto bioinformático**                       |        2       |        4        |
+| **Unidad 4 Uso general de software especializado y organización de un proyecto bioinformático**  |        2       |        4        |
 | 4.1. Utilidad de software especializado                                     |                |                 |
 | 4.2. Cómo entender la instalación y documentación de software especializado |                |                 |
 | 4.3. Docker                                                                 |                |                 |
 | 4.4. Organización de directorios                                            |                |                 |
 | 4.5. Organización de scripts                                                |                |                 |
 | 4.6. Markdown                                                               |                |                 |
-| 4.7. Github                                                                 |                |                 |
+| 4.7. Github para organizar tu proyecto                                      |                |                 |
 | **Unidad 5 Datos y análisis utilizados en bioinformática**                  |        3       |        7        |
 | 5.1. Datos crudos (e.g. Illumina raw reads)                                 |                |                 |
 | 5.2. Información en los archivos FASTQ                                      |                |                 |
@@ -59,18 +60,20 @@ El curso **no** se enfocará en ningún software especializado particular (e.g. 
 | 5.7. Mapeo a genoma de referencia                                           |                |                 |
 | 5.8. Metabarcoding y símiles                                                |                |                 |
 | 5.9. Importancia de elección de parámetros en análisis bioinformáticos      |                |                 |
-| **Unidad 6 Introducción a R con un enfoque bioinformático**                 |        6       |       18        |
+| **Unidad 6 Introducción a R con un enfoque bioinformático**                 |        4       |       9         |
 | 6.1. RStudio                                                                |                |                 |
 | 6.2. Funciones básicas de R más importantes para bioinformática             |                |                 |
 | 6.3. Limpieza de datos en R                                                 |                |                 |
 | 6.4. Graficar en R                                                          |                |                 |
 | 6.5. Funciones propias                                                      |                |                 |
-| 6.6. Bioconductor y paquetes bioinformáticos en R                           |                |                 |
-| 6.7. Exploración gráfica y resumen de datos genéticos                       |                |                 |
-| 6.8. Estimación de parámetros genéticos                                     |                |                 |
-| **Unidad 7 Análisis bioinformáticos en pipeline**                           |        5       |        5        |
-| 7.1. Creación de “pipelines” para análisis de datos crudos a resultados     |                |                 |
-| 7.2. Almacenamiento y reproducibilidad de un proyecto bioinformático        |                |                 |
+| **Unidad 7 Análisis de filogenias y genética de poblaciones**               |        2       |       9         |
+| 7.1. Bioconductor y paquetes bioinformáticos en R                           |                |                 |
+| 7.2. Exploración gráfica y resumen de datos genéticos                       |                |                 |
+| 7.3. Estimación de parámetros genéticos                                     |                |                 |
+| 7.4. Filogenias                                                             |                |                 |
+| **Unidad 8 Análisis bioinformáticos en pipeline**                           |        5       |        5        |
+| 8.1. Creación de “pipelines” para análisis de datos crudos a resultados     |                |                 |
+| 8.2. Almacenamiento y reproducibilidad de un proyecto bioinformático        |                |                 |
 
              
 
