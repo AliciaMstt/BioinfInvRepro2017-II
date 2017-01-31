@@ -19,7 +19,7 @@ El curso **no** se enfocará en ningún software especializado particular (e.g. 
 4.	Presentar a los alumnos los tipos de datos genéticos que se analizan con bioinformática 
 5.	Introducir a los y las alumnas al uso general de software especializado (ensambladores, alineadores, etc)
 6.	Enseñar a los y las alumnas cómo organizar un proyecto bioinformático
-7.	Formar a los alumnos en el uso de R para análisis bioinformáticos y gráficas
+7.	Formar a los y las alumnas en el uso de R para análisis bioinformáticos y gráficas
 
 
 ### Temario
