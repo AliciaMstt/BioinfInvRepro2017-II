@@ -1,6 +1,6 @@
 # Introducción a la bioinformática e investigación reproducible para análisis genéticos
 
-Este es el repositorio de apuntes y código del curso **Introducción a la bioinformática e investigación reproducible para análisis genéticos** semestre 2017-II, brindado por las profesoras Dra. [Alicia Mastretta Yanes](www.mastrettayanes-lab.org) y Azalea Guerra.
+Este es el repositorio de apuntes y código del curso **Introducción a la bioinformática e investigación reproducible para análisis genéticos** semestre 2017-II, brindado por las profesoras Dra. [Alicia Mastretta Yanes](www.mastrettayanes-lab.org) y M. en C. Azalea Guerra.
 
 El curso pertenece al Posgrado en Ciencias Biológicas de la Universidad Nacional Autónoma de México pero los materiales aquí presentados son de acceso libre. 
 
