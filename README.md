@@ -12,7 +12,7 @@ Para más detalles:
 
 * **[Temario](Temario_Bioinfo2017-2.md)**. 
 
-* **Bienvenida al curso y mecanismos de evaluación**. 
+* **[Bienvenida al curso y mecanismos de evaluación](Bienvenida_y_dinamicadeclase.md)**. 
 
 
 ### Este repositorio
