@@ -95,7 +95,21 @@ La diagonal **/** es el símbolo que separa los directorios en niveles jerárqui
 
 ### `cd`
 
-`cd` viene de **change directory** y sirve para movernos a otro directorio. Para esto hay varias opciones:
+`cd` viene de **change directory** y sirve para movernos a otro directorio. Por ejemplo:
+
+```
+Alicias-MacBook-Pro:~ ticatla$ cd Desktop/
+Alicias-MacBook-Pro:Desktop ticatla$ 
+```
+
+**Pregunta:** ¿Qué pasa con el texto antes del nombre de usuario?
+
+Como se explicó antes, el texto antes de `$` nos indica el nombre del equipo, el directorio actual y el nombre del usuario. El directorio actual cambió de "ticatla" (home) a "Desktop". 
+
+Ahora vamos a navegar al directorio del repositorio. La navegación se puede hacer de diferentes maneras:
+
+
+Para esto hay varias opciones:
 
 #### Moverse hacia adelante/abajo (i.e. adentro de subdirectorios):
 
@@ -110,11 +124,14 @@ Alicias-MacBook-Pro:~ ticatla$ cd /Users/ticatla/Desktop/BioinfInvRepro2017-II/U
 Alicias-MacBook-Pro:Prac_Uni2 ticatla$
 
 ```
-**Pregunta:** ¿Qué pasa con el texto antes del nombre de usuario?
 
-Como se explicó antes, el texto antes de `$` nos indica el nombre del equipo, el directorio actual y el nombre del usuario. El directorio actual cambió de "ticatla" (home) a "Prac_Uni2". 
+Háganlo en sus sistemas.
 
+**Quienes estén en Cwying:**
 
+```
+cd cygdrive/c/Users/NOMBREdeUSUARIO/Desktop/BioinfInvRepro2017-II
+```
 
 #### Moverse a home:
 
