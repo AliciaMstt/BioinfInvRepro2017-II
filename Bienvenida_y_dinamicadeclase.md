@@ -22,11 +22,12 @@ A mi parecer aprender técnicas de biología computacional es igual que el traba
 
 * Windows: 
 
-  - Docker instalado y FUNCIONANDO (para la tercera semana de clases)
-  - Cygwin (https://www.cygwin.com) o una partición de Linux (para la segunda clase)
+  - Docker instalado y FUNCIONANDO o una partición de GNU/Linux
+(para la tercera semana de clases)
+   - Cygwin (https://www.cygwin.com) o una partición de GNU/Linux (para la segunda clase)
 
 
-* Mac y Linux:
+* Mac y GNU/Linux:
 
   -  Docker instalado y FUNCIONANDO (en estos SO ocuparemos Docker dentro de un mes)
 
@@ -35,11 +36,11 @@ A mi parecer aprender técnicas de biología computacional es igual que el traba
      1. Un editor de texto decente. Listo para la 2da clase. Recomendaciones:
          * Windows: [Notepad++](https://notepad-plus-plus.org/)
          * Mac: [TextWrangler](http://download.cnet.com/TextWrangler/3000-2351_4-10220012.html) o [Fraise](http://www.macupdate.com/app/mac/33751/fraise)
-         * Linux: [Gedit](http://sourceforge.net/projects/gedit/)
+         * GNU/Linux: [Gedit](http://sourceforge.net/projects/gedit/)
      2. Un editor de Markdown. Listo para la Unidad 6, mejor si desde antes. Recomendaciones:    
          * Windows: [Markdownpad](http://markdownpad.com/)
          * Mac: [MacDown](http://macdown.uranusjr.com/)
-         * Linux: [Remarkable](http://remarkableapp.github.io/linux/download.html)
+         * GNU/Linux: [Remarkable](http://remarkableapp.github.io/GNU/Linux/download.html)
      3. [R y RStudio](https://www.rstudio.com/products/rstudio/download/). Listos para la Unidad 7.
 
 ### Mecanismos de evaluación:
