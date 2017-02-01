@@ -76,7 +76,7 @@ Que quiere decir que no existe el comando `algo`.
 
 Windows, Mac y las interfaces gráficas de Linux (como Ubuntu y Biolinux) tienen un sistema de archivos que estamos acostumbrados a explorar a través carpetas y subcarpetas que podemos ver en una ventana. Por ejemplo así:
 
-![Findereg](Finder01.png) 
+![Findereg](Finder01_Prac.png) 
 
 A continuación vamos a ver cómo navegar por este **mismo** sistema de archivos, pero desde la Terminal y con el teclado en vez de desde una ventana y con clicks.
 
@@ -106,13 +106,13 @@ La diagonal **/** es el símbolo que separa los directorios en niveles jerárqui
 Ejemplo de ruta absoluta:
 
 ```
-Alicias-MacBook-Pro:~ ticatla$ cd /Users/ticatla/Desktop/BioinfInvRepro2017-II/Practicas/
-Alicias-MacBook-Pro:Practicas ticatla$
+Alicias-MacBook-Pro:~ ticatla$ cd /Users/ticatla/Desktop/BioinfInvRepro2017-II/Unidad2/Prac_Uni2
+Alicias-MacBook-Pro:Prac_Uni2 ticatla$
 
 ```
 **Pregunta:** ¿Qué pasa con el texto antes del nombre de usuario?
 
-Como se explicó antes, el texto antes de `$` nos indica el nombre del equipo, el directorio actual y el nombre del usuario. El directorio actual cambió de "ticatla" (home) a "Practicas". 
+Como se explicó antes, el texto antes de `$` nos indica el nombre del equipo, el directorio actual y el nombre del usuario. El directorio actual cambió de "ticatla" (home) a "Prac_Uni2". 
 
 
 
@@ -122,16 +122,17 @@ Como se explicó antes, el texto antes de `$` nos indica el nombre del equipo, e
 
 
 ```
-Alicias-MacBook-Pro:Practicas ticatla$ cd ~
+Alicias-MacBook-Pro:Prac_Uni2 ticatla$ cd ~
 Alicias-MacBook-Pro:~ ticatla$ 
 ```
 
 Ejemplo de ruta relativa:
 
 ```
-Alicias-MacBook-Pro:Practicas ticatla$ cd ~
-Alicias-MacBook-Pro:~ ticatla$ cd Desktop/BioinfInvRepro2017-II/Practicas/
-Alicias-MacBook-Pro:Practicas ticatla$ 
+Alicias-MacBook-Pro:Prac_Uni2 ticatla$ cd ~
+Alicias-MacBook-Pro:~ ticatla$ cd Desktop/BioinfInvRepro2017-II/Unidad2/Prac_Uni2
+
+Alicias-MacBook-Pro:Prac_Uni2 ticatla$ 
 ```
 
 #### Moverse para atrás (hacia el directorio raíz):
@@ -146,7 +147,7 @@ Ejemplo:
 ```
 
 $ pwd
-/Users/ticatla/Desktop/BioinfInvRepro2017-II/Practicas
+/Users/ticatlaDesktop/BioinfInvRepro2017-II/Prac_Uni2
 $ cd ..
 $ pwd
 /Users/ticatla/Desktop/BioinfInvRepro2017-II
@@ -173,7 +174,7 @@ Es decir `../` se puede combinar con una ruta relativa. Ejemplo:
 
 ```
 $ pwd
-/Users/ticatla/Desktop/BioinfInvRepro2017-II/Practicas/Tomates/VerdesFritos
+/Users/ticatla/Desktop/BioinfInvRepro2017-II/Prac_Uni2/Tomates/VerdesFritos
 Alicias-MacBook-Pro:VerdesFritos ticatla$ cd ../../Manzanas
 Alicias-MacBook-Pro:Manzanas ticatla$ 
 ```
