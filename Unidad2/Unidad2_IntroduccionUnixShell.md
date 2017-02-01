@@ -833,7 +833,31 @@ Es decir, básicamente es como copiar-pegar un archivo al final de otro.
 
 
 
-## 2.4. Redirección
+## 2.4. Clonar repositorios de GitHub
+
+Como habíamos visto, [GitHub](http://github.com) es un repositorio de código basado en [`git`](https://git-scm.com/), el cual permite tener un historial de los cambios y está pensado para facilitar la colaboración en proyectos.
+
+Recuerda los términos más importantes en GitHub son:
+
++ **Repositorio**: Se usa para organizar un proyecto. Puede contener imágenes, videos, datos, etc. Es recomendable incluir un READ ME.
++ **Fork o branch**: El repositorio tiene una rama llamada `master`, que es la "original". Se crean otras ramas cuando el repositorio es copiado de la cuenta de un miembro a la de otro, y en éstas se pueden hacer modificaciones sin afectar el código original. 
++ **Commit**: Equivale a guardar los cambios. ¡Ojo! Los cambios se guardan en la branch donde trabajas.
++ **Pull request**: Si se quieren agregar las modificaciones en la branch `master`, se envía una solicitud al propietario original.
++ **Merge**: Una vez que el propietario del repositorio ha revisado y aceptado los cambios, fusiona las ramas. 
+
+Lo anterior es posible hacerlo desde línea de comando: 
+
++ `git clone`: 
++ `git status`:
++ `git add`:
++ `git commit`
++ `git push`:
++ `git pull`: 
+
+**Ejercicio:** clona el repositorio de la clase y actualizalo que vez que sea necesario.
+
+
+## 2.5. Redirección
 
 **Pregunta** ¿Qué son el Standar output y el Standar input?
 
