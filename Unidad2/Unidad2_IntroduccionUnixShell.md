@@ -1252,7 +1252,7 @@ Puedes consultar esta y más info de for loops en [esta guía con ejemplos y var
 
 Como habíamos visto, [GitHub](http://github.com) es un repositorio de código basado en [`git`](https://git-scm.com/), el cual permite tener un historial de los cambios y está pensado para facilitar la colaboración en proyectos.
 
-Recuerda los términos más importantes en GitHub son:
+Recuerda los términos más importantes en GitHub:
 
 + **Repositorio**: Se usa para organizar un proyecto. Puede contener imágenes, videos, datos, etc. Es recomendable incluir un README.
 
@@ -1267,14 +1267,16 @@ Recuerda los términos más importantes en GitHub son:
 + **Merge**: Una vez que el propietario del repositorio ha revisado y aceptado los cambios, fusiona las ramas. 
 
 
-Lo anterior es posible hacerlo desde línea de comando: 
+Lo anterior es posible hacerlo desde línea de comando.
 
-+ `git clone`: te permite copiar un repositorio que ya existe. Cada versión de cada archivo de la historia del proyecto es descargado cuando lo ejecutas.
+### `git clone`
+Te permite copiar un repositorio que ya existe. Cada versión de cada archivo de la historia del proyecto es descargado cuando lo ejecutas.
 ```
 git clone https://github.com/AzaleaGuerra/EjercicioGit.git
 ```
 
-+ `git status`: te permite saber en qué branch estas trabajando y si tienes archivos que te falte "guardar" (commit). Por ejemplo, si lo haces cuando acabas de clonar un repositorio, debe verse algo así:
+### `git status`
+Es para saber en qué branch estas trabajando y si tienes archivos que te falte "guardar" (commit). Por ejemplo, si lo haces cuando acabas de clonar un repositorio, debe verse algo así:
 
 ```
 chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
@@ -1283,7 +1285,8 @@ Su rama está actualizada con «origin/master».
 nothing to commit, working directory clean
 ```
 
-+ `git add`: te permite agregar un archivo que no existía en el repositorio o prepara las modificaciones a archivos existentes. Esto no lo "guarda" (commit). Si modificas un archivo es necesario que vulvas a dar `add`.
+### `git add`
+Te permite agregar un archivo que no existía en el repositorio o prepara las modificaciones a archivos existentes. Esto no lo "guarda" (commit). Si modificas un archivo es necesario que vulvas a dar `add`.
 ```
 chalis@chalis-SVE14118FXW[EjercicioGit] git add BioinfoRep
 chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
@@ -1295,7 +1298,8 @@ Cambios para hacer commit:
 	nuevo archivo: BioinfoRep
 ```
 
-+ `git commit`:  confirma y agrega los cambios a la branch en la que estas trabajando. Se abrirá un editor de texto donde puedes describir brevemente el cambio que hiciste. Si tu editor es Vim, puedes guardar y salir con `:w` y `:q`, respectivamente.
+### `git commit`
+Confirma y agrega los cambios a la branch en la que estas trabajando. Se abrirá un editor de texto donde puedes describir brevemente el cambio que hiciste. Si tu editor es Vim, puedes guardar y salir con `:w` y `:q`, respectivamente.
 ```
 chalis@chalis-SVE14118FXW[EjercicioGit] git commit                           []
 [master 7ee0c94] Agregar BioinfoRep
