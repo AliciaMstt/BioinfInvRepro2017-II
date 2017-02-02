@@ -71,6 +71,12 @@ La terminal dirá:
 Que quiere decir que no existe el comando `algo`. 
 
 
+La práctica hace al maestro. A continuación veremos algunos de los comandos básicos, pero para practicar más parte de la tarea será resolver los siguientes cursos prácticos:
+
+* Terminar el curso [Learn the Command Line de CodeAcademy](https://www.codecademy.com/learn/learn-the-command-line).
+
+* Adentrarse en el bosque con este [juego de bash](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html).
+
 
 ## 2.2. Funciones básicas de navegación y manejo de archivos y directorios
 
