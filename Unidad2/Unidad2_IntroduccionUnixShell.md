@@ -136,7 +136,7 @@ Háganlo en sus sistemas.
 **Quienes estén en Cwying:**
 
 ```
-cd cygdrive/c/Users/NOMBREdeUSUARIO/Desktop/BioinfInvRepro2017-II
+cd /cygdrive/c/Users/NOMBREdeUSUARIO/Desktop/BioinfInvRepro2017-II
 ```
 
 #### Moverse a home:
