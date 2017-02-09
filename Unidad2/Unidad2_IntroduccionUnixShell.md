@@ -448,29 +448,59 @@ $ nano ejemplonano.txt
 
 ## curl
 
-Sirve para bajar archivos de internet a la computadora.
+
+* Quienes estén en cywing chequen cómo "instalar" curl [en este post the stacksoverflow](http://stackoverflow.com/questions/3647569/how-do-i-install-curl-on-cygwin). 
+
+`curl` Sirve para bajar archivos de internet a la computadora.
 
 Sintaxis:
 
     curl [opciones] [direccionURLdelarchivo]
    
-Ejemplo:
+
+Ejemplo, podemos bajar el archivo de texto del README que vive en el repositorio de este clase:
+
 
 ```
-$ curl -s "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=937202862"
->gi|937202862|gb|KT820711.1| Chiropterotriton sp. SMR-2015b voucher MVZ:Herp:269665 cytochrome b (cytb) gene, partial cds; mitochondrial
-TTAATACCTCATTCATTGATCTGCCTACACCATCAAACATCTCTTATCTTTGAAATTTTGGATCTCTATT
-AGGCGTATGTCTTATTATACAAATCTTAACAGGTGTATTTTTAGCTCTACACTTTACCGCAGACACACTA
-TCTGCATTTTCATCAGTAGCCCATATTTGTCGAGACGTAAATTATGGATGAATAATTCGAAATATTCACA
-CTAATGGCGCCTCCATATTTTTTATCTGCCTATACTTACACATTGGTCGAGGCATTTATTATGGATCATT
-TATATATAAACAAACCTGAAACATTGGAATTATCTTATTATTCTTAGTAATAGCAACCGCATTTATAGGA
-TACGTTTTACCATGAGGCCAAATATCATTTTGAGGAGCAACTGTAATCACAAATTTATTATCAGCAATCC
-CTTATATTGGAGATATATTAGTACAGTGAGTATGGGGGGGGTTTTCAGTAGACAAGGCCACTCTTACCCG
-ATTCTTTGCCTTTCACTTTATTTTACCCTTCATTATTTCAGGAGTTAGTATCATCCATTTACTTTTCCTA
-CATGAAACGGGTTCTAACAATCCAACAGGATTAAATTCTAACTCAGATAAAATCCCGTTTCATCCATACT
-TTACCCACAAGGACCTTCTTGGGATCTTACTCTTAATTTTAGTCTTAGCTCCACTATCTTTATTTTCACC
-AAACCTATTAGGAGATCCAGACAATTTCATTCAAGCAAACCCACTAATTACACCCCCTCAT
+$ curl -s "https://raw.githubusercontent.com/AliciaMstt/BioinfInvRepro2017-II/master/README.md"
+# Introducción a la bioinformática e investigación reproducible para análisis genéticos
+
+Este es el repositorio de apuntes y código del curso **Introducción a la bioinformática e investigación reproducible para análisis genéticos** semestre 2017-II, brindado por las profesoras Dra. [Alicia Mastretta Yanes](www.mastrettayanes-lab.org) y M. en C. Azalea Guerra.
+
+El curso pertenece al Posgrado en Ciencias Biológicas de la Universidad Nacional Autónoma de México pero los materiales aquí presentados son de acceso libre.
+[...]
 ```
+
+O bajar sencuencias de ADN de GeneBank! ([instrucciones aquí](http://www.ncbi.nlm.nih.gov/books/NBK25499/#chapter4.EFetch)
+
+
+```
+$ curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=AB080944.1"
+>AB080944.1 Pinus patula chloroplast matK gene for maturase, complete cds
+ATGGATGAGTTCCATAGATGCGGAAAGGAAGATAGCTTTTGGCAACAATGCTTTTTATATCCACTCTTTT
+TTCAGGAAGATCTTTACGCAATTTCTCATGATCATTATTTGGATGTATCAAGTTCCTCCAGACCGATGGA
+ACATTTAAGTTCCAATGATCAATTAAGTTTCCTAACTGTAAAACGTTTGATTGGTCAAATACGTCAACAA
+AATCATTCAATTGTTTTATTCGTGAATTGCGATCCAAATCCATTAGCTGATCGCAAGAAGAGTTTCTATT
+CTGAATCGGTACTAGAAGCACTTACATTGGTCCTGGAAGTTCCGTTCTCTATATGGTCAAAATATTCTGT
+GGAAGGGATGAATGAATCGAAGAGTTTCCGGTCGATCCATTCAATATTTCCCTTCTTAGAGGATAAATTC
+CCGCATTCAAATTCTATATTAGATGCACGAATACCCTATTCTATTCATCCGGAAATTTTGGTTCGAACCT
+TTCGTCGCTGGATCCGAGATGCTCCCTCCTTGCACCCATTACGATCTGTTCTCTATGAATATAGAAATAG
+TCCAGATAATTTACAAAGATCAATTATTGTCGTCCCAAGAGTAAATACGAGATTCTTCCTGTTCCTGTGG
+AATTATTATGTCTGTGAATGCGAATCCATTTTATTTTCCCGTCTTAAACGATCCTCTCATTCACGATCGT
+TGACTCATGGATCTTTCCCTCAGCGAACTCATTTTCATCGAAAGATAAAACATATTATCATATTTTCTCG
+TCGAAATTCACTGAAAAGTATCTGGTCGTTGAAGGATCCTAAAATTCACTATGTTAGATATGGCGAAAGA
+CCTATTATAGCTATAAAGGGTGCTCATCTCCTAGTTAAAAAATGTAGATATTATCTTCTAATTTTTCGGC
+AATTTTATTTCCATCTTTGGTCCGAACCGTATAGGGTCTGTTCTCATCAATTATCCAAGAATTGTTCTTC
+TTCTCCAGGTTATTTTTTGAGGGTTCGGATGAACCCTATTTTGGTCAGAACCAAAATGCTCGATGAGTTA
+TTCATCGCCGATCTTATTACCGATGAAATTGATCCAATAGTTCCGATTGTACCAATAATTGGATTATTGG
+CTACAGAAAAATTCTGTGACATATCAGGGCGGCCAATTAGTAAATTGTCTTGGACCAGTCTAACAGATGA
+TGATATCCTCGATCGATTCGATCAAATTTGGAGAAATCTTTTTCATTACTACAGTGGATCCTTTGATCGA
+GATGGTTTATATCGTATAAAGTATATACTTTCATTATCATGTGCTAAAACTTTAGCCTGTAAACATAAAA
+GTACGATACGTGTAGTTCGGAAGGAATTAGGTCCAGAACTCTTTAAAAAATCGTTTTCAAAAGAACGAGA
+ATTTTATTCTCTGCGCTTTTCATCAAAAGCGGCGGCCCGTTCGCAGAGAGAACGAATTTGGCATTCAGAT
+ATTTCCCAGATAAATCCCCTAGCTAATTCCTGGCAAAAGATACAGGATCTGAAAATAGAAAACTTATTTG
+ACCAATGAAATGCTCTTTGAGTAATTGCCTCGATTCAGAATCATTTTTATTTTTCTATCCGAGAACTAAA
+ATGATTAGGAAATAGATACATTACATGGGGAAAGCCGTGTGCAATGAGAAT```
 
 En bioinformática `curl` se utiliza para transferir desde archivos FASTA de secuencias individuales de GeneBank hasta genomas completos. 
 
@@ -1065,7 +1095,8 @@ $ grep ">" tomatesverdes.fasta
 ```
 **Pregunta**: ¿Por qué está ">" entre comillas? 
 
-**Ejercicio** En el mismo directorio hay otro archivo fasta. Utiliza grep para ver el encabezado de `tomatesverdes.fasta` y `jitomate.fasta`. ¿Qué diferencia hay con el output anterior?
+**Ejercicio** En el mismo directorio hay otro archivo fasta. Utiliza `grep` y algo más para ver el encabezado de `tomatesverdes.fasta` y `jitomate.fasta`. ¿Qué diferencia hay con el output anterior?
+
 
 #### `grep -c` 
 Para contar en cuántas líneas aparece la expresión de búsqueda 
@@ -1110,7 +1141,7 @@ $
 ```
 
 
-#### `grep -E
+#### `grep -E`
 
 Lee el texto entre comillas como una expresión regular  completa, es decir con operadores, cuantificadores y posicionadores.
 
@@ -1124,10 +1155,22 @@ $ grep -oE "\| \w+ \w+" tomatesverdes.fasta
 
 ```
 
-**Ejercicio 1** Obtener el nombre de la especie como en el ejemplo anterior, pero sin el "|" del principio.
+**Ejercico 1** Primero explora qué hace el comando `history`. ¿Cómo lo combinarías con `grep` para buscar cuál fue la línea que corrimos con `less`?
 
-**Ejercicio 2** Obtener el *nombre de las secuencias* de los archivos tomatesverdes.fasta y jitomares.fasta y escribirlos a un archivo.
- 
+**Ejercicio 2** Obtener el nombre de la especie *Physalis philadelphica* como en el ejemplo anterior, pero sin el "|" del principio.
+
+
+**Ejercicio 3** Obtener el *nombre de las secuencias* de los archivos tomatesverdes.fasta y jitomares.fasta y escribirlos a un archivo llamado secsIDs. No importa cómo escribas la expresión regular, pero el chiste es lograr que toda la operación sea en una sola línea de código.
+
+El texto dentro del archivo secsIDs debe verse así
+
+```
+>gi|156629013|gb|EF438954.1|
+>gi|156629009|gb|EF438952.1|
+>gi|156628921|gb|EF438908.1|
+>gi|156628893|gb|EF438894.1|
+>gi|156629011|gb|EF438953.1|
+``` 
 
 
 **Más información de expresiones regulares en:**
