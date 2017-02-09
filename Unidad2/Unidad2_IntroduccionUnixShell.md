@@ -886,7 +886,6 @@ Es decir, básicamente es como copiar-pegar un archivo al final de otro.
 **Pregunta:** ¿Y si quisiéramos tener el resultado en un archivo nuevo?
 
 
-
 ## 2.4. Redirección
 
 **Pregunta** ¿Qué son el Standar output y el Standar input?
@@ -1185,7 +1184,7 @@ Y buenos ejemplos de cómo usar `grep` [aquí](http://www.thegeekstuff.com/2009/
 
 
 
-## 2.5. For loops
+## 2.4. For loops
 
 ### For loops
 
@@ -1291,5 +1290,77 @@ Navega al directorio `BioinfInvRepro2017-II/Unidad2/Prac_Uni2`. Desde ahí (i.e.
 **Más información de for loops**
 Aquí presenté la sintaxis más usada, pero hay otros métodos para escribir loops que hacen lo mismo. Y también pueden hacerse más complejos agregando "ifs". 
 Puedes consultar esta y más info de for loops en [esta guía con ejemplos y varios formatos](http://www.thegeekstuff.com/2011/07/bash-for-loop-examples/). 
+
+## 2.6. Clonar repositorios de GitHub
+
+Como habíamos visto, [GitHub](http://github.com) es un repositorio de código basado en [`git`](https://git-scm.com/), el cual permite tener un historial de los cambios y está pensado para facilitar la colaboración en proyectos.
+
+Recuerda los términos más importantes en GitHub:
+
++ **Repositorio**: Se usa para organizar un proyecto. Puede contener imágenes, videos, datos, etc. Es recomendable incluir un README.
+
++ **Fork**: Se crea un fork cuando el repositorio es copiado de la cuenta de un miembro a la de otro.
+
++ **Branch**: El repositorio tiene una rama o branch principal llamada `master`, que es la "original". Se pueden crear otras ramas dentro del mismo repositorio en las cuales se pueden hacer modificaciones sin afectar el código original. 
+
++ **Commit**: Equivale a guardar los cambios. ¡Ojo! Los cambios se guardan en la branch donde trabajas.
+
++ **Pull request**: Si se quieren agregar las modificaciones en la branch `master`, se envía una solicitud al propietario original.
+
++ **Merge**: Una vez que el propietario del repositorio ha revisado y aceptado los cambios, fusiona las ramas. 
+
+
+Lo anterior es posible hacerlo desde línea de comando.
+
+### `git clone`
+Te permite copiar un repositorio que ya existe. Cada versión de cada archivo de la historia del proyecto es descargado cuando lo ejecutas.
+```
+git clone https://github.com/AzaleaGuerra/EjercicioGit.git
+```
+
+### `git status`
+Es para saber en qué branch estas trabajando y si tienes archivos que te falte "guardar" (commit). Por ejemplo, si lo haces cuando acabas de clonar un repositorio, debe verse algo así:
+
+```
+chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
+En la rama master
+Su rama está actualizada con «origin/master».
+nothing to commit, working directory clean
+```
+
+### `git add`
+Te permite agregar un archivo que no existía en el repositorio o prepara las modificaciones a archivos existentes. Esto no lo "guarda" (commit). Si modificas un archivo es necesario que vulvas a dar `add`.
+```
+chalis@chalis-SVE14118FXW[EjercicioGit] git add BioinfoRep
+chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
+En la rama master
+Su rama está actualizada con «origin/master».
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+	nuevo archivo: BioinfoRep
+```
+
+### `git commit`
+Confirma y agrega los cambios a la branch en la que estas trabajando. Se abrirá un editor de texto donde puedes describir brevemente el cambio que hiciste. Si tu editor es Vim, puedes guardar y salir con `:w` y `:q`, respectivamente.
+```
+chalis@chalis-SVE14118FXW[EjercicioGit] git commit                           []
+[master 7ee0c94] Agregar BioinfoRep
+ Committer: Chalis <chalis@chalis-SVE14118FXW>
+
+1 file changed, 1 insertion(+)
+ create mode 100644 BioinfoRep
+```
+
++ `git push`: una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas.
+
++ `git pull`: actualiza la copia del repositorio local con respecto a la rama remota. Piensa en `push` para enviar y `pull` para recibir.
+```
+chalis@chalis-SVE14118FXW[EjercicioGit] git pull                             []
+Already up-to-date.
+```
+
+**Ejercicio:** clona el repositorio de la clase y actualízalo que vez que sea necesario.
+
 
 
