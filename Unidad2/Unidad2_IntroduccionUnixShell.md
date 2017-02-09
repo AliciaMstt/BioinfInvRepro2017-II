@@ -471,7 +471,7 @@ El curso pertenece al Posgrado en Ciencias Biológicas de la Universidad Naciona
 [...]
 ```
 
-O bajar sencuencias de ADN de GeneBank! ([instrucciones aquí](http://www.ncbi.nlm.nih.gov/books/NBK25499/#chapter4.EFetch)
+O bajar sencuencias de ADN de GeneBank! ([instrucciones de cómo construir la url aquí](http://www.ncbi.nlm.nih.gov/books/NBK25499/#chapter4.EFetch))
 
 
 ```
