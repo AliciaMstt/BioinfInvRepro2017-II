@@ -94,7 +94,7 @@ Fin
 mkdir Chiropt
 
 # Bajar datos de NCBI 
-curl -s "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=937202862,937202860,937202858" > Chiropt/ranas.fasta
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=937202862,937202860,937202858" > Chiropt/ranas.fasta
 
 # Revisar qué secuencias se bajaron
 grep ">" Chiropt/ranas.fasta
@@ -122,6 +122,81 @@ Veamos por ejemplo los [componentes del programa Stacks](http://catchenlab.life.
 ![StacksComp.png](StacksComp.png)
 
 No solamente los programas bioinformáticos pueden pensarse modularmente, sino también **cualquier análisis** que involucre varios pasos complejos. De modo que en vez de tener un único script que lo haga todo, podemos tener uno por cada paso importante, y correrlos de forma independiente (para probarlos o repetir sólo un paso) o correrlos todos en una sola sentada con un script que ejecute todo el *pipeline* paso por paso. 
+
+**Ejercicio:** Mira el siguiente script ([tomado del manual de Stacks](http://catchenlab.life.illinois.edu/stacks/manual/#phand)) y contesta lo siguiente:
+
+(Si requieren googlear, para evitar colapsar la red hagamos esto por equipos de 3 utilizando una sóla computadora).
+
+1. ¿Cuántos pasos tiene este script?
+2. ¿Si quisieras correr este script y que funcionara en tu propio equipo, qué línea deberías cambiar y a qué? 
+2. ¿A qué equivale `$HOME`?
+3. ¿Qué paso del análisis hace el programa `gsnap`?
+4. ¿Qué hace en términos generales cada uno de los loops?
+5. ¿Qué hace y para qué ocupa el segundo loop el comando `let`?
+6. ¿Para qué sirve el operador `+=` en la línea `samp+="-s $src/stacks/$file "`?
+
+
+```
+#!/bin/bash 
+
+src=$HOME/research/project 
+
+files=”sample_01 
+sample_02 
+sample_03” 
+
+#
+# Align with GSnap and convert to BAM
+# 
+for file in $files
+do
+	gsnap -t 36 -n 1 -m 5 -i 2 --min-coverage=0.90 \
+			-A sam -d gac_gen_broads1_e64 \
+			-D ~/research/gsnap/gac_gen_broads1_e64 \
+			$src/samples/${file}.fq > $src/aligned/${file}.sam
+	samtools view -b -S -o $src/aligned/${file}.bam $src/aligned/${file}.sam 
+	rm $src/aligned/${file}.sam 
+done
+
+#
+# Run Stacks on the gsnap data; the i variable will be our ID for each sample we process.
+# 
+i=1 
+for file in $files 
+do 
+	pstacks -p 36 -t bam -m 3 -i $i \
+	 		 -f $src/aligned/${file}.bam \
+	 		 -o $src/stacks/ 
+	let "i+=1"; 
+done 
+
+# 
+# Use a loop to create a list of files to supply to cstacks.
+# 
+samp="" 
+for file in $files 
+do 
+	samp+="-s $src/stacks/$file "; 
+done 
+
+# 
+# Build the catalog; the "&>>" will capture all output and append it to the Log file.
+# 
+cstacks -g -p 36 -b 1 -n 1 -o $src/stacks $samp &>> $src/stacks/Log 
+
+for file in $files 
+do 
+	sstacks -g -p 36 -b 1 -c $src/stacks/batch_1 \
+			 -s $src/stacks/${file} \ 
+			 -o $src/stacks/ &>> $src/stacks/Log 
+done 
+
+#
+# Calculate population statistics and export several output files.
+# 
+populations -t 36 -b 1 -P $src/stacks/ -M $src/popmap \
+			  -p 9 -f p_value -k -r 0.75 -s --structure --phylip --genepop
+```
 
 
 ## 3.3. Cómo organizar un script
@@ -167,12 +242,12 @@ Memotecnica: *She bangs* de Ricky Martin.
 Por ejemplo, para decir que estamos escribiendo un script de Bash que queremos correr en la Terminal la primera línea tendría que decir:
 
 ```
-#! /bin/bash
+#!/bin/bash
 ```
 Ejemplos en otros lenguajes:
 
 ```
-#! /usr/bin/env python
+#!/usr/bin/env python
 ```
 
 Nuestro script entonces se verá así:
@@ -239,7 +314,8 @@ $ ./getsecsNCBI.sh
 
 ## Ejercicios
 
-1. Escribe **una** línea de código que cree un archivo con los nombres de las muestras de maiz enlistadas en `Practicas/Uni2/Maiz/nuevos_final.fam`. 
+
+1. Escribe **una** línea de código que cree un archivo con los nombres de las muestras de maiz enlistadas en `/Unidad2/Prac_Uni2/Maiz/nuevos_final.fam`. 
 
 2. Escribe un script que cree 4 directorios llamados PobA, PobB, PobC, PobD y dentro de cada uno de ellos un archivo de texto que diga "Este es un individuo de la población x" donde x debe corresponder al nombre del directorio. 
 
