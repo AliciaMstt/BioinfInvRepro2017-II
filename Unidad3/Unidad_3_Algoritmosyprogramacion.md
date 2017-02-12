@@ -132,8 +132,6 @@ No solamente los programas bioinformáticos pueden pensarse modularmente, sino t
 2. ¿A qué equivale `$HOME`?
 3. ¿Qué paso del análisis hace el programa `gsnap`?
 4. ¿Qué hace en términos generales cada uno de los loops?
-5. ¿Qué hace y para qué ocupa el segundo loop el comando `let`?
-6. ¿Para qué sirve el operador `+=` en la línea `samp+="-s $src/stacks/$file "`?
 
 
 ```
