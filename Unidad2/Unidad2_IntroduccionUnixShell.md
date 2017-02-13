@@ -1323,7 +1323,7 @@ git clone https://github.com/AzaleaGuerra/EjercicioGit.git
 Es para saber en qué branch estas trabajando y si tienes archivos que te falte "guardar" (commit). Por ejemplo, si lo haces cuando acabas de clonar un repositorio, debe verse algo así:
 
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
+git status                           []
 En la rama master
 Su rama está actualizada con «origin/master».
 nothing to commit, working directory clean
@@ -1332,8 +1332,8 @@ nothing to commit, working directory clean
 ### `git add`
 Te permite agregar un archivo que no existía en el repositorio o prepara las modificaciones a archivos existentes. Esto no lo "guarda" (commit). Si modificas un archivo es necesario que vulvas a dar `add`.
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git add BioinfoRep
-chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
+git add BioinfoRep
+git status                           []
 En la rama master
 Su rama está actualizada con «origin/master».
 Cambios para hacer commit:
@@ -1353,11 +1353,15 @@ chalis@chalis-SVE14118FXW[EjercicioGit] git commit                           []
  create mode 100644 BioinfoRep
 ```
 
-+ `git push`: una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas.
+### `git push`
+Una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas.
 
-+ `git pull`: actualiza la copia del repositorio local con respecto a la rama remota. Piensa en `push` para enviar y `pull` para recibir.
+### `git pull`
+Actualiza la copia del repositorio local con respecto a la rama remota. 
+Piensa en `push` para enviar y `pull` para recibir.
+
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git pull                             []
+git pull                             []
 Already up-to-date.
 ```
 
