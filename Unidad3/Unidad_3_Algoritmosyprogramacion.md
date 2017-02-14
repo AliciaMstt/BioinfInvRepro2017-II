@@ -42,7 +42,7 @@ Paso 2: Obtener secuencias raw en formato FASTQ
 Paso 3: Descartar secuencias de baja calidad
 Paso 4: Demultiplexear secuencias por individuo
 Paso 5: Realizar ensamblado de novo
-Paso 6: Genotypificiar individuos
+Paso 6: Genotipificar individuos
 Paso 7: Mostrar matriz de genotypos por individuos
 Paso 7: Fin
 ```
@@ -58,7 +58,7 @@ Como vimos en la Unidad 1, un **script** es:
 * un archivo de texto plano (**¡¡NO WORD!!**)
 * permanente,
 * repetible,
-* antoado,
+* anotado,
 * compartible y 
 * compatible con otras plataformas
 
