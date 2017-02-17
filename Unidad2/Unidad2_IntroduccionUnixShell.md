@@ -1316,14 +1316,14 @@ Lo anterior es posible hacerlo desde línea de comando.
 ### `git clone`
 Te permite copiar un repositorio que ya existe. Cada versión de cada archivo de la historia del proyecto es descargado cuando lo ejecutas.
 ```
-git clone https://github.com/AzaleaGuerra/EjercicioGit.git
+$ git clone https://github.com/AzaleaGuerra/EjercicioGit.git
 ```
 
 ### `git status`
 Es para saber en qué branch estas trabajando y si tienes archivos que te falte "guardar" (commit). Por ejemplo, si lo haces cuando acabas de clonar un repositorio, debe verse algo así:
 
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
+$ git status                           []
 En la rama master
 Su rama está actualizada con «origin/master».
 nothing to commit, working directory clean
@@ -1332,8 +1332,8 @@ nothing to commit, working directory clean
 ### `git add`
 Te permite agregar un archivo que no existía en el repositorio o prepara las modificaciones a archivos existentes. Esto no lo "guarda" (commit). Si modificas un archivo es necesario que vulvas a dar `add`.
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git add BioinfoRep
-chalis@chalis-SVE14118FXW[EjercicioGit] git status                           []
+$ git add BioinfoRep
+$ git status                           []
 En la rama master
 Su rama está actualizada con «origin/master».
 Cambios para hacer commit:
@@ -1345,7 +1345,7 @@ Cambios para hacer commit:
 ### `git commit`
 Confirma y agrega los cambios a la branch en la que estas trabajando. Se abrirá un editor de texto donde puedes describir brevemente el cambio que hiciste. Si tu editor es Vim, puedes guardar y salir con `:w` y `:q`, respectivamente.
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git commit                           []
+$ git commit                           []
 [master 7ee0c94] Agregar BioinfoRep
  Committer: Chalis <chalis@chalis-SVE14118FXW>
 
@@ -1353,11 +1353,15 @@ chalis@chalis-SVE14118FXW[EjercicioGit] git commit                           []
  create mode 100644 BioinfoRep
 ```
 
-+ `git push`: una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas.
+### `git push`
+Una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas.
 
-+ `git pull`: actualiza la copia del repositorio local con respecto a la rama remota. Piensa en `push` para enviar y `pull` para recibir.
+### `git pull`
+Actualiza la copia del repositorio local con respecto a la rama remota. 
+Piensa en `push` para enviar y `pull` para recibir.
+
 ```
-chalis@chalis-SVE14118FXW[EjercicioGit] git pull                             []
+$ git pull                             []
 Already up-to-date.
 ```
 
