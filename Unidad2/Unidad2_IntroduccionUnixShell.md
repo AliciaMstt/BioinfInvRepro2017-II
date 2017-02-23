@@ -1502,6 +1502,34 @@ Hacer algo con la muestra teos_9107
 
 **Pregunta**: Si `some_array=($(command))` sirve para crear un arreglo a partir del resultaod de un comando ¿Cómo puedes crear una **variable** a partir de un comando?
 
+**Leyendo desde un archivo**
+Los arrays tienen sus problemas cuando son muy grandes y  es fácil cometer errores porque nunca "los vemos", por lo tanto mucha gente prefiere mejor leer los elemntos directo de un archivo. Ejemplo:
+
+```
+$ grep -oE "\w+_[0-9]*" nuevos_final.fam > muestras.txt
+$ for i in $(cat muestras.txt); do echo Hacer algo con la muestra $i; done
+Hacer algo con la muestra maiz_3
+Hacer algo con la muestra maiz_68
+Hacer algo con la muestra maiz_91
+Hacer algo con la muestra maiz_39
+Hacer algo con la muestra maiz_12
+Hacer algo con la muestra maiz_41
+Hacer algo con la muestra maiz_35
+Hacer algo con la muestra maiz_58
+Hacer algo con la muestra maiz_51
+Hacer algo con la muestra maiz_82
+Hacer algo con la muestra maiz_67
+Hacer algo con la muestra maiz_93
+Hacer algo con la muestra maiz_21
+Hacer algo con la muestra maiz_6
+Hacer algo con la muestra maiz_101
+Hacer algo con la muestra maiz_27
+Hacer algo con la muestra maiz_43
+Hacer algo con la muestra maiz_1
+... [o sea lo mismo que hace rato]
+
+```
+
 
 ### Más información de for loops**
 Aquí presenté la sintaxis más usada, pero hay otros métodos para escribir loops que hacen lo mismo. Y también pueden hacerse más complejos agregando "ifs". 
