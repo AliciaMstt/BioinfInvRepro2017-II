@@ -550,13 +550,22 @@ WORKDIR /data
 
 ```
 
-Este dockerfile vive en el [github de Biocontainers](https://github.com/Biocontainers/). 
+Este dockerfile vive en el [github de Biocontainers](https://github.com/Biocontainers/). Y además en  [DockerHub de Biocontainers](https://hub.docker.com/u/biocontainers/), por lo que podemos hacer un `pull` desde ahí.
 
 Vamos a utilizar ese dockerfile para crear un contenedor:
 
 ```
-$ docker pull 
+$ docker pull biocontainers/biocontainers
+$ docker images
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+ubuntu                        latest              f49eec89601e        5 weeks ago         129.5 MB
+hello-world                   latest              48b5124b2768        6 weeks ago         1.84 kB
+biocontainers/biocontainers   latest              ef3fcbf6896c        10 weeks ago        1.213 GB
 
+$ docker run -it biocontainers/biocontainers /bin/bash
+biodocker@4c1831e1f7f7:/data$
+$ curl   
+curl: try 'curl --help' or 'curl --manual' for more information
 
 ```
 
@@ -566,9 +575,9 @@ $ docker pull
 
 * `curl` está instalado (el default no es este, según vimos la clase pasada). ¿Con qué líneas del dockerfile se especificó esto?
 
-* Pude hacer un docker pull porque el dockerfile de arriba existe en un repositorio de contenedores llamado `biodckr`. 
+* Pude hacer un docker pull porque el dockerfile de arriba existe en un repositorio de contenedores llamado `biocontainers`. 
 
-* La línea 100 dice `VOLUME ["/data", "/config"]` ¿Qué significa esto? 
+* La línea 100 del dockerfile dice `VOLUME ["/data", "/config"]` ¿Qué significa esto? 
 
 **Ejercicio** ¿Cómo puedo utilizar `run` para que el volumen `data` corresponda a un directorio en mi computadora? 
 
@@ -603,6 +612,10 @@ Lo anterior también podríamos haberlo puesto dentro del dockerfile. ¿No serí
 * **[Bioboxes](http://bioboxes.org/)**
 
 Como notamos, ambos se parecen mucho, la diferencia principal es que Bioboxes pide tener instalado `phyton` y `pip` para no interactuar directamente con docker. Biocontainers no requiere instalar nada extra y además tiene actualmente más [contenedores](https://github.com/Biocontainers/containers), así que es en el que me enfocaré, pero tu puedes usar y **contribuir** al que te convenga más. 
+
+
+
+
 
 
 Excelente intro
