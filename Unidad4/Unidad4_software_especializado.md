@@ -579,10 +579,10 @@ curl: try 'curl --help' or 'curl --manual' for more information
 
 * La línea 100 del dockerfile dice `VOLUME ["/data", "/config"]` ¿Qué significa esto? 
 
-**Ejercicio** ¿Cómo puedo utilizar `run` para que el volumen `data` corresponda a un directorio en mi computadora? 
+**Ejercicio** ¿Cómo puedo utilizar `docker run` para que el volumen `data` corresponda a un directorio en mi computadora? 
 
 
-El contenedor creado a partir de `biodckr/Biocontainers` ya tiene varias cosas instaladas (como `zlib1g-dev`, que quizá recuerdes), por lo que instalar FastXtools debiera ser más sencillo que desde cero.
+El contenedor creado a partir de `biocontainers/biocontainers` ya tiene varias cosas instaladas (como `zlib1g-dev`, que quizá recuerdes), por lo que instalar FastXtools debiera ser más sencillo que desde cero.
 
 Una vez dentro del contenedor:
 
@@ -611,17 +611,39 @@ Lo anterior también podríamos haberlo puesto dentro del dockerfile. ¿No serí
 * **[Biocontainers](http://biocontainers.pro/)**
 * **[Bioboxes](http://bioboxes.org/)**
 
-Como notamos, ambos se parecen mucho, la diferencia principal es que Bioboxes pide tener instalado `phyton` y `pip` para no interactuar directamente con docker. Biocontainers no requiere instalar nada extra y además tiene actualmente más [contenedores](https://github.com/Biocontainers/containers), así que es en el que me enfocaré, pero tu puedes usar y **contribuir** al que te convenga más. 
+Ambos se parecen mucho, la diferencia principal es que Bioboxes pide tener instalado `phyton` y `pip` para no interactuar directamente con docker. Biocontainers no requiere instalar nada extra y además tiene actualmente más [contenedores](https://github.com/Biocontainers/containers), así que es en el que me enfocaré, pero tu puedes usar y **contribuir** al que te convenga más. 
+
+Por ejemplo vamos a crear un contenedor con vcftools:
+
+```
+$ docker pull biocontainers/vcftools
+```
+
+Yo puedo entrar a este contenedor con `-it /bin/bash` como lo hemos hecho antes, pero también puedo solamente utilizarlo para **solo** correr `vcftools` con un comando concreto. Por ejemplo, mostrar la ayuda:
+
+```
+$ docker run biocontainers/vcftools vcftools -help
+
+VCFtools (0.1.14)
+© Adam Auton and Anthony Marcketta 2009
+
+Process Variant Call Format files
+
+For a list of options, please go to:
+	https://vcftools.github.io/man_latest.html
+
+Alternatively, a man page is available, type:
+	man vcftools
+
+Questions, comments, and suggestions should be emailed to:
+	vcftools-help@lists.sourceforge.net
+
+``` 
+
+Si te quedan dudas sobre Docker y cómo aplicarlo a Bionformática revisa esta excelente sección de ayuda de [Biocontainers](http://biocontainers.pro/docs/101/intro/).
 
 
-
-
-
-
-Excelente intro
-
-http://biocontainers.pro/docs/101/intro/
-
+**Ejercicio**: ve a la página [http://biocontainers.pro/docs/101/running-example/](http://biocontainers.pro/docs/101/running-example/) y lee el ejemplo de cómo usar blast. Escribe un script para adoptar el ejemplo de esta página a tu computadora. Recuerda que si estás corriendo en Windows todo tendrás que hacerlo desde un contenedor de Docker, pero si estás en Linux o Mac puedes sólo correr el contenedor con el comando de blast en concreto. Guarda tu script en tu repositorio de Github para las tareas del curso y brinda el link a dicho script:
 
 
 
@@ -675,7 +697,6 @@ También es posible tener un directorio para cada subanálisis concreto, por eje
 
 Independientemente del nombre que escojamos para los directorios y archivos, qué es qué y dónde está cada cosa debe ir explicado en un **README**.
 
-**Pregunta:** Si haces un dockerfile como parte de tu proyecto ¿Dónde lo guardarías?
 
 
 ### Organización de scripts 
@@ -699,7 +720,7 @@ Básicamente es una manera de escribir texto de manera que sea interpretado por 
 
 [Aquí una guía de MarkDown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-**Ejercicio:** abre el el editor de Markdown de tu preferencia y escribe un texto en formato Markdown de manera que quede igual que los tres primeros puntos de [Preparing the environment, cleaning the data for Stacks](http://catchenlab.life.illinois.edu/stacks/tut.php#prep) (incluyendo ese subtítulo). 
+**Ejercicio:** abre el el editor de Markdown de tu preferencia y escribe un texto en formato Markdown de manera que quede igual que los tres primeros puntos de [Preparing the environment, cleaning the data for Stacks](http://catchenlab.life.illinois.edu/stacks/tut.php#prep) (incluyendo ese subtítulo). No es necesario poner los colores. 
 
 Es útil aprender la sintaxis de Markdown para poder documentar mejor tus proyectos, sobretodo si los subes a GitHub. 
 
