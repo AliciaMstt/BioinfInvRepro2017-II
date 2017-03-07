@@ -436,119 +436,10 @@ Lo anterior se hace a través de un **dockerfile**, es decir un script que descr
 
 Es decir un dockerfile nos permite construir y compartir una imagen especializada en correr el proceso que deseemos. 
 
-Veamos un dockerfile como [este](https://github.com/Biocontainers/containers/blob/master/Biocontainers/Dockerfile) que instala en una base de ubuntu varias herramientas útiles para bioinformática:
+Veamos un dockerfile como [este](https://github.com/BioContainers/containers/blob/master/biocontainers/Dockerfile) que instala en una base de ubuntu varias herramientas útiles para bioinformática:
 
 (Puedes revisar los comandos de un docker file
 en esta referencia: [Docker Explained: Using Dockerfiles to Automate Building of Images](https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images)).
-
-```
-# Base image
-FROM ubuntu:16.04
-
-# Metadata
-LABEl base.image="ubuntu:16.04"
-LABEL version="4"
-LABEL software="Biocontainers base Image"
-LABEL software.version="08252016"
-LABEL description="Base image for BioDocker"
-LABEL website="http://biocontainers.pro"
-LABEL documentation="https://github.com/BioContainers/specs/wiki"
-LABEL license="https://github.com/BioContainers/containers/blob/master/LICENSE"
-LABEL tags="Genomics,Proteomics,Transcriptomics,General,Metabolomics"
-
-# Maintainer
-MAINTAINER Felipe da Veiga Leprevost <felipe@leprevost.com.br>
-
-ENV DEBIAN_FRONTEND noninteractive
-
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bkp && \
-    bash -c 'echo -e "deb mirror://mirrors.ubuntu.com/mirrors.txt xenial main restricted universe multiverse\n\
-deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-updates main restricted universe multiverse\n\
-deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-backports main restricted universe multiverse\n\
-deb mirror://mirrors.ubuntu.com/mirrors.txt xenial-security main restricted universe multiverse\n\n" > /etc/apt/sources.list' && \
-    cat /etc/apt/sources.list.bkp >> /etc/apt/sources.list && \
-    cat /etc/apt/sources.list
-
-RUN apt-get clean all && \
-    apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y  \
-        autotools-dev   \
-        automake        \
-        cmake           \
-        curl            \
-        grep            \
-        sed             \
-        dpkg            \
-        fuse            \
-        git             \
-        wget            \
-        zip             \
-        openjdk-8-jre   \
-        build-essential \
-        pkg-config      \
-        python          \
-	python-dev      \
-        python-pip      \
-        bzip2           \
-        ca-certificates \
-        libglib2.0-0    \
-        libxext6        \
-        libsm6          \
-        libxrender1     \
-        git             \
-        mercurial       \
-        subversion      \
-        zlib1g-dev &&   \
-        apt-get clean && \
-        apt-get purge && \
-        rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
-    wget --quiet https://repo.continuum.io/miniconda/Miniconda2-4.0.5-Linux-x86_64.sh -O ~/miniconda.sh && \
-    /bin/bash ~/miniconda.sh -b -p /opt/conda && \
-    rm ~/miniconda.sh
-
-RUN TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o "/v.*\"" | sed 's:^..\(.*\).$:\1:'` && \
-    curl -L "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb" > tini.deb && \
-    dpkg -i tini.deb && \
-    rm tini.deb && \
-    apt-get clean
-
-RUN mkdir /data /config
-
-# Add user biodocker with password biodocker
-RUN groupadd fuse && \
-    useradd --create-home --shell /bin/bash --user-group --uid 1000 --groups sudo,fuse biodocker && \
-    echo `echo "biodocker\nbiodocker\n" | passwd biodocker` && \
-    chown biodocker:biodocker /data && \
-    chown biodocker:biodocker /config
-
-# give write permissions to conda folder
-RUN chmod 777 -R /opt/conda/
-
-# Change user
-USER biodocker
-
-ENV PATH=$PATH:/opt/conda/bin
-ENV PATH=$PATH:/home/biodocker/bin
-ENV HOME=/home/biodocker
-
-RUN mkdir /home/biodocker/bin
-
-RUN conda config --add channels r
-RUN conda config --add channels bioconda
-
-RUN conda upgrade conda
-
-VOLUME ["/data", "/config"]
-
-# Overwrite this with 'CMD []' in a dependent Dockerfile
-CMD ["/bin/bash"]
-
-WORKDIR /data
-
-```
 
 Este dockerfile vive en el [github de Biocontainers](https://github.com/Biocontainers/). Y además en  [DockerHub de Biocontainers](https://hub.docker.com/u/biocontainers/), por lo que podemos hacer un `pull` desde ahí.
 
@@ -581,32 +472,7 @@ curl: try 'curl --help' or 'curl --manual' for more information
 
 **Ejercicio** ¿Cómo puedo utilizar `docker run` para que el volumen `data` corresponda a un directorio en mi computadora? 
 
-
-El contenedor creado a partir de `biocontainers/biocontainers` ya tiene varias cosas instaladas (como `zlib1g-dev`, que quizá recuerdes), por lo que instalar FastXtools debiera ser más sencillo que desde cero.
-
-Una vez dentro del contenedor:
-
-```
-$ #Install Gtextutils
-$ wget https://github.com/agordon/libgtextutils/releases/download/0.7/libgtextutils-0.7.tar.gz
-$ tar -xvf libgtextutils-0.7.tar.gz
-$ cd libgtextutils-0.7 
-$ ./configure
-$ make
-$ sudo make install
-$ cd ..
-$ #Install FastX
-$ wget https://github.com/agordon/fastx_toolkit/releases/download/0.0.14/fastx_toolkit-0.0.14.tar.bz2
-$ tar -xvf fastx_toolkit-0.0.14.tar.bz2 
-$ cd fastx_toolkit-0.0.14
-$ ./configure
-$ make
-$ sudo make install
-$ cd ..
-$ rm -rf fas* lib*
-```
-
-Lo anterior también podríamos haberlo puesto dentro del dockerfile. ¿No sería genial que existieran dockerfiles así pero para instalar ese software que tanto necesitas? Pues bien, ya hay dos proyectos que están dockerizando software bioinformático:
+No sería genial que existieran dockerfiles así pero para instalar ese software que tanto necesitas? Pues bien, ya hay dos proyectos que están dockerizando software bioinformático:
 
 * **[Biocontainers](http://biocontainers.pro/)**
 * **[Bioboxes](http://bioboxes.org/)**
@@ -643,7 +509,7 @@ Questions, comments, and suggestions should be emailed to:
 Si te quedan dudas sobre Docker y cómo aplicarlo a Bionformática revisa esta excelente sección de ayuda de [Biocontainers](http://biocontainers.pro/docs/101/intro/).
 
 
-**Ejercicio**: ve a la página [http://biocontainers.pro/docs/101/running-example/](http://biocontainers.pro/docs/101/running-example/) y lee el ejemplo de cómo usar blast. Escribe un script para adoptar el ejemplo de esta página a tu computadora. Recuerda que si estás corriendo en Windows todo tendrás que hacerlo desde un contenedor de Docker, pero si estás en Linux o Mac puedes sólo correr el contenedor con el comando de blast en concreto. Guarda tu script en tu repositorio de Github para las tareas del curso y brinda el link a dicho script:
+**Ejercicio**: ve a la página [http://biocontainers.pro/docs/101/running-example/](http://biocontainers.pro/docs/101/running-example/) y lee el ejemplo de cómo usar `blast`. Escribe un script para adoptar el ejemplo de esta página a tu computadora. Recuerda que si estás corriendo en Windows todo tendrás que hacerlo desde un contenedor de Docker, pero si estás en Linux o Mac puedes sólo correr el contenedor con el comando de blast en concreto. Guarda tu script en tu repositorio de Github para las tareas del curso y brinda el link a dicho script:
 
 
 
