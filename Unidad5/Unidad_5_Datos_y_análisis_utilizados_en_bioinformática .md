@@ -272,7 +272,7 @@ Ahora sí, ¿qué comandos correr de fastxtools y de fastqc?
 
 **Ejercicio**
 
-Integradra en un script.
+Integra todo lo que hicimos antes en un script.
 
 **Ejercicio**
 
