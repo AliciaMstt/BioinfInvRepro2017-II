@@ -201,6 +201,8 @@ Además entender bien tu FASTQC puede permitirte **rescatar** datos usables incl
 
 Abre el archivo `Unidad5/Prac_Uni5/FastqsEjemplo/datos/human_Illumina_dataset.fastq` y examina cada uno de los módulos de FastQC ¿Qué opinas del resultado? ¿Qué harías para limpiarlo?
 
+Estos datos ejemplo vienen de [Galaxy Data Libraries](https://usegalaxy.org/library/list#folders/F5bee13e9f312df25/datasets/99fa250d93e003f7) y son de libre uso.
+
 ### Pre-procesamiento 
 
 El pre-procesamiento se refiere al filtrado y edición de los datos crudos para quedarnos con los **datos limpios**, que son los que se analizarán para resolver preguntas biológicas.
