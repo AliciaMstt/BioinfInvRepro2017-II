@@ -259,8 +259,14 @@ Utiliza un contenedor con FastXtools y otro con FASTQC para limpiar las secuenci
 Primero conseguir las imágenes de los contenedores:
 
 ```
-docker pull biocontainers/fastxtools
-dokcer pull biocontainers/FASTQC
+docker build -t fastxtools/0.0.14 https://github.com/AliciaMstt/fastxtools.git#master:0.0.14
+
+docker build -t fastqc/0.11.15 https://github.com/AliciaMstt/fastqc.git#master:0.11.15
+
+# Pero una vez que estén en biocontainers será:
+
+# docker pull biocontainers/fastxtools
+# dokcer pull biocontainers/FASTQC
 ```
 
 Como sabemos, necesitaremos montar un volumen a `Prac_Uni5/FastqsEjemplo/datos/human_Illumina_dataset.fastq` utilizando la respectiva ruta absoluta dentro de nuestros equipos. Para no andar copiando la ruta tan larga todo el tiempo, es buena idea crear una variable que la contenga.
