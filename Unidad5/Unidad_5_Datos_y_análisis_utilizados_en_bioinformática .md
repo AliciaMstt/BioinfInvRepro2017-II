@@ -667,8 +667,7 @@ Para esta sección leeremos los artículos:
 
 Para esta sección leeremos el artículo:
 
-[Andrews KR, Good JM, Miller MR, Luikart G, Hohenlohe PA (2016) Harnessing the power of RADseq for ecological and evolutionary genomics. Nature Reviews Genetics, 17, 81–92.]
-(http://www.nature.com/nrg/journal/v17/n2/full/nrg.2015.28.html)
+[Andrews KR, Good JM, Miller MR, Luikart G, Hohenlohe PA (2016) Harnessing the power of RADseq for ecological and evolutionary genomics. Nature Reviews Genetics, 17, 81–92.](http://www.nature.com/nrg/journal/v17/n2/full/nrg.2015.28.html)
 
 		
 ## 5.9. Importancia de elección de parámetros en análisis bioinformáticos
