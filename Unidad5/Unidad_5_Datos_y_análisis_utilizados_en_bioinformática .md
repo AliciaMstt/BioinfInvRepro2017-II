@@ -585,40 +585,97 @@ FID	IID	PAT	MAT	SEX	PHENOTYPE	abph1.15_G	ae1.8_A	an1.3_A	ba1.5_G	ba1.7_A	csu1138
 ```
 
 
-
 #### Documentos de texto 
 
 Archivos cvs con las secuencias e información asociada. Programas como Stacks, pyRAD, OBITools y muchos otros los manejan. 
 
 
+**Ejercicio**
 
-## 5.5. Ensamblando genomas y transcriptomas 		
+1) Entra a un contenedor donde tengas instalado vcftools para realizar los siguientes ejercicios: 
 
-Para esta sección leeremos el artículo:
+Pista:
+
+```
+docker pull biocontainers/vcftools
+docker run -it biocontainers/vcftools /bin/bash
+```
+
+a) Utiliza un comando para bajar los datos en formato vcf del repositorio Schweizer RM, Robinson J, Harrigan R, Silva P, Galaverni M, Musiani M, Green RE, Novembre J, Wayne RK (2015) Data from: Targeted capture and resequencing of 1040 genes reveal environmentally driven functional variation in gray wolves. Dryad Digital Repository. [http://dx.doi.org/10.5061/dryad.8g0s3](http://datadryad.org/resource/doi:10.5061/dryad.8g0s3)
+
+b) Cambia el nombre del archivo que acabas de bajar a `wolves.vcf`.
+
+c) ¿Cuántos MB pesa el archivo?
+
+d) ¿Cuántos individuos y variantes (SNPs) tiene el archivo?
+
+e) Calcula la frecuencia de cada alelo para todos los individuos dentro del archivo y guarda el resultado en un archivo.
+
+f) ¿Cuántos sitios del archiov no tienen missing data?
+
+g) Calcula la frecuencia de cada alelo para todos los individuos pero solo para los sitios sin missing data y guarda el resultado en un archivo. 
+
+h) ¿Cuántos sitios tienen una frecuencia del alelo menor <0.05?
+
+i) Calcula la heterozygosidad de cada individuo.
+
+j) Calcula la diversidad nucleotídica por sitio.
+
+k) Calcula la diversidad nucleotídica por sitio solo para los sitios del cromosoma 3
+
+l) Filtra los sitios que tengan una frecuencia del alelo menor  <0.05 y crea un archivo nuevo llamado `wolves_maf05.vcf`.
+
+m) Convierte el archivo `wolves_maf05.vcf` a formato plink. 
+
+
+2) Una vez que tengas la respuesta a cada punto anterior, crea un script que corra todos los puntos asumiendo que estás dentro del contenedor. Luego corre este script utilizando `docker run ...`.
+
+
+## 5.5. Ensamblando *de novo* genomas y transcriptomas 		
+
+Para esta sección leeremos los artículos:
 
 [Ekblom R, Wolf JBW (2014) A field guide to whole-genome sequencing, assembly and annotation. Evolutionary Applications, 7, 1026–1042.](http://onlinelibrary.wiley.com/doi/10.1111/eva.12178/full)
 
+[De Wit P, Pespeni MH, Ladner JT et al. (2012) The simple fool’s guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis. Molecular Ecology Resources, 12, 1058–1067.](http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12003/full)
+
+Y su sitio asociado [http://sfg.stanford.edu/scripts.html](http://sfg.stanford.edu/scripts.html)
+
+[Baker M (2012) De novo genome assembly: what every biologist should know. Nature Methods, 9, 333–337](http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1935.html)
 
 
-## 5.6. Ensamblando datos RAD, GBS y símiles 		
+## 5.6. Mapeo a genoma de referencia 		
+Para esta sección leeremos los artículos:
+
+Otra vez:
+[De Wit P, Pespeni MH, Ladner JT et al. (2012) The simple fool’s guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis. Molecular Ecology Resources, 12, 1058–1067.](http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12003/full)
+
+Y este tutorial asociado [http://sfg.stanford.edu/mapping.html](http://sfg.stanford.edu/mapping.html)
+
+
+## 5.7. Metabarcoding y símiles 
+
+Para esta sección leeremos los artículos:
+
+[Creer S, Deiner K, Frey S et al. (2016) The ecologist’s field guide to sequence-based identification of biodiversity. Methods in Ecology and Evolution, 7, 1008–1018.](http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12574/full)
+
+[Coissac E, Riaz T, Puillandre N (2012) Bioinformatic challenges for DNA metabarcoding of plants and animals. Molecular ecology, 21, 1834–1847.](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.2012.05550.x/full)
+
+
+
+## 5.8. Ensamblando datos RAD, GBS y símiles 		
 
 Para esta sección leeremos el artículo:
 
+[Andrews KR, Good JM, Miller MR, Luikart G, Hohenlohe PA (2016) Harnessing the power of RADseq for ecological and evolutionary genomics. Nature Reviews Genetics, 17, 81–92.]
+(http://www.nature.com/nrg/journal/v17/n2/full/nrg.2015.28.html)
 
-
-## 5.7. Mapeo a genoma de referencia 		
-
-
-Para esta sección leeremos el artículo:
-
-
-## 5.8. Metabarcoding y símiles 		
+		
 ## 5.9. Importancia de elección de parámetros en análisis bioinformáticos
 
 Para esta sección leeremos el artículo:
 
-
-
+[Mastretta-Yanes A, Arrigo N, Alvarez N et al. (2015) Restriction site-associated DNA sequencing, genotyping error estimation and de novo assembly optimization for population genetic inference. Molecular Ecology Resources, 15, 28–41.](http://onlinelibrary.wiley.com/wol1/doi/10.1111/1755-0998.12291/full)
 
 
 
