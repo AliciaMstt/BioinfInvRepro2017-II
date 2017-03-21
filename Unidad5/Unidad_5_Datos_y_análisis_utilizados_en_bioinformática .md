@@ -317,7 +317,7 @@ Por lo tanto hay decenas de formatos. Algunos listados ejemplo:
 
 [Utilizados por the Ensembl Project](http://www.ensembl.org/info/website/upload/index.html#formats)
 
-[Recomendados por the Broad Institute según tipo de datos](https://www.broadinstitute.org/igv/RecommendedFileFormats)
+[Recomendados por the Broad Institute según tipo de datos](https://www.broadinstitute.org/software/igv/RecommendedFileFormats)
 
 [Formatos de OBITools](http://pythonhosted.org/OBITools/welcome.html) y [QUIME](http://qiime.org/documentation/index.html) (metabarcoding).
 
