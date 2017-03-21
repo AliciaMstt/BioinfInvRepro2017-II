@@ -259,12 +259,6 @@ Utiliza un contenedor con FastXtools y otro con FASTQC para limpiar las secuenci
 Primero conseguir las imágenes de los contenedores:
 
 ```
-docker build -t fastxtools/0.0.14 https://github.com/AliciaMstt/fastxtools.git#master:0.0.14
-
-docker build -t fastqc/0.11.15 https://github.com/AliciaMstt/fastqc.git#master:0.11.15
-
-# Pero una vez que estén en biocontainers será:
-
 # docker pull biocontainers/fastxtools
 # dokcer pull biocontainers/FASTQC
 ```
@@ -598,9 +592,30 @@ Archivos cvs con las secuencias e información asociada. Programas como Stacks, 
 
 
 
+## 5.5. Ensamblando genomas y transcriptomas 		
+
+Para esta sección leeremos el artículo:
+
+[Ekblom R, Wolf JBW (2014) A field guide to whole-genome sequencing, assembly and annotation. Evolutionary Applications, 7, 1026–1042.](http://onlinelibrary.wiley.com/doi/10.1111/eva.12178/full)
 
 
 
+## 5.6. Ensamblando datos RAD, GBS y símiles 		
+
+Para esta sección leeremos el artículo:
+
+
+
+## 5.7. Mapeo a genoma de referencia 		
+
+
+Para esta sección leeremos el artículo:
+
+
+## 5.8. Metabarcoding y símiles 		
+## 5.9. Importancia de elección de parámetros en análisis bioinformáticos
+
+Para esta sección leeremos el artículo:
 
 
 
