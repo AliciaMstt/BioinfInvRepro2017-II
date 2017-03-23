@@ -686,11 +686,16 @@ Para esta sección leeremos el artículo:
 		
 ## 5.9. Importancia de elección de parámetros en análisis bioinformáticos
 
-Para esta sección leeremos los artículos:
+Para esta sección leeremos el artículo:
 
 [Mastretta-Yanes A, Arrigo N, Alvarez N et al. (2015) Restriction site-associated DNA sequencing, genotyping error estimation and de novo assembly optimization for population genetic inference. Molecular Ecology Resources, 15, 28–41.](http://onlinelibrary.wiley.com/wol1/doi/10.1111/1755-0998.12291/full)
 
 
+## 5.10. Ambiente computacional y reproducibilidad de análisis bioinformáticos 
+
+Para esta sección leeremos el artículo:
+
+[Beaulieu-Jones BK, Greene CS (2017) Reproducibility of computational workflows is automated using continuous analysis. Nature Biotechnology, advance online publication.](http://www.nature.com/nbt/journal/vaop/ncurrent/full/nbt.3780.html)
 
 
 
