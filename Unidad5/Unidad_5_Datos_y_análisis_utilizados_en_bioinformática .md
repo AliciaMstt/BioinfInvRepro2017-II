@@ -669,10 +669,24 @@ Para esta sección leeremos el artículo:
 
 [Andrews KR, Good JM, Miller MR, Luikart G, Hohenlohe PA (2016) Harnessing the power of RADseq for ecological and evolutionary genomics. Nature Reviews Genetics, 17, 81–92.](http://www.nature.com/nrg/journal/v17/n2/full/nrg.2015.28.html)
 
+**Ejercicio**
+
+* Divídanse en equipos por tipo de datos (transcriptoma, genoma, RAD, metabarcoding, etc) y tipo de análisis (ensamblado de novo, mapeo, filogenética, genética de poblaciones).
+* Discutan los artículos relevantes que dejamos leer para las secciones anteriores y cualquier otro que hayas consultado como parte de la tarea opcional anterior.
+* Contesta lo siguiente:
+
+1. ¿Cuáles son las principales variantes del método de laboratorio para generar mis datos y cuándo es más útil cada una?
+2. ¿Qué limitantes y posibles fuentes de error puede presentar este método (en el laboratorio o la bioinformática)? ¿Qué puede hacerse para amortiguarlos?
+3. ¿El muestreo requiere algún diseño específico? Por ejemplo, si se quiere secuenciar un genoma *de novo* ¿qué individuo sería ideal? Si trabajo con trascriptomas, ¿cómo afecta el tejido, la edad, las condiciones, etc. mi muestreo?
+4. Menciona al menos dos softwares principales que se utilicen para realizar la parte medular de los análisis bioinformáticos de este tipo de análisis (e.g. si es ensamblado *de novo* con qué se ensambla, no con qué se hace el pre-procesamiento) y cuáles son los pros y contras de cada uno. 
+
+* Contesten las preguntas anteriores en un archivo markdwon llamado `Resumen-EquipoX.md` (donde X será  cada uno de los tipos de datos). Si requieres poner imágenes ponles el prefijo `Resumen-EquipoX-FigN`
+* Realicen un pull-request para subir dicho archivo(s) al master del repositorio de la clase en la ruta `Unidad5/Prac_Uni5`.
+* Unx o varixs representantes por equipo pasen a exponer brevemente (5 mins) las conclusiones utilizando como apoyo los archivos anteriores.
 		
 ## 5.9. Importancia de elección de parámetros en análisis bioinformáticos
 
-Para esta sección leeremos el artículo:
+Para esta sección leeremos los artículos:
 
 [Mastretta-Yanes A, Arrigo N, Alvarez N et al. (2015) Restriction site-associated DNA sequencing, genotyping error estimation and de novo assembly optimization for population genetic inference. Molecular Ecology Resources, 15, 28–41.](http://onlinelibrary.wiley.com/wol1/doi/10.1111/1755-0998.12291/full)
 
