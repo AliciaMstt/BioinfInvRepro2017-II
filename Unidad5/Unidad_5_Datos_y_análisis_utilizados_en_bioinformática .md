@@ -690,6 +690,8 @@ Para esta sección leeremos el artículo:
 
 [Mastretta-Yanes A, Arrigo N, Alvarez N et al. (2015) Restriction site-associated DNA sequencing, genotyping error estimation and de novo assembly optimization for population genetic inference. Molecular Ecology Resources, 15, 28–41.](http://onlinelibrary.wiley.com/wol1/doi/10.1111/1755-0998.12291/full)
 
+Y lo discutiremos con el apoyo de esta [presentación](./S2_1640_Mastretta-Yanes_5_noanimation.pdf). 
+
 
 ## 5.10. Ambiente computacional y reproducibilidad de análisis bioinformáticos 
 
