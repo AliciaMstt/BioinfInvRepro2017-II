@@ -29,13 +29,13 @@ Puede existir una amplificación de fragmentos diferencial que altere la homogen
 Solución: Incrementar la profundidad promedio a través de la reducción del número de individuos incluidos por muestra
 
 
-![Tipos de errores más comunes en el prodeco de obtención de datos Rad-SEq] (https://github.com/ghuertaramos/BioinfInvRepro2017-II/blob/master/Unidad5/Prac_Uni5/Resumen-RADseq_Equipo_Morelia.png)
+![Errores más comunes en el prodeco de obtención de datos Rad-SEq](https://github.com/ghuertaramos/BioinfInvRepro2017-II/blob/master/Unidad5/Prac_Uni5/Resumen-RADseq_Equipo_Morelia.png)
 
 ###### (Tomado de McCormack et al. 2013)
 
 #### 3. ¿El muestreo requiere algún diseño específico? Por ejemplo, si se quiere secuenciar un genoma de novo ¿qué individuo sería ideal? Si trabajo con trascriptomas, ¿cómo afecta el tejido, la edad, las condiciones, etc. mi muestreo?
 
-En la reconstrucción filogenética se recomienda que sea un grupo recientemente diversificado e inlcuit el mayor número d terminales posible.
+En la reconstrucción filogenética se recomienda que sea un grupo recientemente diversificado e inlcuir el mayor número d terminales posible.
 
 El ADN debe tener una pureza y concentración mayores a la tradicional secuenciación. En general es un técnica flexible, que permite usar desde 0.05 a 1 ug de ADN. No da muy buenos resultados con muestras de ADN degradado o de menor calidad.
 
