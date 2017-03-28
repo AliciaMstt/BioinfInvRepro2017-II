@@ -29,8 +29,9 @@ Puede existir una amplificación de fragmentos diferencial que altere la homogen
 Solución: Incrementar la profundidad promedio a través de la reducción del número de individuos incluidos por muestra
 
 
-![Tipos de errores más comunes en el prodeco de obtención de datos Rad-SEq] (/home/ghuertaramos/Desktop/Resumen-RADseq_Equipo_Morelia.png)
-######(Tomado de McCormack et al. 2013)
+![Tipos de errores más comunes en el prodeco de obtención de datos Rad-SEq] (BioinfInvRepro2017-II/Unidad5/Prac_Uni5/Resumen-RADseq_Equipo_Morelia.png)
+
+###### (Tomado de McCormack et al. 2013)
 
 #### 3. ¿El muestreo requiere algún diseño específico? Por ejemplo, si se quiere secuenciar un genoma de novo ¿qué individuo sería ideal? Si trabajo con trascriptomas, ¿cómo afecta el tejido, la edad, las condiciones, etc. mi muestreo?
 
