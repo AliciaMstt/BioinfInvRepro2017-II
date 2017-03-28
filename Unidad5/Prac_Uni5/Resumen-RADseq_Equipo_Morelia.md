@@ -55,10 +55,10 @@ Diagrama de trabajo para la obtención de secuencias RAD con diferentes métodos
 
 #### Literatura consultada
 
-Andrews, K. R., Good, J. M., Miller, M. R., Luikart, G., & Hohenlohe, P. A. (2016). Harnessing the power of RADseq for ecological and evolutionary genomics. Nat Rev Genet, advance on(2), 81–92. https://doi.org/10.1038/nrg.2015.28
-DaCosta, J. M., & Sorenson, M. D. (2015). ddRAD-seq phylogenetics based on nucleotide, indel, and presence–absence polymorphisms: Analyses of two avian genera with contrasting histories. Molecular Phylogenetics and Evolution, (August). https://doi.org/10.1016/j.ympev.2015.07.026
-Eaton, D. A. R. (2014). PyRAD: Assembly of de novo RADseq loci for phylogenetic analyses. Bioinformatics, 30(13), 1844–1849. https://doi.org/10.1093/bioinformatics/btu121
-Eaton, D. A. R. (2013). Inferring Phylogeny and Introgression using RADseq Data : An Example from Flowering Plants ( Pedicularis : Orobanchaceae ), 62(5), 689–706. https://doi.org/10.5061/dryad.bn281
-McCormack, J. E., Hird, S. M., Zellmer, A. J., Carstens, B. C., & Brumfield, R. T. (2013). Applications of next-generation sequencing to phylogeography and phylogenetics. Molecular Phylogenetics and Evolution, 66(2), 526–538. https://doi.org/10.1016/j.ympev.2011.12.007
-Puritz et al. 2014. Demystifying the RAD fad. Molecular Ecology 23(24):5937-5942
-Toonen, R. J., Puritz, J. B., Forsman, Z. H., Whitney, J. L., Fernandez-Silva, I., Andrews, K. R., & Bird, C. E. (2013). ezRAD: a simplified method for genomic genotyping in non-model organisms. PeerJ, 1, e203. https://doi.org/10.7717/peerj.203
+##### Andrews, K. R., Good, J. M., Miller, M. R., Luikart, G., & Hohenlohe, P. A. (2016). Harnessing the power of RADseq for ecological and evolutionary genomics. Nat Rev Genet, advance on(2), 81–92. https://doi.org/10.1038/nrg.2015.28
+##### DaCosta, J. M., & Sorenson, M. D. (2015). ddRAD-seq phylogenetics based on nucleotide, indel, and presence–absence polymorphisms: Analyses of two avian genera with contrasting histories. Molecular Phylogenetics and Evolution, (August). https://doi.org/10.1016/j.ympev.2015.07.026
+##### Eaton, D. A. R. (2014). PyRAD: Assembly of de novo RADseq loci for phylogenetic analyses. Bioinformatics, 30(13), 1844–1849. https://doi.org/10.1093/bioinformatics/btu121
+##### Eaton, D. A. R. (2013). Inferring Phylogeny and Introgression using RADseq Data : An Example from Flowering Plants ( Pedicularis : Orobanchaceae ), 62(5), 689–706. https://doi.org/10.5061/dryad.bn281
+##### McCormack, J. E., Hird, S. M., Zellmer, A. J., Carstens, B. C., & Brumfield, R. T. (2013). Applications of next-generation sequencing to phylogeography and phylogenetics. Molecular Phylogenetics and Evolution, 66(2), 526–538. https://doi.org/10.1016/j.ympev.2011.12.007
+##### Puritz et al. 2014. Demystifying the RAD fad. Molecular Ecology 23(24):5937-5942
+##### Toonen, R. J., Puritz, J. B., Forsman, Z. H., Whitney, J. L., Fernandez-Silva, I., Andrews, K. R., & Bird, C. E. (2013). ezRAD: a simplified method for genomic genotyping in non-model organisms. PeerJ, 1, e203. https://doi.org/10.7717/peerj.203
