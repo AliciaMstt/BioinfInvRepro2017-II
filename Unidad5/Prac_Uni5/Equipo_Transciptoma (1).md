@@ -12,9 +12,9 @@ Equipo Transcriptoma
 ![Transcriptoma](http://neurologiainba.com.ar/inba/wp-content/uploads/2015/07/transcriptoma.jpg "Transcripción") 
 
 
-|Paso|Variantes|Pros|Contras|
-|:---|:---|:---|:---|:---|
-|*Toma de muestras*|RNA Later|El RNA se preserva al máximo y no tiene contacto con nada que lo pueda contaminar|El precio es muy elevado ||
+| Paso | Variantes | Pros | Contras |
+| :--- |:--- |:--- |:--- |:--- |
+| *Toma de muestras*|RNA Later|El RNA se preserva al máximo y no tiene contacto con nada que lo pueda contaminar|El precio es muy elevado ||
 ||Nitrogeno liquido|Impide la descomposición y degradación del RNA|Se evapora fácil y es de dificil manejo en campo|||
 ||Hielo|Es el método más económico|Tiempo de duración menor|||
 |*Extracción RNA*|TRIzol|Es la más económica. Se puede obtener DNA, RNA y proteínas| Se necesita un método extra de purificación|||
