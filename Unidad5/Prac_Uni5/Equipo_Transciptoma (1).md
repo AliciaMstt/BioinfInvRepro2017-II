@@ -12,18 +12,17 @@ Equipo Transcriptoma
 ![Transcriptoma](http://neurologiainba.com.ar/inba/wp-content/uploads/2015/07/transcriptoma.jpg "Transcripción") 
 
 
-| Paso | Variantes | Pros | Contras |
-| :--- |:--- |:--- |:--- |:--- |
-| *Toma de muestras*|RNA Later|El RNA se preserva al máximo y no tiene contacto con nada que lo pueda contaminar|El precio es muy elevado ||
-||Nitrogeno liquido|Impide la descomposición y degradación del RNA|Se evapora fácil y es de dificil manejo en campo|||
-||Hielo|Es el método más económico|Tiempo de duración menor|||
-|*Extracción RNA*|TRIzol|Es la más económica. Se puede obtener DNA, RNA y proteínas| Se necesita un método extra de purificación|||
-||CTAB modificado|Es económico y se obtiene obtiene alta concentración de RNA|Se necesita un método extra de purificación|||
-||Cloroformo |Es económico y se obtiene altas concentraciones de RNA|Es peligroso y se necesita purificar|||
-||Kit de Extracción con columnas|Se obtiene RNA purificado. Es práctico y rápido|El precio es alto. |||
-|*Hibridación*|microarreglos|Permite el analisis simultaneo de expresion de miles de genes. Sigue siendo de gran aplicación en diciplinas como la microbiología clínica, la medicina  y para la identificación de especies como parásitos.|Requiere conocimiento previo de los transcritos para generar las sondas de interes. Utilizarlos introduce ruido por posibles hibridizaciones cruzadas, ademas de limitar el rango de detección a genes previamente descritos. Es muy laborioso|||
-|*Secuenciación*|RNAseq|Permite secuenciamiento masivo de ADNc o ARN (Es altamente cuantitativa y de alto rendimiento, elimina ruido de hibridación, mayor rango de detección y panorama global de genes activados)|Algunas son de bajo rendimiento. Costos elevados.|||
-||qPCR|Altamente cuantitativo.Hace posible el desarrollo de perfiles de expresión génica de diferentes tipos de respuestas (i.e. la respuesta de defensa), además de modificaciones epigenéticas.|Es de alto costo|||
+|| Paso | Variantes | Pros | Contras | 
+| :--- |:--- |:--- |:--- |:--- | 
+| Toma de muestras|RNA Later|El RNA se preserva al máximo y no tiene contacto con nada que lo pueda contaminar|El precio es muy elevado ||
+ ||Nitrogeno liquido|Impide la descomposición y degradación del RNA|Se evapora fácil y es de dificil manejo en campo|||
+  ||Hielo|Es el método más económico|Tiempo de duración menor||| 
+  |Extracción RNA|TRIzol|Es la más económica. Se puede obtener DNA, RNA y proteínas| Se necesita un método extra de purificación||| 
+  ||CTAB modificado|Es económico y se obtiene obtiene alta concentración de RNA|Se necesita un método extra de purificación||| 
+  ||Cloroformo |Es económico y se obtiene altas concentraciones de RNA|Es peligroso y se necesita purificar||| ||Kit de Extracción con columnas|Se obtiene RNA purificado. Es práctico y rápido|El precio es alto. ||| 
+  |Hibridación|microarreglos|Permite el analisis simultaneo de expresion de miles de genes. Sigue siendo de gran aplicación en diciplinas como la microbiología clínica, la medicina y para la identificación de especies como parásitos.|Requiere conocimiento previo de los transcritos para generar las sondas de interes. Utilizarlos introduce ruido por posibles hibridizaciones cruzadas, ademas de limitar el rango de detección a genes previamente descritos. Es muy laborioso||| 
+  |Secuenciación|RNAseq|Permite secuenciamiento masivo de ADNc o ARN (Es altamente cuantitativa y de alto rendimiento, elimina ruido de hibridación, mayor rango de detección y panorama global de genes activados)|Algunas son de bajo rendimiento. Costos elevados.||| 
+  ||qPCR|Altamente cuantitativo.Hace posible el desarrollo de perfiles de expresión génica de diferentes tipos de respuestas (i.e. la respuesta de defensa), además de modificaciones epigenéticas.|Es de alto costo|||
 
 
 ![](http://wp.patheos.com.s3.amazonaws.com/blogs/christianpiatt/files/2012/08/lab-accident.jpeg "Fail_in_lab")
