@@ -19,4 +19,7 @@ Por ejemplo: Si trabajas con comunidades de bacterias, la muestra puede contamin
 Otras fuentes de contaminación pueden ser por el alimento que consuma el organismo, por lo que el tejido se tiene que tomar de lugares donde es menos probable encontrar DNA ajeno. 
 
 **4. Menciona al menos dos softwares principales que se utilicen para realizar la parte medular de los análisis bioinformáticos de este tipo de análisis (e.g. si es ensamblado de novo con qué se ensambla, no con qué se hace el pre-procesamiento) y cuáles son los pros y contras de cada uno.**
-- No poseemos los conocimientos para responder esta pregunta. 
+- Al tener secuencias de diferentes organismos, tanto en metabarcoding como barcoding, podemos comparar nuestras secuencias con bases de datos existentes y asignar una especie, o taxón, a cada una de nuestras secuencias. Existen diferentes métodos para este alineamiento; por similitud (como BLAST o BOLD), por métodos filogenéticos (el vecino más lejano o máxima verosimilitud), basados en caracteres o algoritmos de clasificación. 
+Existen diferentes algoritmos o softwares que llevan a cabo el alineamiento por alguno de los métodos antes mencionados como BLAST, BOLD, TaxI, pplacer, Evolutionary Placement Algorithm, etc. Sin embargo, no existe un método que sea superior al resto. Varios meta análisis sobre los métodos de alineación suelen concluir que el mejor método de alineamiento está en función de la cantidad de secuencias, su largo, su calidad y la diversidad genética de la muestra. 
+
+
