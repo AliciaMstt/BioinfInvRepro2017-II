@@ -29,7 +29,7 @@ Puede existir una amplificación de fragmentos diferencial que altere la homogen
 Solución: Incrementar la profundidad promedio a través de la reducción del número de individuos incluidos por muestra
 
 
-![Errores más comunes en el prodeco de obtención de datos Rad-SEq](https://github.com/ghuertaramos/BioinfInvRepro2017-II/blob/master/Unidad5/Prac_Uni5/Resumen-RADseq_Equipo_Morelia.png)
+![Errores más comunes en el prodeco de obtención de datos Rad-SEq](https://github.com/ghuertaramos/BioinfInvRepro2017-II/blob/master/Unidad5/Prac_Uni5/Resumen-RADseq_Equipo_Morelia.png =100x20)
 
 ###### (Tomado de McCormack et al. 2013)
 
