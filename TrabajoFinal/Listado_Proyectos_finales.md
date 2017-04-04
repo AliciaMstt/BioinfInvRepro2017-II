@@ -11,6 +11,6 @@ Sigue el formato:
 
 Ejemplo:
 
-* Azalea Guerra García: [avance 1](https://github.com/AzaleaGuerra/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2](), [avance 3]().
+* Azalea Guerra García: [avance 1](https://github.com/AzaleaGuerra/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
 ## Listado:
