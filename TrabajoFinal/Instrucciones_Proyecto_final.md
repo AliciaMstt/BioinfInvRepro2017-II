@@ -46,7 +46,7 @@ Nota: En el caso de quienes decidan hacer un dockerfile, será necesario cumplir
   
 ## Fechas de entrega y avances preliminares
     
-Los avances preliminares del proyecto serán el 15% de la clificación.
+Los avances preliminares del proyecto serán el 15% de la calificación.
 
 Cada avance será un archivo .md independiente que deberá estar contenido en un repostorio de tu GitHub llamado algo como "ProyectoFinalBioinf2017-II". 
 
