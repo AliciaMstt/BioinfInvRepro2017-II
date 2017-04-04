@@ -1,4 +1,4 @@
-##Equipo meta- y barcoding "No sabemos, pero hacemos nuestro esfuerzo" 
+## Equipo meta- y barcoding "No sabemos, pero hacemos nuestro esfuerzo" 
 **Integrantes:** Nancy Bárcenas, Gerardo Torres y Víctor Taracena
 
 **1. ¿Cuáles son las principales variantes del método de laboratorio para generar mis datos y cuándo es más útil cada una?**
