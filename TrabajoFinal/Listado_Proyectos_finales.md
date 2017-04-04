@@ -14,3 +14,5 @@ Ejemplo:
 * Azalea Guerra García: [avance 1](https://github.com/AzaleaGuerra/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
 ## Listado:
+
+Verónica LIzbeth González VAldez: [avance 1](https://github.com/VeronicaGlez/Proyecto_Final_Bioinf2017-II/blob/master/AVANCES1.md)
