@@ -11,7 +11,6 @@ Sigue el formato:
 
 Ejemplo:
 
-(ejemplo Azalea aquí).
-
+* Azalea Guerra garca: [avance 1](https://github.com/AzaleaGuerra/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2](), [avance 3]().
 
 ## Listado:
