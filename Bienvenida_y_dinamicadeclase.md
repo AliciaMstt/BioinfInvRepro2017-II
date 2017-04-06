@@ -44,9 +44,8 @@ A mi parecer aprender técnicas de biología computacional es igual que el traba
      3. [R y RStudio](https://www.rstudio.com/products/rstudio/download/). Listos para la Unidad 7.
 
 ### Mecanismos de evaluación:
-* **20% Exámenes parciales**    
-    - 1ro: Unidades 1-3
-    - 2do: Unidades 4-6
+* **10% Examen parcial**    
+    - Unidades 1-3
 
 * **40% Tareas fuera del aula**
     - Más o menos una tarea por unidad. 
@@ -55,9 +54,9 @@ A mi parecer aprender técnicas de biología computacional es igual que el traba
 * **10% Participación en clase**
     - Pregunten, respondan, discutan.
 
-* **30% Proyecto final con datos propios (si los tienes) o brindados por la profesora**
+* **40% Proyecto final con datos propios (si los tienes) o brindados por la profesora**
     - Individual.
-    - Debe incluir temas vistos en las unidades 6 a 8
+    - Debe incluir temas vistos en las unidades 5 a 8
  
 
 **Copiar o plagiar (tareas, exámenes, trabajo final, lo que sea) es motivo suficiente para reprobarte sin lugar a discusión**
