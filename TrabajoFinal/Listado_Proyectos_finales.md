@@ -26,3 +26,4 @@ Guillermo Huerta Ramos: [avance 1](https://github.com/ghuertaramos/ProyectoFinal
 
 Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance1.md)
 
+Alejandro Rodríguez Agular: [avance 1](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE1.md)
