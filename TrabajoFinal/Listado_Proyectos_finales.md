@@ -28,4 +28,8 @@ Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Fin
 
 Marisol De la Mora Curiel: [avance 1] (https://github.com/MarisollDC/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
  
+Jessica Raquel Hernández Pérez: [avance 1](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/Avance1.md)
+
+Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%201.md) 
+
 
