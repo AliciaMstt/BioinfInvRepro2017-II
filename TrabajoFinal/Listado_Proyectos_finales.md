@@ -42,3 +42,5 @@ Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf201
 
 Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
+Víctor Jorge Taracena Morales [avance 1](https://github.com/Anecarat/Proyecto_Final_Bioinf2017-II/blob/master/Avances1.md)
+
