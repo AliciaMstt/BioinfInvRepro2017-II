@@ -41,6 +41,8 @@ Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-Bio
 
 Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md)
 
+Sebastián Arenas Jimenez [avance 1] (https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md)
+
 Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
 Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
@@ -50,5 +52,4 @@ Víctor Jorge Taracena Morales [avance 1](https://github.com/Anecarat/Proyecto_F
 Nancy Y. Bárcenas De Los Santos [avance 1](Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%201%20proyecto%20bioinformatica.md)
 
 Benjamin Cristian Corona Comunidad [avance 1] (https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad)
-
 
