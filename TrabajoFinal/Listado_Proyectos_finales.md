@@ -26,6 +26,9 @@ Guillermo Huerta Ramos: [avance 1](https://github.com/ghuertaramos/ProyectoFinal
 
 Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance1.md)
 
+
+Alejandro Rodríguez Agular: [avance 1](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE1.md)
+
 Erandi Ramírez Aguirre: [avance 1](https://github.com/Amanecer1/BioinfInvRepro2017-II/blob/master/Avances_1_Erandi_Ramirez_Aguirre.md)
 
 Marisol De la Mora Curiel: [avance 1](https://github.com/MarisollDC/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
@@ -45,4 +48,5 @@ Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017
 Víctor Jorge Taracena Morales [avance 1](https://github.com/Anecarat/Proyecto_Final_Bioinf2017-II/blob/master/Avances1.md)
 
 Nancy Y. Bárcenas De Los Santos [avance 1](Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%201%20proyecto%20bioinformatica.md)
+
 
