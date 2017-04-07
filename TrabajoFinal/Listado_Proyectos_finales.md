@@ -11,7 +11,19 @@ Sigue el formato:
 
 Ejemplo:
 
-(ejemplo Azalea aquí).
-
+* Azalea Guerra García: [avance 1](https://github.com/AzaleaGuerra/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
 ## Listado:
+
+
+Verónica LIzbeth González VAldez: [avance 1](https://github.com/VeronicaGlez/Proyecto_Final_Bioinf2017-II/blob/master/AVANCES1.md)
+
+Tania López Palafox: [avance 1](https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+
+Madisson Azucena Luna Bárcenas: [avance 1](https://github.com/madisson-luna/Proyecto_Final-Bioinf2017-II/blob/master/Avance%201.md)
+
+Guillermo Huerta Ramos: [avance 1](https://github.com/ghuertaramos/ProyectoFinalBioinf2017-II/blob/master/Avance1%20.md)
+
+Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance1.md)
+
+Nidia Mendoza Díaz: [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
