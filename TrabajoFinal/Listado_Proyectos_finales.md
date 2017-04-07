@@ -42,3 +42,4 @@ Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf201
 
 Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
+Nancy Y. Bárcenas De Los Santos [avance 1](Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%201%20proyecto%20bioinformatica.md)
