@@ -52,5 +52,6 @@ Víctor Jorge Taracena Morales [avance 1](https://github.com/Anecarat/Proyecto_F
 Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%201%20proyecto%20bioinformatica.md)
 
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd)
-Estefania Cano Sánchez [avance 1]
+
+Estefania Cano Sánchez [avance 1](https://github.com/ecanos/Proyecto-final)
 
