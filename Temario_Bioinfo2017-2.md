@@ -43,11 +43,11 @@ El curso **no** se enfocará en ningún software especializado particular (e.g. 
 | 3.2. Modularidad                                                            |                |                 |
 | 3.3. Cómo organizar un script                                               |                |                 |
 | **Unidad 4 Uso general de software especializado y organización de un proyecto bioinformático**  |        2       |        4        |
-| 4.1. Utilidad de software especializado                                     |                |                 |
-| 4.2. Cómo entender la instalación y documentación de software especializado |                |                 |
-| 4.3. Docker                                                                 |                |                 |
-| 4.4. Organización de directorios                                            |                |                 |
-| 4.5. Organización de scripts                                                |                |                 |
+| 4.1. Docker                                     |                |                 |
+| 4.2. Utilidad de software especializado  |                |                 |
+| 4.3. Instalación de software especializado                                                                |                |                 |
+| 4.4. Documentación de software especializado                                                                |                |                 |
+| 4.5. Organización de un proyecto bioinformático                                                |                |                 |
 | 4.6. Markdown                                                               |                |                 |
 | 4.7. Github para organizar tu proyecto                                      |                |                 |
 | **Unidad 5 Datos y análisis utilizados en bioinformática**                  |        3       |        7        |

@@ -1288,7 +1288,250 @@ Ejercicio:
 Navega al directorio `BioinfInvRepro2017-II/Unidad2/Prac_Uni2`. Desde ahí (i.e. **sin** utilizar `cd`) utiliza un for loop para crear por lo menos cuatro directorios dentro del directorio `Tomates/VerdesFritos`. Tu for loop debe incluir una variable definida externamente. 
 
 
-**Más información de for loops**
+### Crear arrays y utilizarlos como una lista en un loop
+
+Quizá quieras correr algo sobre muchas variables, como los nombres de 30 muestras o poblaciones distintas. Esto puede resolverse utilizando comodines, si los nombres lo permiten, o alimentando al loop con un un **arreglo**.
+
+**Con comodines**
+
+Por ejemplo si el loop lo quieres correr sobre puros archivos fasta que estén en un directorio (eg `Prac_Uni2/Tomates`):
+
+```
+$ ls
+VerdesFritos		jitomate.fasta		tomatesverdes.fasta
+$ for i in *.fasta; do
+> echo "El archivo $i es un fasta ejemplo"
+> echo "Utilizamos al archivo $i en este loop"
+> done
+El archivo jitomate.fasta es un fasta ejemplo
+Utilizamos al archivo jitomate.fasta en este loop
+El archivo tomatesverdes.fasta es un fasta ejemplo
+Utilizamos al archivo tomatesverdes.fasta en este loop
+```
+
+**Con arreglos**
+
+Los arreglos (una "lista"). Se generan parecido a las variables, pero con un par de () para indicar que se trata de un arreglo.
+
+```
+$ a=( gato gatito gatón )
+```
+
+Luego para indicar dentro de un loop que `a` es un array, debemos utilizar la notación `${a[@]}`:
+
+```
+$ for i in ${a[@]}; do echo El $i hace miau; done
+El gato hace miau
+El gatito hace miau
+El gatón hace miau
+```
+
+Un arreglo también puede ser el resultado de un comando, por ejemplo de `grep`, siguiendo la siguiente sintaxis `
+some_array=($(command))`. Ejemplo utilizando archivos en `Prac_Uni2/Maiz`:
+
+
+```
+$ a=($(grep -oE "\w+_[0-9]*" nuevos_final.fam))
+$ for i in ${a[@]}; do echo Hacer algo con la muestra $i; done
+Hacer algo con la muestra maiz_3
+Hacer algo con la muestra maiz_68
+Hacer algo con la muestra maiz_91
+Hacer algo con la muestra maiz_39
+Hacer algo con la muestra maiz_12
+Hacer algo con la muestra maiz_41
+Hacer algo con la muestra maiz_35
+Hacer algo con la muestra maiz_58
+Hacer algo con la muestra maiz_51
+Hacer algo con la muestra maiz_82
+Hacer algo con la muestra maiz_67
+Hacer algo con la muestra maiz_93
+Hacer algo con la muestra maiz_21
+Hacer algo con la muestra maiz_6
+Hacer algo con la muestra maiz_101
+Hacer algo con la muestra maiz_27
+Hacer algo con la muestra maiz_43
+Hacer algo con la muestra maiz_1
+Hacer algo con la muestra maiz_33
+Hacer algo con la muestra maiz_100
+Hacer algo con la muestra maiz_24
+Hacer algo con la muestra maiz_103
+Hacer algo con la muestra maiz_72
+Hacer algo con la muestra maiz_10
+Hacer algo con la muestra maiz_28
+Hacer algo con la muestra maiz_49
+Hacer algo con la muestra maiz_56
+Hacer algo con la muestra maiz_66
+Hacer algo con la muestra maiz_52
+Hacer algo con la muestra maiz_47
+Hacer algo con la muestra maiz_80
+Hacer algo con la muestra maiz_65
+Hacer algo con la muestra maiz_94
+Hacer algo con la muestra maiz_36
+Hacer algo con la muestra maiz_26
+Hacer algo con la muestra maiz_105
+Hacer algo con la muestra maiz_30
+Hacer algo con la muestra maiz_16
+Hacer algo con la muestra maiz_42
+Hacer algo con la muestra maiz_4
+Hacer algo con la muestra maiz_31
+Hacer algo con la muestra maiz_17
+Hacer algo con la muestra maiz_46
+Hacer algo con la muestra maiz_5
+Hacer algo con la muestra maiz_32
+Hacer algo con la muestra maiz_19
+Hacer algo con la muestra maiz_50
+Hacer algo con la muestra maiz_8
+Hacer algo con la muestra maiz_34
+Hacer algo con la muestra maiz_23
+Hacer algo con la muestra maiz_54
+Hacer algo con la muestra maiz_14
+Hacer algo con la muestra maiz_37
+Hacer algo con la muestra maiz_25
+Hacer algo con la muestra maiz_55
+Hacer algo con la muestra maiz_40
+Hacer algo con la muestra maiz_29
+Hacer algo con la muestra maiz_60
+Hacer algo con la muestra maiz_44
+Hacer algo con la muestra maiz_74
+Hacer algo con la muestra maiz_89
+Hacer algo con la muestra maiz_64
+Hacer algo con la muestra maiz_83
+Hacer algo con la muestra maiz_75
+Hacer algo con la muestra maiz_92
+Hacer algo con la muestra maiz_69
+Hacer algo con la muestra maiz_84
+Hacer algo con la muestra maiz_76
+Hacer algo con la muestra maiz_97
+Hacer algo con la muestra maiz_70
+Hacer algo con la muestra maiz_85
+Hacer algo con la muestra maiz_77
+Hacer algo con la muestra maiz_71
+Hacer algo con la muestra maiz_86
+Hacer algo con la muestra maiz_78
+Hacer algo con la muestra maiz_102
+Hacer algo con la muestra maiz_73
+Hacer algo con la muestra maiz_88
+Hacer algo con la muestra maiz_79
+Hacer algo con la muestra maiz_106
+Hacer algo con la muestra maiz_119
+Hacer algo con la muestra maiz_148
+Hacer algo con la muestra maiz_108
+Hacer algo con la muestra maiz_120
+Hacer algo con la muestra maiz_151
+Hacer algo con la muestra maiz_134
+Hacer algo con la muestra maiz_123
+Hacer algo con la muestra maiz_153
+Hacer algo con la muestra maiz_135
+Hacer algo con la muestra maiz_124
+Hacer algo con la muestra maiz_184
+Hacer algo con la muestra maiz_140
+Hacer algo con la muestra maiz_125
+Hacer algo con la muestra maiz_141
+Hacer algo con la muestra maiz_131
+Hacer algo con la muestra maiz_189
+Hacer algo con la muestra maiz_57
+Hacer algo con la muestra maiz_126
+Hacer algo con la muestra maiz_113
+Hacer algo con la muestra maiz_138
+Hacer algo con la muestra maiz_63
+Hacer algo con la muestra maiz_127
+Hacer algo con la muestra maiz_114
+Hacer algo con la muestra maiz_139
+Hacer algo con la muestra maiz_99
+Hacer algo con la muestra maiz_129
+Hacer algo con la muestra maiz_116
+Hacer algo con la muestra maiz_142
+Hacer algo con la muestra maiz_110
+Hacer algo con la muestra maiz_132
+Hacer algo con la muestra maiz_118
+Hacer algo con la muestra maiz_144
+Hacer algo con la muestra maiz_133
+Hacer algo con la muestra maiz_121
+Hacer algo con la muestra maiz_111
+Hacer algo con la muestra maiz_137
+Hacer algo con la muestra maiz_109
+Hacer algo con la muestra maiz_146
+Hacer algo con la muestra maiz_164
+Hacer algo con la muestra maiz_157
+Hacer algo con la muestra maiz_171
+Hacer algo con la muestra maiz_149
+Hacer algo con la muestra maiz_165
+Hacer algo con la muestra maiz_159
+Hacer algo con la muestra maiz_172
+Hacer algo con la muestra maiz_150
+Hacer algo con la muestra maiz_166
+Hacer algo con la muestra maiz_160
+Hacer algo con la muestra maiz_173
+Hacer algo con la muestra maiz_152
+Hacer algo con la muestra maiz_167
+Hacer algo con la muestra maiz_161
+Hacer algo con la muestra maiz_174
+Hacer algo con la muestra maiz_154
+Hacer algo con la muestra maiz_169
+Hacer algo con la muestra maiz_162
+Hacer algo con la muestra maiz_176
+Hacer algo con la muestra maiz_156
+Hacer algo con la muestra maiz_170
+Hacer algo con la muestra maiz_163
+Hacer algo con la muestra maiz_177
+Hacer algo con la muestra maiz_178
+Hacer algo con la muestra maiz_192
+Hacer algo con la muestra maiz_185
+Hacer algo con la muestra maiz_201
+Hacer algo con la muestra maiz_179
+Hacer algo con la muestra maiz_193
+Hacer algo con la muestra maiz_186
+Hacer algo con la muestra maiz_202
+Hacer algo con la muestra maiz_180
+Hacer algo con la muestra maiz_195
+Hacer algo con la muestra maiz_187
+Hacer algo con la muestra maiz_181
+Hacer algo con la muestra maiz_197
+Hacer algo con la muestra maiz_188
+Hacer algo con la muestra maiz_182
+Hacer algo con la muestra maiz_198
+Hacer algo con la muestra maiz_190
+Hacer algo con la muestra maiz_200
+Hacer algo con la muestra maiz_183
+Hacer algo con la muestra maiz_191
+Hacer algo con la muestra teos_96
+Hacer algo con la muestra teos_203
+Hacer algo con la muestra teos_911
+Hacer algo con la muestra teos_9107
+```
+
+**Pregunta**: Si `some_array=($(command))` sirve para crear un arreglo a partir del resultaod de un comando ¿Cómo puedes crear una **variable** a partir de un comando?
+
+**Leyendo desde un archivo**
+Los arrays tienen sus problemas cuando son muy grandes y  es fácil cometer errores porque nunca "los vemos", por lo tanto mucha gente prefiere mejor leer los elemntos directo de un archivo. Ejemplo:
+
+```
+$ grep -oE "\w+_[0-9]*" nuevos_final.fam > muestras.txt
+$ for i in $(cat muestras.txt); do echo Hacer algo con la muestra $i; done
+Hacer algo con la muestra maiz_3
+Hacer algo con la muestra maiz_68
+Hacer algo con la muestra maiz_91
+Hacer algo con la muestra maiz_39
+Hacer algo con la muestra maiz_12
+Hacer algo con la muestra maiz_41
+Hacer algo con la muestra maiz_35
+Hacer algo con la muestra maiz_58
+Hacer algo con la muestra maiz_51
+Hacer algo con la muestra maiz_82
+Hacer algo con la muestra maiz_67
+Hacer algo con la muestra maiz_93
+Hacer algo con la muestra maiz_21
+Hacer algo con la muestra maiz_6
+Hacer algo con la muestra maiz_101
+Hacer algo con la muestra maiz_27
+Hacer algo con la muestra maiz_43
+Hacer algo con la muestra maiz_1
+... [o sea lo mismo que hace rato]
+
+```
+
+
+### Más información de for loops**
 Aquí presenté la sintaxis más usada, pero hay otros métodos para escribir loops que hacen lo mismo. Y también pueden hacerse más complejos agregando "ifs". 
 Puedes consultar esta y más info de for loops en [esta guía con ejemplos y varios formatos](http://www.thegeekstuff.com/2011/07/bash-for-loop-examples/). 
 
