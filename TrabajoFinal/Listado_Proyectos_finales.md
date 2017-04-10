@@ -55,3 +55,16 @@ Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiin
 
 Israel Moreno Contreras [avance 1]
 (https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+
+Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/ProyectoFinalVillafranco.md)
+
+Contreras Luna Maria J. https://github.com/maryjomvz/ProyectoFinalBioinf2017-II-Maryjo-Contreras-Luna/issues/1
+
+Mariana Pérez Rivera [avance 1] https://github.com/LENTEJITA/ProyectoFinalBioinf2017-II/blob/master/AVANCE%201.md
+
+Martín Yair Cabrera Garrido [avance 1](https://github.com/MartinCabreraG/ProyectoFinalBioinf2017-II/blob/master/avances1.md)
+
+Adan Fernando Mar Silva  [avance 1](https://github.com/Ferxengutta/Proyecto-Final-Bioinf2017-II/blob/master/Avance%201.md)
+
+Andrea Rebollo Hernández [avance 1](https://github.com/andyrh0402/Tareas-Curso-BioinfInvRepro/blob/master/Avance%201.md)
+
