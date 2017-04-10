@@ -53,6 +53,8 @@ Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Traba
 
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd)
 
+Israel Moreno Contreras [avance 1]
+(https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
 Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/ProyectoFinalVillafranco.md)
 
