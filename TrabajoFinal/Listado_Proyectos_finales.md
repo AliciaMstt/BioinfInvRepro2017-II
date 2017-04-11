@@ -29,7 +29,7 @@ Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Fin
 
 Alejandro Rodríguez Agular: [avance 1](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE1.md)
 
-Erandi Ramírez Aguirre: [avance 1] https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_1_Erandi_Ramirez_Aguirre.md
+Erandi Ramírez Aguirre: [avance 1](https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_1_Erandi_Ramirez_Aguirre.md)
 
 Marisol De la Mora Curiel: [avance 1](https://github.com/MarisollDC/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
  
@@ -70,7 +70,7 @@ Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCur
 
 Contreras Luna Maria J. https://github.com/maryjomvz/ProyectoFinalBioinf2017-II-Maryjo-Contreras-Luna/issues/1
 
-Mariana Pérez Rivera [avance 1] https://github.com/LENTEJITA/ProyectoFinalBioinf2017-II/blob/master/AVANCE%201.md
+Mariana Pérez Rivera [avance 1](https://github.com/LENTEJITA/ProyectoFinalBioinf2017-II/blob/master/AVANCE%201.md)
 
 Martín Yair Cabrera Garrido [avance 1](https://github.com/MartinCabreraG/ProyectoFinalBioinf2017-II/blob/master/avances1.md)
 
