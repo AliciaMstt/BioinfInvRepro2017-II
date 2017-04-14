@@ -53,4 +53,6 @@ Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Traba
 
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd)
 
+Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss/blob/master/Primer%20Avance)
+
 
