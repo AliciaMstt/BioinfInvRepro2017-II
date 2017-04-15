@@ -79,3 +79,5 @@ Adan Fernando Mar Silva  [avance 1](https://github.com/Ferxengutta/Proyecto-Fina
 Andrea Rebollo Hernández [avance 1](https://github.com/andyrh0402/Tareas-Curso-BioinfInvRepro/blob/master/Avance%201.md)
 
 Carmina Martinez Gonzalez:  [avance 1](https://github.com/MinaMaglez/Trabajo-Final-Bioinformatica/blob/master/Avance%201.md)
+
+Fernando Chávez Maya: [avances 1] (https://github.com/cmayaf/ProyectoFinalBioinf2017-II/blob/master/Avances1.md) 
