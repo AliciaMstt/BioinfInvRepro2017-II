@@ -7,7 +7,7 @@ rm(list = ls())
 # Load libraries
 library(ade4)
 library(ggplot2)
-library("sp")
+library(sp)
 
 ########### Get data  ###############
 ## Source home made funcs to load data
