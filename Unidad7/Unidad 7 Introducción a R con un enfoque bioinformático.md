@@ -112,6 +112,9 @@ Vectores:
 
 **Ejercicio:** suma el número 2 a todos los números entre 1 y 150. 
 
+**Ejercicio** ¿cuántos números son mayores a 20 
+en el vector -13432:234?
+
 Matrices
 * Matrices `matrix(0, 3, 5)`
 * Acceso a elementos e una matriz `[ , ]`
