@@ -169,7 +169,7 @@ Nota también que si abres RStudio clickeando su ícono, tu WD por default será
  
 
 **Ejercicio:** 
-Escribe un script que debe estar guardado en `Practicas/Uni7/bin` y llamarse `ExplorandoMaiz.R`, que 1) cargue en R el archivo `Prac_Uni6/maiz/meta/maizteocintle_SNP50k_meta_extended.txt` y 2) responda lo siguiente. 
+Escribe un script que debe estar guardado en `Prac_Uni6/maices/bin` y llamarse `ExplorandoMaiz.R`, que 1) cargue en R el archivo `Prac_Uni6/maices/meta/maizteocintle_SNP50k_meta_extended.txt` y 2) responda lo siguiente. 
 
 (averigua cada punto con comandos de R. Recuerda comentar o tendrás 7 años de mala suerte en el lab)
 
