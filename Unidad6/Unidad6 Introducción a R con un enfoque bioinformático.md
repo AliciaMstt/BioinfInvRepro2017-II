@@ -97,6 +97,8 @@ Antes de pasar a las funciones bionformáticas, veamos la sintaxis básica de R 
 
 Un excelente tutorial para familiarizarse con los comandos de R es [TryR](http://tryr.codeschool.com/).
 
+Imprime dos veces este [Acordeón de R básico](https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf). Ten uno siempre contigo y otro bajo la almuada para la ósmosis.
+
 * Expresiones matemáticas: `1+1`
 * Strings de texto: `"¡Holaaaaa mundo!"`
 * Valores lógicos: `1<5`, `2+2 ==5`
