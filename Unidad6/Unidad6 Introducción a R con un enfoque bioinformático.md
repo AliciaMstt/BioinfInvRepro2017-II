@@ -234,7 +234,7 @@ elefantes
 
 **Ejercicio**  
 
-Abre en RStudio el script `Prac_Uni6/mantel/bin/1.IBR_testing.r`. Este script realiza un análisis de aislamiento por resistencia con Fst calculadas con ddRAD en *Berberis alpina*. 
+Abre en RStudio el script `Prac_Uni6/mantel/bin/1.IBR_testing.r`. Este script realiza un análisis de [aislamiento por resistencia](http://www.bioone.org/doi/abs/10.1554/05-321.1) con Fst calculadas con ddRAD en *Berberis alpina*. 
 
 Lee el código del script y determina:
 
