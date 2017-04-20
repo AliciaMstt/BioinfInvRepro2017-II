@@ -214,6 +214,21 @@ for (i in 2:10){
 
 La anterior es la versión más simple de un loop. Para otras opciones (como `while`, `if`, `if else`, `next`) revisa este [tutorial](https://www.datacamp.com/community/tutorials/tutorial-on-loops-in-r).
 
+Los loops son útiles ya que nos permiten reciclar código en vez de repetir lo mismo para difernetes valores. Por ejemplo el loop anterior hace lo mismo que:
+
+```{r}
+paste(2, "elefantes se columpiaban sobre la tela de una araña")
+paste(3, "elefantes se columpiaban sobre la tela de una araña")
+paste(4, "elefantes se columpiaban sobre la tela de una araña")
+paste(5, "elefantes se columpiaban sobre la tela de una araña")
+paste(6, "elefantes se columpiaban sobre la tela de una araña")
+paste(7, "elefantes se columpiaban sobre la tela de una araña")
+paste(8, "elefantes se columpiaban sobre la tela de una araña")
+paste(9, "elefantes se columpiaban sobre la tela de una araña")
+paste(10, "elefantes se columpiaban sobre la tela de una araña")
+
+```
+
 
 **Ejercicio** 
 
