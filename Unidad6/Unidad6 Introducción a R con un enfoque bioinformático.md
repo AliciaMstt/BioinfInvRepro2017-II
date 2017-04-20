@@ -242,6 +242,46 @@ Lee el código del script y determina:
 * ¿qué paquetes necesitas para correr el script?
 * ¿qué archivos necesitas para correr el script?
 
+
+### Notas sobre operaciones aritméticas en computadoras:
+
+Las computadoras pueden almacenar una candidad finita de dígitos de un número real. En computadoras de 64 bits, este máximo es 16 (ie el hardware permite almacenar 16).
+
+Además, las computadoras utilizan el sistema binarios (0s y 1s) para representar númperos. Por ejemplo 2.125 se puede representar como `2^1 + 2^-3`. Pero algunos números no tienen una representación exacta en sistema binario. Por ejemplo los irracionales como `1/3` que tienen una expansión infitia. Para resolver esto las compus lo truncan a 16 dígitos y eso lo representan en base 2.
+
+Las computadoras realizan operaciones aritméticas utilizando *precisión finita* con las limitantes anteriores (16 dígitos y números que no pueden representarse en base 2). Por lo tanto las operaciones de las computadoras no son exactas.
+
+Por ejemplo:
+
+Si resolvemos manualmente `3*(4/3-1)` obtenemos 1: 
+
+```
+3*(4/3-1)
+3*(1/3)
+3/3
+1
+```
+
+Pero mira lo que pasa si lo resolvemos en R (o en cualquier otro lenguaje que haga operaciones aritméticas):
+
+```
+options(digits = 16) # esto le dice a R que nos muestre resultados sin redondear
+3*(4/3-1)
+options(digits = 7) # Volver al default
+```
+
+La acumulación de este **error de redondeo** al realizar operaciones se puede acumular considerablemente.
+
+Por ejemplo `3*(4/3-1)-1 = 0 `. Pero para una computadora: 
+
+```
+> 3*(4/3-1)-1
+[1] -2.220446049250313e-16
+```
+
+Por eso en [Talentos Ocultos](http://www.popularmechanics.com/space/rockets/a24429/hidden-figures-real-story-nasa-women-computers/), [Katherine Johnson](https://en.wikipedia.org/wiki/Katherine_Johnson) le gana en exactitud  a la IBM.
+
+
 ## 6.3. Funciones propias:	Crear funciones y utilizarlas con `source`
 
 
@@ -264,17 +304,82 @@ statements
 return(object)
 }
 ```
-**Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado.
+**Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado. 
 
  
 Ejemplo:
 
 ```{r}
+give_i_line<- function(file, i){
+  ## Arguments 
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+  
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+  
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  return(x)
+} 
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+```
+
+
+Como alternativa a `return()` puedes poner el nombre del objeto (como si quisieras verlo en la terminal). 
+
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments 
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+  
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+  
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  x
+} 
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
 
 
 ```
 
-Si guardamos la función como un script llamado [`give_i_line.r`](../Practicas/Uni7/bin/give_i_line.r) después podemos correrlo desde otro script:
+Si quieres ver un resultado pero que este no sea guardado como un objeto, utiliza `print()`.
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments 
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+  
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+  
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  x
+} 
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+
+```
+
+#### Source
+
+Si guardamos la función como un script llamado [`give_i_line.r`](Prac_Uni6/ejemplosgenerales/bingive_i_line.r) después podemos correrla desde otro script, llamándola con `source()`:
 
 ```{r} 
 source("give_i_line.r")
@@ -439,7 +544,7 @@ Puede correrse desde R e incluso guardarse en forma de notebook (knitr).
 
 ## 6.7. Manipulación y limpieza de datos en R
 
-La manipulación y la limpieza da datos muchas veces es necesaria antes de poner hacer análisis en R. Aquí trataremos brevemente lo siguientes puntos en notas aparte:
+La manipulación y la limpieza da datos muchas veces es necesaria antes de poner hacer análisis en R. Aquí trataremos brevemente lo siguientes puntos en [notas aparte](Limpieza_de_datos.html):
 
 * Reestructura de datos y el principio de los datos limpios.
 
