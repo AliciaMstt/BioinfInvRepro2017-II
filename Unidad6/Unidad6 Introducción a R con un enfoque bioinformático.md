@@ -462,7 +462,8 @@ Un [R Notebook](http://rmarkdown.rstudio.com/r_notebooks.html#overview) es un do
 
 Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es un archivo HTML que contiene el código y los output resultantes, que puede abrirse en cualquier explorador web y en RStudio.
 
-**Ejercicio:** Haz un R Markdown usando el paquete RColorBrewer. El archivo de salida debe ser un documento Word.## 6.5. Correr R desde la Terminal
+**Ejercicio:** Haz un R Markdown usando el paquete RColorBrewer. El archivo de salida debe ser un documento Word.
+
 
 ## 6.5. Correr R desde la Terminal
 
