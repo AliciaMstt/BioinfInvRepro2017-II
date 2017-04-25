@@ -408,10 +408,64 @@ Nota que `source` NO corre la función en sí, sino que solo la carga al cerebro
 **Ejercicio:** Al script del ejercicio de las pruebas de Mantel, agrega el código necesario para realizar un Partial Mantel test entre la matriz Fst, y las matrices del presente y el LGM, parcializando la matriz flat. Necesitarás el paquete `vegan`. 
 
 
-## 6.4. RMarkdown y Cuadernos de Notas 
+## 6.4. R Markdown y R Notebook
+
+[R Markdown](http://rmarkdown.rstudio.com/index.html) es un formato que te permite crear documentos o reportes, en los que al mismo tiempo guardas y ejecutas código. 
+
+![alt text](Rmarkdown1.png)
+
+Primero, instala R Markdown:
+
+```
+ install.packages("rmarkdown")
+```
+
+Un archivo R Markdown es un archivo de texto plano que debe verse algo así: 
+
+![alt text](Rmarkdown_text)
+
+El archivo tiene tres tipos de contenido:
+
+- Encabezado (---)
+- Código (```)
+- Texto simple (Markdown)
 
 
-## 6.5 Correr R desde la Terminal
+### Archivos de salida
+
+A partir de un archivo .Rmd, es posible crear archivos de salida en una gran variedad de formatos, por ejemplo: 
+
+- HTML
+- Documentos interactivos
+- Word
+- Diapositivas
+- PDF
+- Páginas web
+- R Notebooks
+
+Checa más formatos de salida [aquí](http://rmarkdown.rstudio.com/formats.html)
+
+Para crear el reporte o archivo de salida, debes correr `render()`, dar click en "Knit" o ⇧+Ctrl+K.
+
+```
+render("1-example.Rmd")
+```
+
+
+### Interfaz notebook y R Notebooks
+
+Cuando abres o creas un archivo .Rmd, la interfaz de RStudio cambia a Notebook. Ahora, puedes ejecutar el código usando las flechas y los resultados se despliegan a continuación del código. 
+
+![alt text](Notebook_interface)
+
+Un R Notebook es un documento R Markdown en el que se pueden ejecutar las líneas de código de forma independiente e interactiva, cuya principal característica es que el output del código de muestra debajo de éste.
+
+Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es un archivo HTML que contiene el código y los output resultantes, que puede abrirse en cualquier explorador web y en RStudio.
+
+
+
+
+## 6.5. Correr R desde la Terminal
 
 R es un programa que funciona con la línea de comando y por lo tanto puede correrse desde la terminal de varias formas:
 
