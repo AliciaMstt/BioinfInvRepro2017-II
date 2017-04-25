@@ -381,6 +381,8 @@ give_i_line<- function(file, i){
   # read indicadores list
   indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
   
+  print(i)
+  
   # give text of the i line of the file  
   x<-indicador[i,1]
   x
