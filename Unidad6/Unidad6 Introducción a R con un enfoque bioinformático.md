@@ -464,6 +464,8 @@ Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es
 
 **Ejercicio:** Haz un R Markdown usando el paquete RColorBrewer. El archivo de salida debe ser un documento Word.## 6.5. Correr R desde la Terminal
 
+## 6.5. Correr R desde la Terminal
+
 R es un programa que funciona con la línea de comando y por lo tanto puede correrse desde la terminal de varias formas:
 
 ### Acceder a la consola de R desde la Terminal: 
