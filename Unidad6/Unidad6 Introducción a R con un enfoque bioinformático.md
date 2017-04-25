@@ -468,7 +468,7 @@ Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es
 
 ### Generar un reporte de un script .R
 
-Es posible generar un reporte a partir de un script de R, aún cuando no tenga el formato de una R Markdown. Únicamente das click en el cuaderno (Compile report) o Ctrl+Shift+K.
+Es posible generar un reporte a partir de un script de R, aún cuando no tenga el formato de un archivo R Markdown. Únicamente das click en el cuaderno (Compile report) o Ctrl+Shift+K.
 
 ![alt text](RColorB.png)
 
