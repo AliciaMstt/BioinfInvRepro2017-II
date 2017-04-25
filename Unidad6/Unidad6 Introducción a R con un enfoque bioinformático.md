@@ -458,14 +458,11 @@ Cuando abres o creas un archivo .Rmd, la interfaz de RStudio cambia a Notebook. 
 
 ![alt text](Notebook_interface)
 
-Un R Notebook es un documento R Markdown en el que se pueden ejecutar las líneas de código de forma independiente e interactiva, cuya principal característica es que el output del código de muestra debajo de éste.
+Un [R Notebook](http://rmarkdown.rstudio.com/r_notebooks.html#overview) es un documento R Markdown en el que se pueden ejecutar las líneas de código de forma independiente e interactiva, cuya principal característica es que el output del código de muestra debajo de éste.
 
 Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es un archivo HTML que contiene el código y los output resultantes, que puede abrirse en cualquier explorador web y en RStudio.
 
-
-
-
-## 6.5. Correr R desde la Terminal
+** Ejercicio: ** Haz un R Markdown usando el paquete RColorBrewer. El archivo de salida debe ser un documento Word.## 6.5. Correr R desde la Terminal
 
 R es un programa que funciona con la línea de comando y por lo tanto puede correrse desde la terminal de varias formas:
 
