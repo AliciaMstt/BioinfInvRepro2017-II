@@ -422,7 +422,7 @@ Primero, instala R Markdown:
 
 Un archivo R Markdown es un archivo de texto plano que debe verse algo así: 
 
-![alt text](Rmarkdown_text)
+![alt text](Rmarkdown_text.png)
 
 El archivo tiene tres tipos de contenido:
 
@@ -456,7 +456,7 @@ render("1-example.Rmd")
 
 Cuando abres o creas un archivo .Rmd, la interfaz de RStudio cambia a Notebook. Ahora, puedes ejecutar el código usando las flechas y los resultados se despliegan a continuación del código. 
 
-![alt text](Notebook_interface)
+![alt text](Notebook_interface.png)
 
 Un [R Notebook](http://rmarkdown.rstudio.com/r_notebooks.html#overview) es un documento R Markdown en el que se pueden ejecutar las líneas de código de forma independiente e interactiva, cuya principal característica es que el output del código de muestra debajo de éste.
 
