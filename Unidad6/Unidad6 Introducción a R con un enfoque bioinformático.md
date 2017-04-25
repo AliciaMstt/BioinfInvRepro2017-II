@@ -466,6 +466,12 @@ Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es
 
 **Ejercicio:** Haz un R Markdown usando el paquete RColorBrewer. El archivo de salida debe ser un documento Word.
 
+### Generar un reporte de un script .R
+
+Es posible generar un reporte a partir de un script de R, aún cuando no tenga el formato de una R Markdown. Únicamente das click en el cuaderno (Compile report) o Ctrl+Shift+K.
+
+![alt text](RColorB.png)
+
 
 ## 6.5. Correr R desde la Terminal
 
