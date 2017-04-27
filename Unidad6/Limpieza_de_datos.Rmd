@@ -84,7 +84,7 @@ valores, convierte los datos anchos en largos.
 
 Para otras funciones parecidas no se pierdan este acordeón: 
 
-[R Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+[R Data Transformation Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf)
 
 
 #### Los encabezados de las columanas son valores
