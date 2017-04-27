@@ -70,7 +70,7 @@ Israel Moreno Contreras [avance 1](https://github.com/Israelornis/ProyectoFinalB
 
 Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/ProyectoFinalVillafranco.md)
 
-Contreras Luna Maria J. https://github.com/maryjomvz/ProyectoFinalBioinf2017-II-Maryjo-Contreras-Luna/issues/1
+Contreras Luna Maria J. [avance1](https://github.com/maryjomvz/ProyectoFinalBioinf2017-II-Majo-Contreras/blob/avance-1/AVANCE1.md)
 
 Mariana Pérez Rivera [avance 1](https://github.com/LENTEJITA/ProyectoFinalBioinf2017-II/blob/master/AVANCE%201.md)
 
