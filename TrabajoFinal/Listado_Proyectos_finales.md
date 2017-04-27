@@ -20,7 +20,7 @@ Verónica LIzbeth González VAldez: [avance 1](https://github.com/VeronicaGlez/P
 
 Tania López Palafox: [avance 1](https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
-Madisson Azucena Luna Bárcenas: [avance 1](https://github.com/madisson-luna/Proyecto_Final-Bioinf2017-II/blob/master/Avance%201.md)
+Madisson Azucena Luna Bárcenas: [avance 1](https://github.com/madisson-luna/Proyecto_Final-Bioinf2017-II/blob/master/Avance%201.md) , [avance 2](https://github.com/madisson-luna/Proyecto_Final-Bioinf2017-II/blob/master/Avance%202.md)
 
 Guillermo Huerta Ramos: [avance 1](https://github.com/ghuertaramos/ProyectoFinalBioinf2017-II/blob/master/Avance1%20.md)
 
