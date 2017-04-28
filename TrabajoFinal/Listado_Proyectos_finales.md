@@ -66,7 +66,7 @@ José Rubén Montes Montiel [avance 1](https://github.com/JR-Montes/ProyectoFina
 
 Arturo Morales Lopez: [avance 1](https://github.com/ArturoMoLo90/Proyecto_Final_Bioinf2017-II/blob/master/Avance_1.md)
 
-Israel Moreno Contreras [avance 1](https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+Israel Moreno Contreras [avance 1](https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2] (https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md)
 
 Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/ProyectoFinalVillafranco.md)
 
