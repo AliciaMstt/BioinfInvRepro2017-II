@@ -18,7 +18,7 @@ Ejemplo:
 
 Verónica LIzbeth González VAldez: [avance 1](https://github.com/VeronicaGlez/Proyecto_Final_Bioinf2017-II/blob/master/AVANCES1.md)
 
-Tania López Palafox: [avance 1](https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+aTania López Palafox: [avance 1](https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
 Madisson Azucena Luna Bárcenas: [avance 1](https://github.com/madisson-luna/Proyecto_Final-Bioinf2017-II/blob/master/Avance%201.md) , [avance 2](https://github.com/madisson-luna/Proyecto_Final-Bioinf2017-II/blob/master/Avance%202.md)
 
@@ -40,6 +40,7 @@ Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFin
 Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avances%201.md)
 
 Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md)
+[avance 2](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/Brenda%20Mu%C3%B1oz%20Vazquez:%20avance2.md)
 
 Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md)
 
