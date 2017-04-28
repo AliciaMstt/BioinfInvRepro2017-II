@@ -39,7 +39,7 @@ Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFin
 
 Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avances%201.md)
 
-Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md)
+Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md), [avance 2](
 
 Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md)
 
@@ -53,4 +53,4 @@ Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Traba
 
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd)
 
-Gabriela Castellanos Morales [avance 1](https://github.com/GabrielaCastellanos/TareasCursoBioinfInvRepro/blob/master/Avance1.md)
+Gabriela Castellanos Morales [avance 1](https://github.com/GabrielaCastellanos/TareasCursoBioinfInvRepro/blob/master/Avance1.md), [avance 2](https://github.com/GabrielaCastellanos/TareasCursoBioinfInvRepro/blob/master/Avance2.md)
