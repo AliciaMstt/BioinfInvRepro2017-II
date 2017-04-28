@@ -26,7 +26,7 @@ Guillermo Huerta Ramos: [avance 1](https://github.com/ghuertaramos/ProyectoFinal
 
 Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance1.md)
 
-Jessica Raquel Hernández Pérez: [avance 1](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/Avance1.md)
+Jessica Raquel Hernández Pérez: [avance 1](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/Avance1.md), [avance 2](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/avance%202.md)
 
 Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%201.md) 
 
