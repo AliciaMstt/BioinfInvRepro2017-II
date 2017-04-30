@@ -45,7 +45,7 @@ Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFin
 
 Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
 
-Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/avance2.md)
 
 Víctor Jorge Taracena Morales [avance 1](https://github.com/Anecarat/Proyecto_Final_Bioinf2017-II/blob/master/Avances1.md)
 
