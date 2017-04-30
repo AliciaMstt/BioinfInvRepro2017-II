@@ -56,7 +56,7 @@ Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiin
 Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss/blob/master/Primer%20Avance)
 
 
-Nelly Jazmín Pacheco Cruz [avance 1](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance1.md)
+Nelly Jazmín Pacheco Cruz [avance 1](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance1.md)  [avance 2](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance2_N3L.md)
 
 Estefania Cano Sánchez [avance 1](https://github.com/ecanos/Proyecto-final)
 
