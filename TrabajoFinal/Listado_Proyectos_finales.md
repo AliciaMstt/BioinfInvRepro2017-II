@@ -76,7 +76,7 @@ Contreras Luna Maria J. [avance1](https://github.com/maryjomvz/ProyectoFinalBioi
 
 Mariana Pérez Rivera [avance 1](https://github.com/LENTEJITA/ProyectoFinalBioinf2017-II/blob/master/AVANCE%201.md)
 
-Martín Yair Cabrera Garrido [avance 1](https://github.com/MartinCabreraG/ProyectoFinalBioinf2017-II/blob/master/avances1.md)
+Martín Yair Cabrera Garrido [avance 1](https://github.com/MartinCabreraG/ProyectoFinalBioinf2017-II/blob/master/avances1.md), [avance2](https://github.com/MartinCabreraG/ProyectoFinalBioinf2017-II/blob/master/avances2.md)
 
 Adan Fernando Mar Silva  [avance 1](https://github.com/Ferxengutta/Proyecto-Final-Bioinf2017-II/blob/master/Avance%201.md)
 
