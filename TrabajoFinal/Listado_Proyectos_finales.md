@@ -61,6 +61,8 @@ Nelly Jazmín Pacheco Cruz [avance 1](https://github.com/n311pc/Tareas-Curso-Bio
 Estefania Cano Sánchez [avance 1](https://github.com/ecanos/Proyecto-final)
 
 Lisandro Hernandez Anaya [Avance1](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+                         [Avance2](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md)
+                         
 
 José Rubén Montes Montiel [avance 1](https://github.com/JR-Montes/ProyectoFinalBioinf2017-II/blob/master/Avance_1.md)
 
