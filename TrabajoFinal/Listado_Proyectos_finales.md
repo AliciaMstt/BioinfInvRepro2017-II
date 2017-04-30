@@ -64,7 +64,7 @@ Lisandro Hernandez Anaya [Avance1](https://github.com/LisandroHernan/ProyectoFin
                          [Avance2](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md)
                          
 
-José Rubén Montes Montiel [avance 1](https://github.com/JR-Montes/ProyectoFinalBioinf2017-II/blob/master/Avance_1.md)
+José Rubén Montes Montiel [avance 1](https://github.com/JR-Montes/ProyectoFinalBioinf2017-II/blob/master/Avance_1.md) [Avance 2](https://github.com/JR-Montes/ProyectoFinalBioinf2017-II/blob/master/Avance_2.md)
 
 Arturo Morales Lopez: [avance 1](https://github.com/ArturoMoLo90/Proyecto_Final_Bioinf2017-II/blob/master/Avance_1.md) , [avance_2](https://github.com/ArturoMoLo90/Proyecto_Final_Bioinf2017-II/blob/master/avance_2.md)
 
