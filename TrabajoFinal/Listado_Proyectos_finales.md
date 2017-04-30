@@ -78,6 +78,6 @@ Martín Yair Cabrera Garrido [avance 1](https://github.com/MartinCabreraG/Proyec
 
 Adan Fernando Mar Silva  [avance 1](https://github.com/Ferxengutta/Proyecto-Final-Bioinf2017-II/blob/master/Avance%201.md)
 
-Andrea Rebollo Hernández [avance 1](https://github.com/andyrh0402/Tareas-Curso-BioinfInvRepro/blob/master/Avance%201.md)
+Andrea Rebollo Hernández [avance 1](https://github.com/andyrh0402/Tareas-Curso-BioinfInvRepro/blob/master/Avance%201.md), [avance 2](https://github.com/andyrh0402/Tareas-Curso-BioinfInvRepro/blob/master/Avance2.md)
 
 Carmina Martinez Gonzalez:  [avance 1](https://github.com/MinaMaglez/Trabajo-Final-Bioinformatica/blob/master/Avance%201.md)
