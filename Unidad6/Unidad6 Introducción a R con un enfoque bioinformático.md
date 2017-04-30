@@ -55,9 +55,9 @@ Como hemos visto en otras unidades, un **script** es un archivo de nuestros aná
 * un archivo de texto plano 
 * permanente,
 * repetible,
-* anotado,
-* compartible y 
-* compatible con otras plataformas
+* anotado y
+* compartible 
+
 
 En otras palabras, un script es una recopilación por escrito de las instrucciones que queremos enviar a la consola, de modo que al tener esas instrucciones cualquiera pueda repetir el análisis tal cual se hizo. 
 
@@ -97,6 +97,8 @@ Antes de pasar a las funciones bionformáticas, veamos la sintaxis básica de R 
 
 Un excelente tutorial para familiarizarse con los comandos de R es [TryR](http://tryr.codeschool.com/).
 
+Imprime dos veces este [Acordeón de R básico](https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf). Ten uno siempre contigo y otro bajo la almuada para la ósmosis.
+
 * Expresiones matemáticas: `1+1`
 * Strings de texto: `"¡Holaaaaa mundo!"`
 * Valores lógicos: `1<5`, `2+2 ==5`
@@ -107,16 +109,22 @@ Un excelente tutorial para familiarizarse con los comandos de R es [TryR](http:/
 **Ejercicio**: crea una variable con el logaritmo base 10 de 50 y súmalo a otra variable cuyo valor sea igual a 5.
 
 Vectores:
+
 * vectores `c(5, 4, 6, 7)`, `5:9`
 * Acceso a elementos de un vector `[]` 
 
 **Ejercicio:** suma el número 2 a todos los números entre 1 y 150. 
 
+**Ejercicio** ¿cuántos números son mayores a 20 
+en el vector -13432:234?
+
 Matrices
+
 * Matrices `matrix(0, 3, 5)`
 * Acceso a elementos e una matriz `[ , ]`
 
 Data frames
+
 * Data frame `data.frame(x = c("a", "b", "c"), y = 1:3)`
 * Acceso a elementos e una data.frame `[ , ]`, `$`
 
@@ -125,13 +133,49 @@ Para una versión un poco más amplia del anterior resumen veamos estas [notas s
 * Funciones de sistema: `list.files`, `getwd`, `setwd`
 * Cargar una función: `source`
 * Instalar paquetes (sola una vez en cada equipo): `install.packages`.
-* Cargar un paquete previamente instalado (cada vez que corramos el script): `library`.
+* Cargar un paquete previamente instalado (cada vez que corramos el script): `install.packages`.
 * Cargar a R un archivo de texto con filas y columnas (separado por tabs o comas): `read.delim`.
 * "Pegar" texto uno detrás de otro: `paste()` y `paste0()`.
 
-**Ejercicio:** Carga en R el archivo `Unidad6/Prac_Uni6/meta/maizteocintle_SNP50k_meta_extended.txt` y utiliza un script de R, que debe estar guardado en `Unidad6/Prac_Uni6/bin`, para responder lo siguiente:
+#### Notas sobre cargar librerías:
 
-* ¿Qué tipo de objeto creamos al cargar la base?
+`install.packages` sirve para instalar un paquete en nuestras máquinas, esto la baja de CRAN u otro servidor y lo instala en R, pero **no lo carga a la sesión activa**. 
+
+Una vez que el paquete está instalado, este NO estará cargado en el cerebro de R al menos que utilicemos `library(nombredelpaquete)`. Si tu script utiliza un paquete determinado, es recomendable que estos se carguen en las primeras líneas o al principio de la sección de código que los utilizará.
+
+Sólo carga los paquetes que realmente utilices en un script dado.
+ 
+#### Notas sobre cargar archivos:
+`read.delim` sirve para cargar un archivo de texto con filas y columnas. Revisa su ayuda para determinar que variables utilizar para leerlo si está separado por comas, tabulaciones (tab), espacios o qué. 
+
+Además de archivos de filas y columnas, se pueden leer a R todo tipo de archivos, en algunos casos esto se hace con paquetes que crearon funciones específicas para esto. Normalmente se llaman `read.algo`. Por ejemplo la función `read.plink` del paquete snpMatrix.
+
+Cuando utilices `read.delim` o símil, asume que tu WD es donde vive tu script y **utiliza rutas relativas** para navegar hasta el archivo que deseas cargar. 
+
+Para poner tristes a Alicia y Azalea preguntar por qué es importante hacer lo anterior.
+
+#### Working directory
+Buena práctica recomendada: que tu working directory sea donde sea que viva el script en el que estás trabajando. 
+
+Para averiguar cuál es tu WD actual utiliza `getwd()`.
+
+Puedes definir tu WD manualmente con la función `setwd()`, pero OJO: realiza esto en **La Consola**, *NO en tu script*. Neto, porfas. 
+
+Una trampa práctica en RStudio para que tu WD sea el lugar donde vive tu script es ir al Menú:
+
+`Session > Set Working Directory > To source file location`
+
+O sease "source file" = tu script activo.
+
+Nota también que si abres RStudio clickeando su ícono, tu WD por default será el home de tu usuario. Sin embargo, si abres RStudio clickeando en un script, el WD default será donde viva dicho script.
+ 
+
+**Ejercicio:** 
+Escribe un script que debe estar guardado en `Prac_Uni6/maices/bin` y llamarse `ExplorandoMaiz.R`, que 1) cargue en R el archivo `Prac_Uni6/maices/meta/maizteocintle_SNP50k_meta_extended.txt` y 2) responda lo siguiente. 
+
+(averigua cada punto con comandos de R. Recuerda comentar o tendrás 7 años de mala suerte en el lab)
+
+* ¿Qué tipo de objeto creamos al cargar la base? 
 
 * ¿Cómo se ven las primeras 6 líneas del archivo?
 
@@ -170,6 +214,21 @@ for (i in 2:10){
 
 La anterior es la versión más simple de un loop. Para otras opciones (como `while`, `if`, `if else`, `next`) revisa este [tutorial](https://www.datacamp.com/community/tutorials/tutorial-on-loops-in-r).
 
+Los loops son útiles ya que nos permiten reciclar código en vez de repetir lo mismo para difernetes valores. Por ejemplo el loop anterior hace lo mismo que:
+
+```{r}
+paste(2, "elefantes se columpiaban sobre la tela de una araña")
+paste(3, "elefantes se columpiaban sobre la tela de una araña")
+paste(4, "elefantes se columpiaban sobre la tela de una araña")
+paste(5, "elefantes se columpiaban sobre la tela de una araña")
+paste(6, "elefantes se columpiaban sobre la tela de una araña")
+paste(7, "elefantes se columpiaban sobre la tela de una araña")
+paste(8, "elefantes se columpiaban sobre la tela de una araña")
+paste(9, "elefantes se columpiaban sobre la tela de una araña")
+paste(10, "elefantes se columpiaban sobre la tela de una araña")
+
+```
+
 
 **Ejercicio** 
 
@@ -190,48 +249,55 @@ elefantes
 
 **Ejercicio**  
 
-Observa el siguiente código:
+Abre en RStudio el script `Prac_Uni6/mantel/bin/1.IBR_testing.r`. Este script realiza un análisis de [aislamiento por resistencia](http://www.bioone.org/doi/abs/10.1554/05-321.1) con Fst calculadas con ddRAD en *Berberis alpina*. 
 
-(para correr esto es necesario estar conectado a la red UNAM o tener una api key)
+Lee el código del script y determina:
 
-```{r}
-# Required packages
-library(rscopus)
-library(httr)
-
-# Definir Apikey para poder acceder a scopus (la generé desde http://dev.elsevier.com/myapikey.html, se requiere entrar desde bidiunam)
-api_key<-"b3d334ef41f4096efa745ee88fcc55ca"
+* ¿qué hacen los dos for loops del script?
+* ¿qué paquetes necesitas para correr el script?
+* ¿qué archivos necesitas para correr el script?
 
 
-# read indicadores list
-indicador<-read.delim("../data/indicadores.txt", header=FALSE, 
-                       quote="", stringsAsFactors=FALSE)
+### Notas sobre operaciones aritméticas en computadoras:
 
-## RUN
+Las computadoras pueden almacenar una candidad finita de dígitos de un número real. En computadoras de 64 bits, este máximo es 16 (ie el hardware permite almacenar 16).
 
-# build query
-pais<-"Mexico"
-query_string<-paste0('(TITLE-ABS-KEY(Maize)', ' AND TITLE-ABS-KEY(', pais, ') AND TITLE-ABS-KEY(', indicador[1,1],'))')
+Además, las computadoras utilizan el sistema binarios (0s y 1s) para representar númperos. Por ejemplo 2.125 se puede representar como `2^1 + 2^-3`. Pero algunos números no tienen una representación exacta en sistema binario. Por ejemplo los irracionales como `1/3` que tienen una expansión infitia. Para resolver esto las compus lo truncan a 16 dígitos y eso lo representan en base 2.
 
-# run query
-# check out this for more filters than can be added to the query: http://api.elsevier.com/documentation/SCOPUSSearchAPI.wadl
+Las computadoras realizan operaciones aritméticas utilizando *precisión finita* con las limitantes anteriores (16 dígitos y números que no pueden representarse en base 2). Por lo tanto las operaciones de las computadoras no son exactas.
 
-s = generic_elsevier_api(query = query_string,
-  type = "search", search_type = "scopus",
-  api_key = api_key)
+Por ejemplo:
 
-# extract number of resulted documents 
-res<-s$content$`search-results`$`opensearch:totalResults`
-      
+Si resolvemos manualmente `3*(4/3-1)` obtenemos 1: 
+
+```
+3*(4/3-1)
+3*(1/3)
+3/3
+1
 ```
 
+Pero mira lo que pasa si lo resolvemos en R (o en cualquier otro lenguaje que haga operaciones aritméticas):
 
-Con base en el código anterior, utiliza un loop para repetir la búsqueda para todos los indicadores del archivo `/data/indicadores.txt` (se encuentra en el repo de Practicas de la Uni6) y para tres países: México, Estados Unidos y Ecuador. Los resultados deben guardarse en un una df única y escribirse a un archivo que esté en una carpeta `out` que se llame `busquedaScopus.txt`. 
+```
+options(digits = 16) # esto le dice a R que nos muestre resultados sin redondear
+3*(4/3-1)
+options(digits = 7) # Volver al default
+```
 
-Tu código para este ejercicio debe estar guardado en un script llamado `Ejercicio_rscopusloop.R`.
+La acumulación de este **error de redondeo** al realizar operaciones se puede acumular considerablemente.
+
+Por ejemplo `3*(4/3-1)-1 = 0 `. Pero para una computadora: 
+
+```
+> 3*(4/3-1)-1
+[1] -2.220446049250313e-16
+```
+
+Por eso en [Talentos Ocultos](http://www.popularmechanics.com/space/rockets/a24429/hidden-figures-real-story-nasa-women-computers/), [Katherine Johnson](https://en.wikipedia.org/wiki/Katherine_Johnson) le gana en exactitud  a la IBM.
 
 
-### Crear funciones y utilizarlas con `source`
+## 6.3. Funciones propias:	Crear funciones y utilizarlas con `source`
 
 
 `source` es una función que sirve para correr un script de R **dentro de otro script de R**. Esto permite modularizar un análisis y luego correr una pipeline general, así como tener por separado **funciones propias** (que podemos llamar igual que llamamos las funciones de los paquetes) y que utilizamos mucho en diversos scripts. Este tipo de funciones son las que podemos compartir en Github con otros usuarios y hasta convertirlas en un paquete. 
@@ -239,9 +305,9 @@ Tu código para este ejercicio debe estar guardado en un script llamado `Ejercic
 Ejemplos de cómo utilizar `source`: correr el script del ejercicio anterior desde otro script con la línea.
 
 ```{r}
-source("Ejercicio_rscopusloop.R")
+source("1.IBR_testing.r")
 ```
-Nota que pare que esto funcione tu working directory debe ser el correcto para leer `Ejercicio_rscopusloop.R` como si fuera un archivo (que lo es).
+Nota que pare que esto funcione tu working directory debe ser el correcto para leer `1.IBR_testing.r` como si fuera un archivo (que lo es).
 
 **Hacer una función propia**:
 
@@ -253,7 +319,7 @@ statements
 return(object)
 }
 ```
-**Ojo**: el comando `return` es necesario al final de una función simpre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado.
+**Ojo**: el comando `return` es necesario al final de una función siempre que queramos que dicha función "devuelva" un objeto (por ejemplo una df que creemos como parte de la función). De no poner esta instrucción, la función correrá desde otro script, pero no veremos ningún resultado. 
 
  
 Ejemplo:
@@ -262,20 +328,75 @@ Ejemplo:
 give_i_line<- function(file, i){
   ## Arguments 
   # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
-  # number of line of file we want to print
-
+  # i = number of line of file we want to print
+  
   ## Function
   # read indicadores list
   indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
-
+  
   # give text of the i line of the file  
   x<-indicador[i,1]
   return(x)
-  } 
+} 
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
 
 ```
 
-Si guardamos la función como un script llamado [`give_i_line.r`](/Unidad6/Prac_Uni6/bin/give_i_line.r) después podemos correrlo desde otro script:
+
+Como alternativa a `return()` puedes poner el nombre del objeto (como si quisieras verlo en la terminal). 
+
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments 
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+  
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+  
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  x
+} 
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+
+```
+
+Si quieres ver un resultado pero que este no sea guardado como un objeto, utiliza `print()`.
+
+```{r}
+give_i_line<- function(file, i){
+  ## Arguments 
+  # file = path to desired file with the indicadores, must be tab delimited and do NOT have a header
+  # i = number of line of file we want to print
+  
+  ## Function
+  # read indicadores list
+  indicador<-read.delim(file, header=FALSE, quote="", stringsAsFactors=FALSE)
+  
+  print(i)
+  
+  # give text of the i line of the file  
+  x<-indicador[i,1]
+  x
+} 
+
+give_i_line("../data/indicadores.txt", i=2)
+x<-give_i_line("../data/indicadores.txt", i=2)
+
+
+```
+
+#### Source
+
+Si guardamos la función como un script llamado [`give_i_line.r`](Prac_Uni6/ejemplosgenerales/bingive_i_line.r) después podemos correrla desde otro script, llamándola con `source()`:
 
 ```{r} 
 source("give_i_line.r")
@@ -286,77 +407,83 @@ Nota que `source` NO corre la función en sí, sino que solo la carga al cerebro
 
 **Ejercicio:** Escribe una función llamada `calc.tetha` que te permita calcular tetha dados Ne y u como argumentos. Recuerda que tetha =4Neu.
 
-**Ejercicio:** Escribe una función que te permita leer un archivo de indicadores y realizar una búsqueda de todos los indicadores del archivo como en el ejercicio del script `Ejercicio_rscopusloop.R`. Uno de los argumentos de tu función debe ser "country" de manera que sea posible utilizar la función para correr la misma búsqueda con diferente país. El nombre de tu función debe ser `search_IndicadoresCountry`. Después en un script utiliza esa función para correr la búsqueda para dos países de tu elección, guarda los resultados en una df e imprímela en pantalla.
+**Ejercicio:** Al script del ejercicio de las pruebas de Mantel, agrega el código necesario para realizar un Partial Mantel test entre la matriz Fst, y las matrices del presente y el LGM, parcializando la matriz flat. Necesitarás el paquete `vegan`. 
 
 
-### Operador "Forward pipe" `%>%`
-El forward pipe `%>%` pertenece al paquete `magrittr`. Puedes encontrar [más info y tutoriales aquí](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html). 
+## 6.4. R Markdown y R Notebook
 
-Cuando uno hace varias operaciones es difícil leer y entender el código.
+[R Markdown](http://rmarkdown.rstudio.com/index.html) es un formato que te permite crear documentos o reportes, en los que al mismo tiempo guardas y ejecutas código. 
 
-Por ejemplo (asumiendo que hemos cargado la matriz de datos de maiz de los ejercicios anteriores con `fullmat<- read.delim("../meta/maizteocintle_SNP50k_meta_extended.txt"`)
+![alt text](Rmarkdown1.png)
 
-
-```{r}
-# Estimar la altitud media a la que fueron colectadas las muestras que fueron muestreadas a una latitud menor a 20?
-x<-mean(fullmat[fullmat$Latitud >20, 16], na.rm = TRUE)
+Primero, instala R Markdown:
 
 ```
-
-La dificultad radica en que usualmente los parámetros se asignan después del 
-nombre de la función usando `()`. El operador "Forward Pipe" (`%>%`) cambia este 
-orden, manera que un parámetro que precede a la función es enviado ("piped") a 
-la función, similar a como vimos en ´bash´ con ´|´.
-
-Veamos como cambia el código anterior:
-
-```{r}
-library("magrittr")
-# Estimar la altitud media a la que fueron colectadas las muestras que fueron muestreadas a una latitud menor a 20?
-x<-fullmat[fullmat$Latitud >20, 16] %>%
-  mean
+ install.packages("rmarkdown")
 ```
 
-podemos leer %>% como "_después_". De modo que si asumimos que cada paso es una función podríamos tener código así:
+Un archivo R Markdown es un archivo de texto plano que debe verse algo así: 
 
-```{r}
-result <- datos %>% paso_uno() %>% paso_dos() %>% paso_tres()
+![alt text](Rmarkdown_text.png)
+
+El archivo tiene tres tipos de contenido:
+
+- Encabezado (---)
+- Código (```)
+- Texto simple (Markdown)
+
+
+### Archivos de salida
+
+A partir de un archivo .Rmd, es posible crear archivos de salida en una gran variedad de formatos, por ejemplo: 
+
+- HTML
+- Documentos interactivos
+- Word
+- Diapositivas
+- PDF
+- Páginas web
+- R Notebooks
+
+Checa más formatos de salida [aquí](http://rmarkdown.rstudio.com/formats.html)
+
+Para crear el reporte o archivo de salida, debes correr `render()`, dar click en "Knit" o ⇧+Ctrl+K.
+
+```
+render("1-example.Rmd")
 ```
 
-Otro ejemplo ([tomado de aquí](http://grunwaldlab.github.io/Population_Genetics_in_R/Getting_ready_to_use_R.html)):
 
-```{r}
-library("poppr")
-library("magrittr")
-data(Pinf)
+### Interfaz notebook y R Notebooks
 
-# Compare the traditional R script
+Cuando abres o creas un archivo .Rmd, la interfaz de RStudio cambia a Notebook. Ahora, puedes ejecutar el código usando las flechas y los resultados se despliegan a continuación del código. 
 
-allelic_diversity <- lapply(seppop(clonecorrect(Pinf, strata = ~Continent/Country)), 
-                            FUN = locus_table, info = FALSE)
+![alt text](Notebook_interface.png)
 
-# versus the magrittr piping:
+Un [R Notebook](http://rmarkdown.rstudio.com/r_notebooks.html#overview) es un documento R Markdown en el que se pueden ejecutar las líneas de código de forma independiente e interactiva, cuya principal característica es que el output del código de muestra debajo de éste.
 
-allelic_diversity <- Pinf %>%
-  clonecorrect(strata= ~Continent/Country) %>% # clone censor by continent and country.
-  seppop() %>%                                # Separate populations (by continent)
-  lapply(FUN = locus_table, info = FALSE)     # Apply the function locus_table to both populations
+Cuando se guarda un notebook .Rmd, también se crea un archivo .nb.html. Este es un archivo HTML que contiene el código y los output resultantes, que puede abrirse en cualquier explorador web y en RStudio.
 
-```
+**Ejercicio:** Haz un R Markdown usando el paquete RColorBrewer. El archivo de salida debe ser un documento Word.
 
-**Ejercicio**
-A partir de sólo con las muestras de los estados Puebla, Jalisco, Yucatan crea una df que contenga las columnas NSiembra, Raza y Altitud de las muestras de Puebla ordenadas de menor a mayor altitud.
+### Generar un reporte de un script .R
+
+Es posible generar un reporte a partir de un script de R, aún cuando no tenga el formato de un archivo R Markdown. Únicamente das click en el cuaderno (Compile report) o Ctrl+Shift+K.
+
+![alt text](RColorB.png)
 
 
-### Manipulación y limpieza de datos
+## 6.5. Manipulación y limpieza de datos en R
 
-La manipulación y la limpieza da datos muchas veces es necesaria antes de poner hacer análisis en R. Aquí trataremos brevemente lo siguientes puntos en notas aparte:
+La manipulación y la limpieza da datos muchas veces es necesaria antes de poner hacer análisis en R. Aquí trataremos brevemente lo siguientes puntos en [notas aparte](Limpieza_de_datos.html):
 
 * Reestructura de datos y el principio de los datos limpios.
 
 * Estrategia divide-aplica-combina.
 
 
-## 6.3. Graficar en R 		
+
+## 6.6. Graficar en R 		
 
 Los apuntes de esta sección están en [Graficar en R](Graficar_en_R.html) (código y gráficas) y [Graficar en R](Graficar en R.Rmd) (sólo código)
+
