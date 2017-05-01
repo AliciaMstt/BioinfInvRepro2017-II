@@ -53,12 +53,14 @@ Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Traba
 
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd)
 
+
+Estefania Cano Schz [avance 1](https://github.com/ecanos/Proyecto-final), [Avance 2](https://github.com/ecanos/Avance-2/blob/master/Avance%202.md)
+
 Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss/blob/master/Primer%20Avance)
 
 
 Nelly Jazmín Pacheco Cruz [avance 1](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance1.md)  [avance 2](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance2_N3L.md)
 
-Estefania Cano Sánchez [avance 1](https://github.com/ecanos/Proyecto-final)
 
 Lisandro Hernandez Anaya [Avance1](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
                          [Avance2](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md)
