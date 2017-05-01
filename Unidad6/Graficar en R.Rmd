@@ -141,7 +141,7 @@ Nota que `legend` es una función por si misma (i.e. NO un argumento de `plot`) 
 ### Boxplot
 
 Ejemplo:
-````{r}
+```{r}
 boxplot(reads$nreads ~ reads$Library,
         border = c("red", "blue", "darkgreen"))
 ```
