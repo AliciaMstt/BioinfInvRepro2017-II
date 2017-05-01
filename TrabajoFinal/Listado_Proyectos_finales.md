@@ -43,7 +43,7 @@ Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf
 Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md) ,
 [avance 2] (https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance2.md)
 
-Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
+Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance2.md)
 
 Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2](https://github.com/Lieiad/ProyectoFinalBioinf2017-II/blob/master/avance2.md)
 
