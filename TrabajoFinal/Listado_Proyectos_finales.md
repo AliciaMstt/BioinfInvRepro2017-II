@@ -28,7 +28,7 @@ Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Fin
 
 Alejandro Rodríguez Agular: [avance 1](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE1.md), [avance 2](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE2.md)
 
-Erandi Ramírez Aguirre: [avance 1](https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_1_Erandi_Ramirez_Aguirre.md)
+Erandi Ramírez Aguirre: [avance 1](https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_1_Erandi_Ramirez_Aguirre.md)  [avance 2]https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_2_Erandi_Ramirez_Aguirre.md
 
 Marisol De la Mora Curiel: [avance 1](https://github.com/MarisollDC/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
  
