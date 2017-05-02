@@ -1,4 +1,4 @@
-# Listado de proyectos finales y sus avances
+va# Listado de proyectos finales y sus avances
 
 ## Instrucciones
 
@@ -38,7 +38,7 @@ Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFin
 
 Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avances%201.md) [Avance 2](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%202.md)
 
-Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md)
+Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md) [Avance 2](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/Brenda%20Mu%C3%B1oz%20Vazquez:%20avance2.md)
 
 Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md) ,
 [avance 2] (https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance2.md)
