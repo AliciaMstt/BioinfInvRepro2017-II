@@ -40,8 +40,7 @@ Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-Bio
 
 Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md)
 
-Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md) ,
-[avance 2] (https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance2.md)
+Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md), [avance 2](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance2.md)
 
 Myriam Campos Aguilar [avance 1](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2](https://github.com/Myrim/ProyectoFinalBioinf2017-II/blob/master/Avance2.md)
 
