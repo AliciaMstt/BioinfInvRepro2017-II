@@ -34,7 +34,7 @@ Estas son las principales funciones para graficar utilizando la base de R. Puede
 * `qqnorm`, `qqline`, `qqplot`: distribution comparison plots
 
 
-### Gráficas x,y:**
+### Gráficas x,y:
 
 Dando x, y:
 ```{r}
