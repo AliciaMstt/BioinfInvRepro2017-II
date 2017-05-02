@@ -16,7 +16,7 @@ Ejemplo:
 ## Listado:
 
 
-Verónica LIzbeth González VAldez: [avance 1](https://github.com/VeronicaGlez/Proyecto_Final_Bioinf2017-II/blob/master/AVANCES1.md)
+Verónica Lizbeth González Valdez: [avance 1](https://github.com/VeronicaGlez/Proyecto_Final_Bioinf2017-II/blob/master/AVANCES1.md), [avance 2] (https://github.com/VeronicaGlez/Proyecto_Final_Bioinf2017-II/blob/master/AVANCES2.md)
 
 Tania López Palafox: [avance 1](https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2] (https://github.com/tnpalafox/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md) 
 
