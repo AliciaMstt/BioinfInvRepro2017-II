@@ -1,0 +1,22 @@
+---
+title: "Phylotools"
+output: html_document
+---
+
+Phylotools es un paquete de R desarrollado por [Lian Revell](http://faculty.umb.edu/liam.revell/) 
+
+
+http://blog.phytools.org/2017/01/plotting-terminal-edges-of-tree.html
+
+```{r}
+library(phylotools)
+
+```
+
+
+
+```{r, echo=FALSE}
+
+```
+
+
