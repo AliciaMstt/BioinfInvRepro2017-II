@@ -113,6 +113,14 @@ Puedes apoyarte con loas integrantes de tu equipo del ejercicio pasado pero los 
 
 ## Resultados ejercicio software interesante por equipos
 
+Utilizar el siguiente formato para ponder sus resultados:
+
+**Equipo tal**
+Integrantes: Perengana, Fulana y Sutano
+* Paquete 1 (con link). Explicación para qué lo ocuparían y qué input requiere. 
+* Paquete 2. Idem
+* Paquete 3. Idem
+
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
