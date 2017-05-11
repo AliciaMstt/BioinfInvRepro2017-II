@@ -121,6 +121,11 @@ Integrantes: Perengana, Fulana y Sutano
 * Paquete 2. Idem
 * Paquete 3. Idem
 
+**Equipo Campechano**
+Integrantes: Nelly, Tania, Sebastian y Madisson
+* GENESIS [link](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html) Programa para estimar y contabilizar estructura poblacional, pedigree, coeficientes de parentezco, endogamia --> Es util para hacer PCA y detectar estructura poblacional *Input:* PLINK .bed, .bim, y .fam
+* genfilter [link](https://www.bioconductor.org/packages/release/bioc/html/genefilter.html) Programa con métodos de filtrado genes obtenidos de NGS --> Es util para detectar si hay genes cerca de algún gen de interés detectado (para hacer perfiles de expresión,descartar genes ligados), o hacer ANOVA. *Input:* matriz de microarreglos o datos de RNAseq.
+* funciSNP [link](https://www.bioconductor.org/packages/release/bioc/html/FunciSNP.html) Programa que integra información de estudios de asociación genómica (GWAS) para identificar SNP candidatos funcionales en regiones codificantes y no codificantes --> Es util para relacionar SNPś candidatos con caractres fisiológicos y funcionales *Input:* .bed
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
