@@ -1,0 +1,52 @@
+---
+title: "Ejemplos de uso de Phytools"
+output: html_document
+---
+
+Lo primero es tener cargado el paquete de phytools
+
+
+```{r}
+library(phytools)
+```
+
+
+## Ejemplo 1: Poner barras de error a una filogenia
+
+Tomado de [esta entrada del blog de phylotools](http://blog.phytools.org/2017/03/error-bars-on-divergence-times-on.html)
+
+
+Empecemos por simular un árbol:
+```{r}
+library(phylotools)
+tree<-pbtree(n=26,tip.label=LETTERS[26:1],scale=100)
+h<-sapply(1:tree$Nnode+Ntip(tree),nodeheight,tree=tree)
+CI<-cbind(h-runif(n=length(h),min=10,max=20),h+runif(n=length(h),
+    min=5,max=10))
+CI[CI>max(nodeHeights(tree))]<-max(nodeHeights(tree))
+CI<-max(nodeHeights(tree))-CI
+rownames(CI)<-1:tree$Nnode+Ntip(tree)
+colnames(CI)<-paste(c("lower","upper"),"(MYBP)")
+
+```
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+
+
+http://blog.phytools.org/2017/01/plotting-terminal-edges-of-tree.html
+
+```{r, echo=FALSE}
+
+```
+
+
