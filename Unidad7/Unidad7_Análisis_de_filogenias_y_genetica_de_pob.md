@@ -121,6 +121,13 @@ Integrantes: Perengana, Fulana y Sutano
 * Paquete 2. Idem
 * Paquete 3. Idem
 
+**Equipo "en la lejanía"**
+Nidia Mendoza Díaz
+* *apex* en [CRAN](https://cran.r-project.org/web/packages/apex/index.html). Soporta como *input* formatos como FASTA o Clustal, que después transforma en diferentes objetos. Este paquete sería utilizado para visualizar la información filogenética proveniente de diferentes genes, con el fin de encontrar incongruencia entre ellos y explorar cómo manejar estos datos antes de realizar un análisis filogenético concatenado.
+* *diversitree* en [CRAN](https://cran.r-project.org/web/packages/diversitree/index.html). Como *input* maneja archivos en formato .tree .nex .csv, es decir, archivos que contengan información para crear árboles filogenéticos o sean ya estos árboles. Sirve para estimar patrones de diversificación y evolución de caracteres sobre una filogenia que puede o no estar resuelta, ya que incorpora diferentes modelos y módulos para lidiar con ello (en una filogenia incompleta, se puede utilizar MuSSE y QuaSSE). Como también evalúa modelos de extinción y especiación, puede ser útil para reconstrucciones biogeográficas. Utilizaría este paquete para explorar hipótesis de diversificación dentro del género de Boraginaceae que trabajo que, además, presenta una distribución disyunta con grupos hermanos distribuidos principalmente en África.
+* *ggtree* en [Bioconductor](https://www.bioconductor.org/packages/release/bioc/html/ggtree.html). Quizá éste suene a copia, pero considerando que hay muchos modelos de análisis de datos, los paquetes -que principalmente encontré en CRAN- redundan sobre las funciones de los paquetes anteriores. Con fines filogenéticos, es necesario tener una herramienta de manipulación de los árboles generados, por lo que concluyo escogiendo este paquete. Formatos soportados: newik, nexus, NHX, Jplace, Phylip, y los *output* de BEAST, EPA, HYPHY, PAML, PHYLDOG, pplacer, r8s, RAxML y RevBayes.
+Los anteriores paquetes requieren tener activado el paquete *ape*.
+
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
