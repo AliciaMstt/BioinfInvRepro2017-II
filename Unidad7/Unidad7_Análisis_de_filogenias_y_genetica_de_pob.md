@@ -121,6 +121,14 @@ Integrantes: Perengana, Fulana y Sutano
 * Paquete 2. Idem
 * Paquete 3. Idem
 
+**RAD_team**
+Integrantes: Carmina Martinez GOnzalez, Israel Moreno Contreras.
+* Paquete 1: [**GENESIS**](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html). Análisis de estructura genética y relaciones de parentesco entre los individuos (ver si los individuos de mi muestra son primos, hermanos o qué relación tienen entre ellos). Para este programa se requiere que los archivos estén en formato PLINK o GDS.
+
+* Paquete 2: [**poppr**](https://cran.r-project.org/web/packages/poppr/index.html). Medir diversidad genotípica y distancias genéticas de entre las poblaciones. Para este programa se requiere usar formato de GenAlEx en csv. 
+
+* Paquete 3: [**genetics**](https://cran.r-project.org/web/packages/genetics/index.html). Saber si mis muestras se encuentran o no en equilibrio Hardy-Weinberg. Para este programa se requiere que los archivos estén en formato Pop, pedigree o market. 
+
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
