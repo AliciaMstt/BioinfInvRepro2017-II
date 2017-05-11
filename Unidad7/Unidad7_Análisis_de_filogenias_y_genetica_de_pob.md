@@ -137,6 +137,13 @@ Nidia Mendoza Díaz
 * *ggtree* en [Bioconductor](https://www.bioconductor.org/packages/release/bioc/html/ggtree.html). Quizá éste suene a copia, pero considerando que hay muchos modelos de análisis de datos, los paquetes -que principalmente encontré en CRAN- redundan sobre las funciones de los paquetes anteriores. Con fines filogenéticos, es necesario tener una herramienta de manipulación de los árboles generados, por lo que concluyo escogiendo este paquete. Formatos soportados: newik, nexus, NHX, Jplace, Phylip, y los *output* de BEAST, EPA, HYPHY, PAML, PHYLDOG, pplacer, r8s, RAxML y RevBayes.
 Los anteriores paquetes requieren tener activado el paquete *ape*.
 
+**GBS Alejandro Rodríguez** 
+
+[GENESIS](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html) Para estimar estructura poblacional. Input: plink
+
+[ggtree](https://www.bioconductor.org/packages/release/bioc/html/ggtree.html) PAra modificar arboles filogeneticos, hacer anotaciones. Input: 
+
+[semisup](https://www.bioconductor.org/packages/release/bioc/html/semisup.html) Para detectar interacciones significativas SNP-SNP con algun efecto principal, esto puede resultar interesante. 
 
 **Phylo/Metabar**
 Integrantes Nancy Bárcenas, Gerardo Torres, Víctor Taracena  y D. Jossue Jiménez 
