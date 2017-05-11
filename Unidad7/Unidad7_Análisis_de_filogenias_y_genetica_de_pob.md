@@ -149,14 +149,25 @@ Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernánd
 
 [**Pegas**](https://cran.r-project.org/web/packages/pegas/pegas.pdf). Input: objeto "loci", "haplotype", "haploNet". Evaluar equilibrio Hardy-Weinberg (hw-test), extraer frecuencias absolutas de haplotipos (haploFreq), hacer comparaciones entre haplotipos (diffHaplo), generar redes de haplotipos (haploNet).
 
-**Equipo genoma de referencia/análisis filogenéticos**
+## Equipo genoma de referencia/análisis filogenéticos
+### Paqueterías de Bioconductor
+
+### 
 **Integrantes**: Oscar Villafranco, Estefanía Cano, José Rubén Montes y Benjamín Cristian Corona Comunidad 
+
+
+
+### 
 
 **Paquete 1**: [ggtree](http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12628/epdf) Se utilizaría para realizar anotaciones, modificaciones o editar nodos o ramas y/o para extraer información del árbol filogenético. **Input**: Formatos newick, nexus, NHX, phylip y jplace  **Output**: Árbol filogenético 
 
+
+### 
 **Paquete 2:** [Biostrings](https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html) Se utilizaría para construir el alinemiento múltiple de los exones que hayan ensamblado a nuestra referencia. 
 **Input**: fastq y fasta
 
+
+###
 **Paquete 3:** [Chromplot](https://www.bioconductor.org/packages/release/bioc/html/chromPlot.html). Se utilizará para ubicar y graficar regiones, genes de expresión y sintenia entre especies y en cromosomas. **Input**: Formato bed 
 
 
@@ -175,5 +186,80 @@ SNPRelate, admixture
 
 Vamos a ver unos ejemplos de uso tomado de su blog en [estas notas](Prac_Uni7/bin/Ejemplo_phytools.Rmd).
 
+# Equipo delimitación de especies
+**Integrantes** Ofelia Jimenéz, Alejandro Manzanero, Marisol De la Mora y Myriam Campos  
+
+## Bedassle
+Cuantifica y distingue la contribución relativa de distancias geográficas y ecologicas, utilizando un algoritmo de cadenas de markov.   
+
+`calculate.pairwise.Fst` Esta funcion se utiliza para calculas Fst pareadas entre un par de poblaciones o individuos. 
+
+### Input
+Para poder correr este comando, se necesitan dos matrices: 
+
+1) Matriz de alelos: `nrow = 2` cada renglon corresponde a cada una de las poblaciones o individuos y `ncol=` las columnas corresponden al numero de *loci*
+
+2) Matríz del tamaño de la muestra: `nrow = 2` cada renglon corresponde a cada una de las poblaciones o individuos y `ncol=` las columnas corresponden al numero de *loci*. Cada celda corresponde al numero de cromosomas que fueron genotipificados en cada *locus* en cada población. 
+
+### Output
+
+Calculo de la *Fst* entre las poblaciones, impreso en la pantalla de **R**. 
+
+### Link 
+- [Bedassle v.1.5](https://www.rdocumentation.org/packages/BEDASSLE/versions/1.5) 
+
+- [calculate.pairwise.Fst](https://www.rdocumentation.org/packages/BEDASSLE/versions/1.5/topics/calculate.pairwise.Fst)
+
+## Phylodin
+
+Implementa metodos Bayesianos y los acopla con modelos coalescentes para inferir cambios en el tamaño efectivo poblacional. 
+
+Actualmente se emplea en el análisis de virus marcando la trayectoria de los clados marcando en donde hubieron eventos de alternancia y en donde coocurrerion.Sin embargo, uno de los objetivos de este paquete es implementarlo en el entendimiento de la historia evolutiva de otras especies, poder identificar los cambios en el tamaño efectivo poblacional en el tiempo
+
+link: [(https://github.com/mdkarcher/phylodyn)]
+
+## Paquete _adegenet_
+
+[_adegenet_](http://adegenet.r-forge.r-project.org/) es un paquete de **R** que incluye diversas funciones para realizar análisis exploratorios de dato genéticos.
+
+Uno de estos es el **Análisis Discriminante de Componentes Principales (DAPC)**, el cual se refiere a métodos para identificar y describir grupos genéticos (clusters).
+
+Para lo anterior se pueden ocupar dos funciones: `find.clusters` y `dapc`. Se puede consultar un tutorial [aquí.](http://adegenet.r-forge.r-project.org/files/tutorial-dapc.pdf)
+
+### Función `find.clusters()`
+El DAPC necesita que se definan grupos de manera previa, para lo cual utilizamos `find.clusters()`.
+
+Esta función convierte los datos genéticos crudos en Componentes Principales mediante un PCA, y nos permite probar diferentes grupos (_k_) con una evaluaciónbayesiana de los mismos (Criterio de Información Bayesiano, BIC).
+
+Acepta objetos tipo `data.frame`, `genind` y `genlight`.
+
+El resultado de aplicar esta función es una lista, de la cual "nos quedamos" solamente con el elemento "grp", que son los clusters genéticos inferidos.
+
+### Función `dapc()`
+
+Con esta función se describen los grupos genéticos previamente definidos, a partir de variables sintéticas (llamadas _funciones discriminantes_).
+
+Al igual que `find.clusters`, acepta objetos de tipo tipo `data.frame`, `genind`y `genlight`.
+
+Como resultado, se obtiene una gráfica de baras de los eigenvalores del análisis discriminante, donde el usuario define el número de funciones discriminantes (i.e. variables) que desea retener. El objeto resultante contiene toda la información del análisis, pero la manera de visualizar el resultado es mediante la función `scatterplot()`.
+
+#Paquete GENESIS
+
+Lo usariamos para estimar la estructura poblacional. Este provee un modelo para la estimacion de los coeficientes de ancestria, probabilida de compartir IBD y coeficientes de endogamia usando datos genome-wide SNP. 
+
+###link
+[GENESIS.pdf](https://www.bioconductor.org/packages/release/bioc/manuals/GENESIS/man/GENESIS.pdf)
+
+Presenta dos funciones: 
+
+1)`PC-AiR`para la detencion de estructura poblacional en una muestra que puede contener relaciones parentesco cripticas.
+
+2)`PC-Relate`   usa los componentes princiaples representativos de la ancestria para ajustar la estructura de la poblacion y precisar las estimaciones de relaciones geneticas recientes como coeficientes de parentesco, IBD y coeficientes de endogamia.
+
+###Input 
+Archivos PLINK o GDS.
+
+###Output 
+Un data.frame con varias columnas mostrando el resultado. 
 
 
