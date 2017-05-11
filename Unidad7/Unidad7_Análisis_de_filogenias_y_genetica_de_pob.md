@@ -149,25 +149,14 @@ Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernánd
 
 [**Pegas**](https://cran.r-project.org/web/packages/pegas/pegas.pdf). Input: objeto "loci", "haplotype", "haploNet". Evaluar equilibrio Hardy-Weinberg (hw-test), extraer frecuencias absolutas de haplotipos (haploFreq), hacer comparaciones entre haplotipos (diffHaplo), generar redes de haplotipos (haploNet).
 
-## Equipo genoma de referencia/análisis filogenéticos
-### Paqueterías de Bioconductor
-
-### 
+**Equipo genoma de referencia/análisis filogenéticos**
 **Integrantes**: Oscar Villafranco, Estefanía Cano, José Rubén Montes y Benjamín Cristian Corona Comunidad 
-
-
-
-### 
 
 **Paquete 1**: [ggtree](http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12628/epdf) Se utilizaría para realizar anotaciones, modificaciones o editar nodos o ramas y/o para extraer información del árbol filogenético. **Input**: Formatos newick, nexus, NHX, phylip y jplace  **Output**: Árbol filogenético 
 
-
-### 
 **Paquete 2:** [Biostrings](https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html) Se utilizaría para construir el alinemiento múltiple de los exones que hayan ensamblado a nuestra referencia. 
 **Input**: fastq y fasta
 
-
-###
 **Paquete 3:** [Chromplot](https://www.bioconductor.org/packages/release/bioc/html/chromPlot.html). Se utilizará para ubicar y graficar regiones, genes de expresión y sintenia entre especies y en cromosomas. **Input**: Formato bed 
 
 
