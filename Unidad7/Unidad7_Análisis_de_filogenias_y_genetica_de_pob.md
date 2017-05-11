@@ -92,7 +92,7 @@ http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12577/full)
 
 Los análisis de genómica de poblaciones van mucho más allá de R, y hay muchos programas para hacer análisis muy específicos. 
 
-[Yann Burgeouis](Yann Bourgeois) sacó el fua y creo esta Lista de Métodos de genómica de poblaciones: [methodspopgen.com](http://methodspopgen.com/). Donde recopila métodos para inferir estructura, detectar selección e inferir la historia de la población. 
+[Yann Burgeouis](http://www.yannbourgeois.com/) sacó el fua y creo esta Lista de Métodos de genómica de poblaciones: [methodspopgen.com](http://methodspopgen.com/). Donde recopila métodos para inferir estructura, detectar selección e inferir la historia de la población. 
 
 # 7.4. ¿Qué software de todo eso me sirve? 
 
@@ -110,6 +110,9 @@ Los análisis de genómica de poblaciones van mucho más allá de R, y hay mucho
 4. Sube el código (.R, .sh, etc) y si aplica el notebook (.pdf) a tu cuenta de github. Será necesario enviar el link via ClassMarker.
 
 Puedes apoyarte con loas integrantes de tu equipo del ejercicio pasado pero los resultados se entregan de forma individual y deben ser diferentes datos de input. 
+
+## Resultados ejercicio software interesante por equipos
+
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
