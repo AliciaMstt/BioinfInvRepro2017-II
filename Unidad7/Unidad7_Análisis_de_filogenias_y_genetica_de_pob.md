@@ -121,6 +121,7 @@ Integrantes: Perengana, Fulana y Sutano
 * Paquete 2. Idem
 * Paquete 3. Idem
 
+
 **Phylo/Metabar**
 Integrantes Nancy Bárcenas, Gerardo Torres, Víctor Taracena  y D. Jossue Jiménez 
 * [phangorn](https://cran.r-project.org/web/packages/phangorn/index.html). La función phyDat sería útil para tranformar mis datos ("fasta") en uno admitido por phangorn ("phyDat").Se pueden realizar análisis filogenéticos de verosimilitud máxima y máxima pársimonia. Lo usaría tambien  para hacer comparación de diferentes modelos de sustitucion de aminoácidos. Tiene varias opciones para editar los árboles generados. Te permite exportar en formato "nexus". La usaríamos para generar el archivo que después será ingresado a otros análisis (filogenéticos, genética de poblaciones...). Requiere un formato del input "phyDat", si no se tiene, phangorn cuenta funciones para tranformar matrices y dataframe al formato "phyDat"
@@ -128,15 +129,16 @@ Integrantes Nancy Bárcenas, Gerardo Torres, Víctor Taracena  y D. Jossue Jimé
 * [phyloseq](https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html). Sirve para cargar tablas de OTUs sin importar en qué software procesé
 Los datos crudos para obtener la tabla (DADA2, UPARSE, QIIME, mothur, BIOM, PyroTagger, RDP, etc.)
 
-Me permite asociar datos, como parámetros ecológicos y ambientales de la localidad, la lista de taxa de mis OTUs, entre otros. 
+**Equipo Filogenia y genética de poblaciones**
+Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernández y Martín Cabrera
 
-Utiliza los siguientes input files: 
+[**Decipher**](http://bioconductor.org/packages/release/bioc/html/DECIPHER.html). Es un paquete de Bioconductor, acepta *input* en formato FASTA y te permite realizar alineamiento y consenso de secuencias.
 
-  |input file| phyloseq function|
-  |------------|----------------|
-  |.biom|import.biom()|
-  |.tre|read.tree()|
-  |map.txt|import_qiime_sample_data()|
+[**ggtree**](http://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf). También pertenece a Bioconductor. Permite realizar y editar árboles filogenéticos mediante distintos métodos y el *input* puede set .txt
+
+[**Adegenet**](http://adegenet.r-forge.r-project.org/). Input: objeto "genind". Análisis básicos de genética de poblaciones: frecuencias alélicas (makefreq), heterocigosis esperada, observada (summary), , distancias genéticas de Nei (dist.genpop), análisis de discriminantes principales.
+
+[**Pegas**](https://cran.r-project.org/web/packages/pegas/pegas.pdf). Input: objeto "loci", "haplotype", "haploNet". Evaluar equilibrio Hardy-Weinberg (hw-test), extraer frecuencias absolutas de haplotipos (haploFreq), hacer comparaciones entre haplotipos (diffHaplo), generar redes de haplotipos (haploNet).
 
 
 **Equipo Campechano**
@@ -153,7 +155,6 @@ Integrantes: Carmina Martinez GOnzalez, Israel Moreno Contreras.
 * Paquete 2: [**poppr**](https://cran.r-project.org/web/packages/poppr/index.html). Medir diversidad genotípica y distancias genéticas de entre las poblaciones. Para este programa se requiere usar formato de GenAlEx en csv. 
 
 * Paquete 3: [**genetics**](https://cran.r-project.org/web/packages/genetics/index.html). Saber si mis muestras se encuentran o no en equilibrio Hardy-Weinberg. Para este programa se requiere que los archivos estén en formato Pop, pedigree o market. 
-
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
