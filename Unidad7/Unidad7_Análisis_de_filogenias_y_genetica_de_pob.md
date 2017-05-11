@@ -123,7 +123,7 @@ Integrantes: Perengana, Fulana y Sutano
 
 **Phylo/Metabar**
 Integrantes Nancy Bárcenas, Gerardo Torres, Víctor Taracena  y D. Jossue Jiménez 
-* [phangorn](https://cran.r-project.org/web/packages/phangorn/index.html). La función phyDat sería útil para tranformar mis datos ("fasta") en uno admitido por phangorn ("phyDat").Se pueden realizar análisis filogenéticos de verosimilitud máxima y máxima pársimonia. Lo usaría tambien  para hacer comparación de diferentes modelos de sustitucion de aminoácidos. Tiene varias opciones para editar los árboles generados. Te permite exportar en formato "nexus".
+* [phangorn](https://cran.r-project.org/web/packages/phangorn/index.html). La función phyDat sería útil para tranformar mis datos ("fasta") en uno admitido por phangorn ("phyDat").Se pueden realizar análisis filogenéticos de verosimilitud máxima y máxima pársimonia. Lo usaría tambien  para hacer comparación de diferentes modelos de sustitucion de aminoácidos. Tiene varias opciones para editar los árboles generados. Te permite exportar en formato "nexus". La usaríamos para generar el archivo que después será ingresado a otros análisis (filogenéticos, genética de poblaciones...). Requiere un formato del input "phyDat", si no se tiene, phangorn cuenta funciones para tranformar matrices y dataframe al formato "phyDat"
 * [muscle](https://bioconductor.org/packages/release/bioc/html/muscle.html). Efectúa alineamientos múltiples de secuencias de DNA, RNA y aminoácidos mediante un algoritmo iterativo, en el cuál primero se calculan alineamientos pareados a los cuáles se asignan *scores*, con los cuáles se construye una matriz para la inferencia de árboles en los que se evalúa el mejor alineamiento. El input y el output son secuencias .fasta
 * [phyloseq](https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html). Sirve para cargar tablas de OTUs sin importar en qué software procesé
 Los datos crudos para obtener la tabla (DADA2, UPARSE, QIIME, mothur, BIOM, PyroTagger, RDP, etc.)
@@ -138,9 +138,6 @@ Utiliza los siguientes input files:
   |.tre|read.tree()|
   |map.txt|import_qiime_sample_data()|
 
-La usaríamos para generar el archivo que después será ingresado a otros análisis (filogenéticos, genética de poblaciones...)
-
-Requiere un formato del input "phyDat", si no se tiene, phangorn cuenta funciones para tranformar matrices y dataframe al formato "phyDat"
 
 **Equipo Campechano**
 Integrantes: Nelly, Tania, Sebastian y Madisson
