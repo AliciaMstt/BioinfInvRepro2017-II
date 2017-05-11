@@ -121,41 +121,16 @@ Integrantes: Perengana, Fulana y Sutano
 * Paquete 2. Idem
 * Paquete 3. Idem
 
-**Phylo/Metabar**
-Integrantes Nancy Bárcenas, Gerardo Torres, Víctor Taracena  y D. Jossue Jiménez 
-* [phangorn](https://cran.r-project.org/web/packages/phangorn/index.html). La función phyDat sería útil para tranformar mis datos ("fasta") en uno admitido por phangorn ("phyDat").Se pueden realizar análisis filogenéticos de verosimilitud máxima y máxima pársimonia. Lo usaría tambien  para hacer comparación de diferentes modelos de sustitucion de aminoácidos. Tiene varias opciones para editar los árboles generados. Te permite exportar en formato "nexus".
-* [muscle](https://bioconductor.org/packages/release/bioc/html/muscle.html). Efectúa alineamientos múltiples de secuencias de DNA, RNA y aminoácidos mediante un algoritmo iterativo, en el cuál primero se calculan alineamientos pareados a los cuáles se asignan *scores*, con los cuáles se construye una matriz para la inferencia de árboles en los que se evalúa el mejor alineamiento. El input y el output son secuencias .fasta
-* [phyloseq](https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html). Sirve para cargar tablas de OTUs sin importar en qué software procesé
-Los datos crudos para obtener la tabla (DADA2, UPARSE, QIIME, mothur, BIOM, PyroTagger, RDP, etc.)
+**Equipo Filogenia y genética de poblaciones**
+Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernández y Martín Cabrera
 
-Me permite asociar datos, como parámetros ecológicos y ambientales de la localidad, la lista de taxa de mis OTUs, entre otros. 
+[**Decipher**](http://bioconductor.org/packages/release/bioc/html/DECIPHER.html). Es un paquete de Bioconductor, acepta *input* en formato FASTA y te permite realizar alineamiento y consenso de secuencias.
 
-Utiliza los siguientes input files: 
+[**ggtree**](http://bioconductor.org/packages/release/bioc/manuals/ggtree/man/ggtree.pdf). También pertenece a Bioconductor. Permite realizar y editar árboles filogenéticos mediante distintos métodos y el *input* puede set .txt
 
-  |input file| phyloseq function|
-  |------------|----------------|
-  |.biom|import.biom()|
-  |.tre|read.tree()|
-  |map.txt|import_qiime_sample_data()|
+[**Adegenet**](http://adegenet.r-forge.r-project.org/). Input: objeto "genind". Análisis básicos de genética de poblaciones: frecuencias alélicas (makefreq), heterocigosis esperada, observada (summary), , distancias genéticas de Nei (dist.genpop), análisis de discriminantes principales.
 
-La usaríamos para generar el archivo que después será ingresado a otros análisis (filogenéticos, genética de poblaciones...)
-
-Requiere un formato del input "phyDat", si no se tiene, phangorn cuenta funciones para tranformar matrices y dataframe al formato "phyDat"
-
-**Equipo Campechano**
-Integrantes: Nelly, Tania, Sebastian y Madisson
-* GENESIS [link](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html) Programa para estimar y contabilizar estructura poblacional, pedigree, coeficientes de parentezco, endogamia --> Es util para hacer PCA y detectar estructura poblacional *Input:* PLINK .bed, .bim, y .fam
-* genfilter [link](https://www.bioconductor.org/packages/release/bioc/html/genefilter.html) Programa con métodos de filtrado genes obtenidos de NGS --> Es util para detectar si hay genes cerca de algún gen de interés detectado (para hacer perfiles de expresión,descartar genes ligados), o hacer ANOVA. *Input:* matriz de microarreglos o datos de RNAseq.
-* funciSNP [link](https://www.bioconductor.org/packages/release/bioc/html/FunciSNP.html) Programa que integra información de estudios de asociación genómica (GWAS) para identificar SNP candidatos funcionales en regiones codificantes y no codificantes --> Es util para relacionar SNPś candidatos con caractres fisiológicos y funcionales *Input:* .bed
-
-
-**RAD_team**
-Integrantes: Carmina Martinez GOnzalez, Israel Moreno Contreras.
-* Paquete 1: [**GENESIS**](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html). Análisis de estructura genética y relaciones de parentesco entre los individuos (ver si los individuos de mi muestra son primos, hermanos o qué relación tienen entre ellos). Para este programa se requiere que los archivos estén en formato PLINK o GDS.
-
-* Paquete 2: [**poppr**](https://cran.r-project.org/web/packages/poppr/index.html). Medir diversidad genotípica y distancias genéticas de entre las poblaciones. Para este programa se requiere usar formato de GenAlEx en csv. 
-
-* Paquete 3: [**genetics**](https://cran.r-project.org/web/packages/genetics/index.html). Saber si mis muestras se encuentran o no en equilibrio Hardy-Weinberg. Para este programa se requiere que los archivos estén en formato Pop, pedigree o market. 
+[**Pegas**](https://cran.r-project.org/web/packages/pegas/pegas.pdf). Input: objeto "loci", "haplotype", "haploNet". Evaluar equilibrio Hardy-Weinberg (hw-test), extraer frecuencias absolutas de haplotipos (haploFreq), hacer comparaciones entre haplotipos (diffHaplo), generar redes de haplotipos (haploNet).
 
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
