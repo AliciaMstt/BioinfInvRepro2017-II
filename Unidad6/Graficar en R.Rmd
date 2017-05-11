@@ -34,7 +34,7 @@ Estas son las principales funciones para graficar utilizando la base de R. Puede
 * `qqnorm`, `qqline`, `qqplot`: distribution comparison plots
 
 
-### Gráficas x,y:**
+### Gráficas x,y:
 
 Dando x, y:
 ```{r}
@@ -88,7 +88,7 @@ barplot(DNAcon$concentracionADN, names.arg=DNAcon$muestra)
 Ahora cargemos un archivo real de datos:
 
 ```{r}
-reads<-read.delim("Prac_Uni6/data/reads.txt")
+reads<-read.delim("Prac_Uni6/ejemplosgenerales/data/reads.txt")
 ```
 
 Hagamos una gráfica de barras y colorear acorde a info contenida en otra columna:
@@ -227,7 +227,7 @@ Podemos leer árboles en formato newick o nexus a R con la función `read.tree` 
 
 ```{r}
 # cargar archivo
-maiz.tree<-read.nexus("Prac_Uni6/data/tree")
+maiz.tree<-read.nexus("Prac_Uni6/maices/data/tree")
 
 # checar contenido
 maiz.tree
@@ -243,7 +243,7 @@ Vamos a poner colores de acuerdo a la Categoría de Altitud en vez de nombres de
 ### Graficar por Categorías Altitud
 
 # leer info extra de las muestras
-fullmat<-read.delim("Prac_Uni6/meta/maizteocintle_SNP50k_meta_extended.txt")
+fullmat<-read.delim("Prac_Uni6/maices/meta/maizteocintle_SNP50k_meta_extended.txt")
 
 # ¿Cuántos colores necesito?
 numcolsneeded<-length(levels(fullmat$Categ.Altitud))
@@ -317,7 +317,7 @@ Por ejemplo vamos leer a R y graficar el  shaphile de las regiones biogeográfic
 
 ```{r}
 # leer shapefile
-biogeo<-readShapePoly("Prac_Uni6/data/rbiog4mgw/rbiog4mgw.shp")
+biogeo<-readShapePoly("Prac_Uni6/maices/data/rbiog4mgw/rbiog4mgw.shp")
 
 # plot
 plot(biogeo)
@@ -399,7 +399,7 @@ PlotOnStaticMap(mygooglemap)
 * "Cerrar el device" con `dev.off`
 
 ```{r}
-png("Prac_Uni6/out/arbol.png")
+png("Prac_Uni6/maices/out/arbol.png")
 plot(maiz.tree, type="unrooted", show.tip=FALSE)
 tiplabels(pch=20, col="green3", tip=c(1:161), cex=.5)
 tiplabels(pch=15, col="black", tip=c(162:165), cex=.5)
@@ -541,7 +541,7 @@ En este tipo de gráficas la altura de las barras puede significar dos cosas:
 Ejemplo:
 ```{r}
 # Cargar archivo
-reads<-read.delim(".Prac_Uni6/data/reads.txt")
+reads<-read.delim(".Prac_Uni6/ejemplosgenerales/data/reads.txt")
 
 # plot
 p <- ggplot(data=reads, aes(x=sample, y=nreads, fill=Library)) + 
