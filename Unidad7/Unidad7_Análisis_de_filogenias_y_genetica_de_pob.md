@@ -179,6 +179,18 @@ Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernánd
 **Paquete 3:** [Chromplot](https://www.bioconductor.org/packages/release/bioc/html/chromPlot.html). Se utilizará para ubicar y graficar regiones, genes de expresión y sintenia entre especies y en cromosomas. **Input**: Formato bed 
 
 
+## Equipo: Genomica de poblaciones
+
+**Equipo**: Gissella Pineda
+
+[**FastSTRUCTURE**](http://rajanil.github.io/fastStructure/) análisis con máxima verosimilitud que permite realizar agrupamiento genético de individuos; es mucho más rapido que *Structure* lo que podría ser conveniente para grandes cantidades de datos como SNPs. **Input**: formato str ó  bed.
+
+[**SPRelate**](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) permite realizar análisis de componentes principales y análisis de parentezco con datos de SNPs; en caso de no tener estructura popblacional, sería util evaluar las relaciones de parentezco dentro los individuos de mi población. **Input**: formato VCF
+
+[**GENELAND**](https://cran.r-project.org/web/packages/Geneland/)  Detecta estructura poblacional basada en la frecuencia de los alelos asociada a Hardy-Weinberg y desequilibrio de ligamiento. Los modelos los realiza en base a información genética y geográfica para inferir la organización espacial de los individuos; aunque los datos geograficos son opcionales. **Input**:no requiere un formato especializado, puede ser un archivo csv o txt, sólo se debe de tener en cuenta el orden de las columnas; tanto para los datos genéticos como para los geográficos.
+
+
+
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
 SNPStats, Hierfstat y plink
