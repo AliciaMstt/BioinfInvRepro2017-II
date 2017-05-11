@@ -121,6 +121,23 @@ Integrantes: Perengana, Fulana y Sutano
 * Paquete 2. Idem
 * Paquete 3. Idem
 
+
+**Equipo "en la lejanía"**
+Nidia Mendoza Díaz
+* *apex* en [CRAN](https://cran.r-project.org/web/packages/apex/index.html). Soporta como *input* formatos como FASTA o Clustal, que después transforma en diferentes objetos. Este paquete sería utilizado para visualizar la información filogenética proveniente de diferentes genes, con el fin de encontrar incongruencia entre ellos y explorar cómo manejar estos datos antes de realizar un análisis filogenético concatenado.
+* *diversitree* en [CRAN](https://cran.r-project.org/web/packages/diversitree/index.html). Como *input* maneja archivos en formato .tree .nex .csv, es decir, archivos que contengan información para crear árboles filogenéticos o sean ya estos árboles. Sirve para estimar patrones de diversificación y evolución de caracteres sobre una filogenia que puede o no estar resuelta, ya que incorpora diferentes modelos y módulos para lidiar con ello (en una filogenia incompleta, se puede utilizar MuSSE y QuaSSE). Como también evalúa modelos de extinción y especiación, puede ser útil para reconstrucciones biogeográficas. Utilizaría este paquete para explorar hipótesis de diversificación dentro del género de Boraginaceae que trabajo que, además, presenta una distribución disyunta con grupos hermanos distribuidos principalmente en África.
+* *ggtree* en [Bioconductor](https://www.bioconductor.org/packages/release/bioc/html/ggtree.html). Quizá éste suene a copia, pero considerando que hay muchos modelos de análisis de datos, los paquetes -que principalmente encontré en CRAN- redundan sobre las funciones de los paquetes anteriores. Con fines filogenéticos, es necesario tener una herramienta de manipulación de los árboles generados, por lo que concluyo escogiendo este paquete. Formatos soportados: newik, nexus, NHX, Jplace, Phylip, y los *output* de BEAST, EPA, HYPHY, PAML, PHYLDOG, pplacer, r8s, RAxML y RevBayes.
+Los anteriores paquetes requieren tener activado el paquete *ape*.
+
+
+**Phylo/Metabar**
+Integrantes Nancy Bárcenas, Gerardo Torres, Víctor Taracena  y D. Jossue Jiménez 
+* [phangorn](https://cran.r-project.org/web/packages/phangorn/index.html). La función phyDat sería útil para tranformar mis datos ("fasta") en uno admitido por phangorn ("phyDat").Se pueden realizar análisis filogenéticos de verosimilitud máxima y máxima pársimonia. Lo usaría tambien  para hacer comparación de diferentes modelos de sustitucion de aminoácidos. Tiene varias opciones para editar los árboles generados. Te permite exportar en formato "nexus". La usaríamos para generar el archivo que después será ingresado a otros análisis (filogenéticos, genética de poblaciones...). Requiere un formato del input "phyDat", si no se tiene, phangorn cuenta funciones para tranformar matrices y dataframe al formato "phyDat"
+* [muscle](https://bioconductor.org/packages/release/bioc/html/muscle.html). Efectúa alineamientos múltiples de secuencias de DNA, RNA y aminoácidos mediante un algoritmo iterativo, en el cuál primero se calculan alineamientos pareados a los cuáles se asignan *scores*, con los cuáles se construye una matriz para la inferencia de árboles en los que se evalúa el mejor alineamiento. El input y el output son secuencias .fasta
+* [phyloseq](https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html). Sirve para cargar tablas de OTUs sin importar en qué software procesé
+Los datos crudos para obtener la tabla (DADA2, UPARSE, QIIME, mothur, BIOM, PyroTagger, RDP, etc.)
+
+
 **Equipo Filogenia y genética de poblaciones**
 Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernández y Martín Cabrera
 
