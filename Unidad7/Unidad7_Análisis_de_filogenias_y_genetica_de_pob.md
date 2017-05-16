@@ -243,9 +243,9 @@ Archivos PLINK o GDS.
 Output 
 Un data.frame con varias columnas mostrando el resultado. 
 
-## Equipo: Genomica de poblaciones
+**Equipo: Genomica de poblaciones**
 
-**Equipo**: Gissella Pineda
+Gissella Pineda
 
 [**FastSTRUCTURE**](http://rajanil.github.io/fastStructure/) análisis con máxima verosimilitud que permite realizar agrupamiento genético de individuos; es mucho más rapido que *Structure* lo que podría ser conveniente para grandes cantidades de datos como SNPs. **Input**: formato str ó  bed.
 
