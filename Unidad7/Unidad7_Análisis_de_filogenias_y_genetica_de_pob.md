@@ -243,6 +243,22 @@ Archivos PLINK o GDS.
 Output 
 Un data.frame con varias columnas mostrando el resultado. 
 
+## Equipo: Genomica de poblaciones
+
+**Equipo**: Gissella Pineda
+
+[**FastSTRUCTURE**](http://rajanil.github.io/fastStructure/) análisis con máxima verosimilitud que permite realizar agrupamiento genético de individuos; es mucho más rapido que *Structure* lo que podría ser conveniente para grandes cantidades de datos como SNPs. **Input**: formato str ó  bed.
+
+[**SPRelate**](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) permite realizar análisis de componentes principales y análisis de parentezco con datos de SNPs; en caso de no tener estructura popblacional, sería util evaluar las relaciones de parentezco dentro los individuos de mi población. **Input**: formato VCF
+
+[**GENELAND**](https://cran.r-project.org/web/packages/Geneland/)  Detecta estructura poblacional basada en la frecuencia de los alelos asociada a Hardy-Weinberg y desequilibrio de ligamiento. Los modelos los realiza en base a información genética y geográfica para inferir la organización espacial de los individuos; aunque los datos geograficos son opcionales. **Input**:no requiere un formato especializado, puede ser un archivo csv o txt, sólo se debe de tener en cuenta el orden de las columnas; tanto para los datos genéticos como para los geográficos.
+
+**Equipo Campechano**
+Integrantes: Nelly, Tania, Sebastian y Madisson
+* GENESIS [link](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html) Programa para estimar y contabilizar estructura poblacional, pedigree, coeficientes de parentezco, endogamia --> Es util para hacer PCA y detectar estructura poblacional *Input:* PLINK .bed, .bim, y .fam
+* genfilter [link](https://www.bioconductor.org/packages/release/bioc/html/genefilter.html) Programa con métodos de filtrado genes obtenidos de NGS --> Es util para detectar si hay genes cerca de algún gen de interés detectado (para hacer perfiles de expresión,descartar genes ligados), o hacer ANOVA. *Input:* matriz de microarreglos o datos de RNAseq.
+* funciSNP [link](https://www.bioconductor.org/packages/release/bioc/html/FunciSNP.html) Programa que integra información de estudios de asociación genómica (GWAS) para identificar SNP candidatos funcionales en regiones codificantes y no codificantes --> Es util para relacionar SNPś candidatos con caractres fisiológicos y funcionales *Input:* .bed
+
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
