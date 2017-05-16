@@ -250,7 +250,9 @@ SNPStats, Hierfstat y plink
 
 # 7.6 Ejemplo PCA, estructura poblacional
 
-SNPRelate, admixture
+[SNPRelate](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) es un paquete de Bioconductor muy bueno y rápido para hacer PCA y exploraciones básicas de datos genómicos. Puedes ver sus tutoriales [aquí](https://bioconductor.org/packages/release/bioc/vignettes/SNPRelate/inst/doc/SNPRelateTutorial.html), y seguiremos [estas notas en clase](Prac_Uni7/bin/Ejemplo_phytools.Rmd).
+
+admixture (pending...)
 
 
 # 7.7 Ejemplo filogenias con Phytools
