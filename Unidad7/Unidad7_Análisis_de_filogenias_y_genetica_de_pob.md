@@ -246,13 +246,62 @@ Un data.frame con varias columnas mostrando el resultado.
 
 # 7.5 Ejemplo estadísticos básicos genética de poblaciones
 
-SNPStats, Hierfstat y plink
+## PLINK 
 
-# 7.6 Ejemplo PCA, estructura poblacional
+[PLINK](https://www.cog-genomics.org/plink/1.9/) es un software de acceso libre muy usado porque permite realizar un amplio rango de análisis genómicos de forma relativamente rápida y sencilla.
 
-[SNPRelate](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) es un paquete de Bioconductor muy bueno y rápido para hacer PCA y exploraciones básicas de datos genómicos. Puedes ver sus tutoriales [aquí](https://bioconductor.org/packages/release/bioc/vignettes/SNPRelate/inst/doc/SNPRelateTutorial.html), y seguiremos [estas notas en clase](Prac_Uni7/bin/Ejemplo_SNPRelate.html).
+Dentro de los análisis que pueden hacerse usando PLINK, están:
 
-admixture (pending...)
+- Manejo y transformación de datos
+- Estimación de desequilibrio de ligamiento
+- Matriz de identidad por descendecia (IBD) e identidad por estado (IBS)
+- Asociación genómica
+
+**Limitaciones:**
+- Análisis de variantes estructurales (excepto indels pequeños)
+- Análisis de datos crudos
+- No interfaz gráfica
+
+Los dos formatos principales de PLINK son **ped** y **bed**, pero acepta formatos comúnmente usados con **vcf**.
+
+
+**Ejercicio:** Descarga e instala [PLINK](https://www.cog-genomics.org/plink/1.9/). Echa un ojo a las funciones que puedes usar.
+
+Para conocer si cada uno de los loci del set de datos ``cocci_silv`` se encuentra en equilibrio HW, usaríamos este comando:
+
+``
+plink --file ../data/cocci_silv --hardy --out ../out/HW_cocci
+``
+
+Con el siguiente comando quitaré los loci que son indels y le pediré que el archivo resultante se encuentre en formato vcf.
+
+``
+plink --file ../data/cocci_silv --snps-only just-acgt -recode vcf --out
+``
+
+**Ejercicio:** Estima el desequilibro de ligamiento en términos de r<sup>2</sup>. Posteriormente, quédate con aquellos SNPs cuya r<sup>2</sup> < 0.2. El archo resultante debe llamarse `/data/cocci_silv_filt.bed`
+
+
+## Hierfstat
+Este paquete de R te permite estimar estadísticos F con datos de genomas haploides y diploides, tomando en cuenta por la estructura de las poblaciones. Las notas de la clase están [aquí](Prac_Uni7/bin/Hierfstat_cocci.html).
+
+
+## SNPstats
+Es un paquete de R muy utilizado. Dentro de las estimaciones que pueden obtenerse se encuentran:
+
+- Fst
+- LD
+- Imputación
+- Filtro de SNPs
+
+
+# 7.6 PCA y estructura poblacional
+
+## SNPRelate
+
+[SNPRelate](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) es un paquete de Bioconductor muy bueno y rápido para hacer PCA, asociación genómica, análisis de parentesco y exploraciones básicas de datos genómicos. Puedes ver sus tutoriales [aquí](https://bioconductor.org/packages/release/bioc/vignettes/SNPRelate/inst/doc/SNPRelateTutorial.html), y seguiremos [estas notas en clase](Prac_Uni7/bin/Ejemplo_SNPRelate.html).
+
+## Admixture
 
 
 # 7.7 Ejemplo filogenias con Phytools
