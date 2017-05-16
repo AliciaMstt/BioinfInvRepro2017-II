@@ -144,6 +144,27 @@ estimar desequilibrios de ligamiento.
 
 [Muscle](https://www.bioconductor.org/packages/release/bioc/html/muscle.html)Con esta herramiento realizaremos el alinemamento de las secuencias obtenidos por Ion Torrent.
 
+**EQUIPO COCHIS =@** MaryJo Contreras y Mariana Pérez Rivera
+
+*Los paquetes que necesitaremos son:*
+
+-- **Paquete 1. MSA** (Multiple Sequence Alignment )
+ https://https://www.bioconductor.org/packages/release/bioc/html/msa.html
+
+ 
+ La ventaja es que alinea con los algoritmos de ClustalW, ClustalOmega y Muscle en un solo paquete. Se usaría para el análisis de las secuencias obtenidas con base en la de referencia. No requiere paquetes adicionales. 
+
+El input es en formato FASTA
+
+
+
+--**Paquete 2. ggtree**
+https://www.bioconducor.org/packages/release/bioc/html/ggtree.html
+
+
+Para la edición de los árboles filogenéticos, manipulación de clados y darles formato más chulo
+
+newick, nexus, NHX, phylip y jplace
 
 
 **Equipo Metabarcoding**
