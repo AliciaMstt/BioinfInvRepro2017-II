@@ -157,80 +157,43 @@ Integrantes: Brenda Muñoz, Raquel Hernández, Andrea Rebollo, Lisandro Hernánd
 
 [**Pegas**](https://cran.r-project.org/web/packages/pegas/pegas.pdf). Input: objeto "loci", "haplotype", "haploNet". Evaluar equilibrio Hardy-Weinberg (hw-test), extraer frecuencias absolutas de haplotipos (haploFreq), hacer comparaciones entre haplotipos (diffHaplo), generar redes de haplotipos (haploNet).
 
-## Equipo genoma de referencia/análisis filogenéticos
-### Paqueterías de Bioconductor
+**Equipo genoma de referencia/análisis filogenéticos**
+Paqueterías de Bioconductor
 
-### 
 **Integrantes**: Oscar Villafranco, Estefanía Cano, José Rubén Montes y Benjamín Cristian Corona Comunidad 
-
-
-
-### 
 
 **Paquete 1**: [ggtree](http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12628/epdf) Se utilizaría para realizar anotaciones, modificaciones o editar nodos o ramas y/o para extraer información del árbol filogenético. **Input**: Formatos newick, nexus, NHX, phylip y jplace  **Output**: Árbol filogenético 
 
 
-### 
 **Paquete 2:** [Biostrings](https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html) Se utilizaría para construir el alinemiento múltiple de los exones que hayan ensamblado a nuestra referencia. 
 **Input**: fastq y fasta
 
-
-###
 **Paquete 3:** [Chromplot](https://www.bioconductor.org/packages/release/bioc/html/chromPlot.html). Se utilizará para ubicar y graficar regiones, genes de expresión y sintenia entre especies y en cromosomas. **Input**: Formato bed 
 
 
-## Equipo: Genomica de poblaciones
+**Equipo delimitación de especies**
 
-**Equipo**: Gissella Pineda
-
-[**FastSTRUCTURE**](http://rajanil.github.io/fastStructure/) análisis con máxima verosimilitud que permite realizar agrupamiento genético de individuos; es mucho más rapido que *Structure* lo que podría ser conveniente para grandes cantidades de datos como SNPs. **Input**: formato str ó  bed.
-
-[**SPRelate**](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) permite realizar análisis de componentes principales y análisis de parentezco con datos de SNPs; en caso de no tener estructura popblacional, sería util evaluar las relaciones de parentezco dentro los individuos de mi población. **Input**: formato VCF
-
-[**GENELAND**](https://cran.r-project.org/web/packages/Geneland/)  Detecta estructura poblacional basada en la frecuencia de los alelos asociada a Hardy-Weinberg y desequilibrio de ligamiento. Los modelos los realiza en base a información genética y geográfica para inferir la organización espacial de los individuos; aunque los datos geograficos son opcionales. **Input**:no requiere un formato especializado, puede ser un archivo csv o txt, sólo se debe de tener en cuenta el orden de las columnas; tanto para los datos genéticos como para los geográficos.
-
-
-
-# 7.5 Ejemplo estadísticos básicos genética de poblaciones
-
-SNPStats, Hierfstat y plink
-
-# 7.6 Ejemplo PCA, estructura poblacional
-
-SNPRelate, admixture
-
-
-# 7.7 Ejemplo filogenias con Phytools
-
-[phytools: Phylogenetic Tools for Comparative Biology (and Other Things)](https://cran.r-project.org/web/packages/phytools/index.html) es un paquete de R desarrollado por [Lian Revell](http://faculty.umb.edu/liam.revell/) que consta de decenas de funciones para analizar y graficar árboles filogenéticos. El paquete cuenta con un excelente blog: [http://blog.phytools.org/](http://blog.phytools.org/), que vale la pena pasar las tardes leyendo.
-
-Vamos a ver unos ejemplos de uso tomado de su blog en [estas notas](Prac_Uni7/bin/Ejemplo_phytools.Rmd).
-
-# Equipo delimitación de especies
 **Integrantes** Ofelia Jimenéz, Alejandro Manzanero, Marisol De la Mora y Myriam Campos  
 
-## Bedassle
+* Bedassle
 Cuantifica y distingue la contribución relativa de distancias geográficas y ecologicas, utilizando un algoritmo de cadenas de markov.   
 
 `calculate.pairwise.Fst` Esta funcion se utiliza para calculas Fst pareadas entre un par de poblaciones o individuos. 
 
-### Input
-Para poder correr este comando, se necesitan dos matrices: 
+Input: Para poder correr este comando, se necesitan dos matrices: 
 
 1) Matriz de alelos: `nrow = 2` cada renglon corresponde a cada una de las poblaciones o individuos y `ncol=` las columnas corresponden al numero de *loci*
 
 2) Matríz del tamaño de la muestra: `nrow = 2` cada renglon corresponde a cada una de las poblaciones o individuos y `ncol=` las columnas corresponden al numero de *loci*. Cada celda corresponde al numero de cromosomas que fueron genotipificados en cada *locus* en cada población. 
 
-### Output
+Output: Calculo de la *Fst* entre las poblaciones, impreso en la pantalla de **R**. 
 
-Calculo de la *Fst* entre las poblaciones, impreso en la pantalla de **R**. 
-
-### Link 
+Link 
 - [Bedassle v.1.5](https://www.rdocumentation.org/packages/BEDASSLE/versions/1.5) 
 
 - [calculate.pairwise.Fst](https://www.rdocumentation.org/packages/BEDASSLE/versions/1.5/topics/calculate.pairwise.Fst)
 
-## Phylodin
+* Phylodin
 
 Implementa metodos Bayesianos y los acopla con modelos coalescentes para inferir cambios en el tamaño efectivo poblacional. 
 
@@ -238,7 +201,7 @@ Actualmente se emplea en el análisis de virus marcando la trayectoria de los cl
 
 link: [(https://github.com/mdkarcher/phylodyn)]
 
-## Paquete _adegenet_
+* Paquete _adegenet_
 
 [_adegenet_](http://adegenet.r-forge.r-project.org/) es un paquete de **R** que incluye diversas funciones para realizar análisis exploratorios de dato genéticos.
 
@@ -246,7 +209,7 @@ Uno de estos es el **Análisis Discriminante de Componentes Principales (DAPC)**
 
 Para lo anterior se pueden ocupar dos funciones: `find.clusters` y `dapc`. Se puede consultar un tutorial [aquí.](http://adegenet.r-forge.r-project.org/files/tutorial-dapc.pdf)
 
-### Función `find.clusters()`
+Función `find.clusters()`
 El DAPC necesita que se definan grupos de manera previa, para lo cual utilizamos `find.clusters()`.
 
 Esta función convierte los datos genéticos crudos en Componentes Principales mediante un PCA, y nos permite probar diferentes grupos (_k_) con una evaluaciónbayesiana de los mismos (Criterio de Información Bayesiano, BIC).
@@ -255,7 +218,7 @@ Acepta objetos tipo `data.frame`, `genind` y `genlight`.
 
 El resultado de aplicar esta función es una lista, de la cual "nos quedamos" solamente con el elemento "grp", que son los clusters genéticos inferidos.
 
-### Función `dapc()`
+Función `dapc()`
 
 Con esta función se describen los grupos genéticos previamente definidos, a partir de variables sintéticas (llamadas _funciones discriminantes_).
 
@@ -263,11 +226,11 @@ Al igual que `find.clusters`, acepta objetos de tipo tipo `data.frame`, `genind`
 
 Como resultado, se obtiene una gráfica de baras de los eigenvalores del análisis discriminante, donde el usuario define el número de funciones discriminantes (i.e. variables) que desea retener. El objeto resultante contiene toda la información del análisis, pero la manera de visualizar el resultado es mediante la función `scatterplot()`.
 
-#Paquete GENESIS
+* Paquete GENESIS
 
 Lo usariamos para estimar la estructura poblacional. Este provee un modelo para la estimacion de los coeficientes de ancestria, probabilida de compartir IBD y coeficientes de endogamia usando datos genome-wide SNP. 
 
-###link
+ link
 [GENESIS.pdf](https://www.bioconductor.org/packages/release/bioc/manuals/GENESIS/man/GENESIS.pdf)
 
 Presenta dos funciones: 
@@ -276,10 +239,93 @@ Presenta dos funciones:
 
 2)`PC-Relate`   usa los componentes princiaples representativos de la ancestria para ajustar la estructura de la poblacion y precisar las estimaciones de relaciones geneticas recientes como coeficientes de parentesco, IBD y coeficientes de endogamia.
 
-###Input 
+Input 
 Archivos PLINK o GDS.
 
-###Output 
+Output 
 Un data.frame con varias columnas mostrando el resultado. 
+
+**Equipo: Genomica de poblaciones**
+
+Gissella Pineda
+
+[**FastSTRUCTURE**](http://rajanil.github.io/fastStructure/) análisis con máxima verosimilitud que permite realizar agrupamiento genético de individuos; es mucho más rapido que *Structure* lo que podría ser conveniente para grandes cantidades de datos como SNPs. **Input**: formato str ó  bed.
+
+[**SPRelate**](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) permite realizar análisis de componentes principales y análisis de parentezco con datos de SNPs; en caso de no tener estructura popblacional, sería util evaluar las relaciones de parentezco dentro los individuos de mi población. **Input**: formato VCF
+
+[**GENELAND**](https://cran.r-project.org/web/packages/Geneland/)  Detecta estructura poblacional basada en la frecuencia de los alelos asociada a Hardy-Weinberg y desequilibrio de ligamiento. Los modelos los realiza en base a información genética y geográfica para inferir la organización espacial de los individuos; aunque los datos geograficos son opcionales. **Input**:no requiere un formato especializado, puede ser un archivo csv o txt, sólo se debe de tener en cuenta el orden de las columnas; tanto para los datos genéticos como para los geográficos.
+
+**Equipo Campechano**
+Integrantes: Nelly, Tania, Sebastian y Madisson
+* GENESIS [link](https://www.bioconductor.org/packages/release/bioc/html/GENESIS.html) Programa para estimar y contabilizar estructura poblacional, pedigree, coeficientes de parentezco, endogamia --> Es util para hacer PCA y detectar estructura poblacional *Input:* PLINK .bed, .bim, y .fam
+* genfilter [link](https://www.bioconductor.org/packages/release/bioc/html/genefilter.html) Programa con métodos de filtrado genes obtenidos de NGS --> Es util para detectar si hay genes cerca de algún gen de interés detectado (para hacer perfiles de expresión,descartar genes ligados), o hacer ANOVA. *Input:* matriz de microarreglos o datos de RNAseq.
+* funciSNP [link](https://www.bioconductor.org/packages/release/bioc/html/FunciSNP.html) Programa que integra información de estudios de asociación genómica (GWAS) para identificar SNP candidatos funcionales en regiones codificantes y no codificantes --> Es util para relacionar SNPś candidatos con caractres fisiológicos y funcionales *Input:* .bed
+
+
+# 7.5 Ejemplo estadísticos básicos genética de poblaciones
+
+## PLINK 
+
+[PLINK](https://www.cog-genomics.org/plink/1.9/) es un software de acceso libre muy usado porque permite realizar un amplio rango de análisis genómicos de forma relativamente rápida y sencilla.
+
+Dentro de los análisis que pueden hacerse usando PLINK, están:
+
+- Manejo y transformación de datos
+- Estimación de desequilibrio de ligamiento
+- Matriz de identidad por descendecia (IBD) e identidad por estado (IBS)
+- Asociación genómica
+
+**Limitaciones:**
+- Análisis de variantes estructurales (excepto indels pequeños)
+- Análisis de datos crudos
+- No interfaz gráfica
+
+Los dos formatos principales de PLINK son **ped** y **bed**, pero acepta formatos comúnmente usados con **vcf**.
+
+
+**Ejercicio:** Descarga e instala [PLINK](https://www.cog-genomics.org/plink/1.9/). Echa un ojo a las funciones que puedes usar.
+
+Para conocer si cada uno de los loci del set de datos ``cocci_silv`` se encuentra en equilibrio HW, usaríamos este comando:
+
+``
+plink --file ../data/cocci_silv --hardy --out ../out/HW_cocci
+``
+
+Con el siguiente comando quitaré los loci que son indels y le pediré que el archivo resultante se encuentre en formato vcf.
+
+``
+plink --file ../data/cocci_silv --snps-only just-acgt -recode vcf --out
+``
+
+**Ejercicio:** Estima el desequilibro de ligamiento en términos de r<sup>2</sup>. Posteriormente, quédate con aquellos SNPs cuya r<sup>2</sup> < 0.2. El archo resultante debe llamarse `/data/cocci_silv_filt.bed`
+
+
+## Hierfstat
+Este paquete de R te permite estimar estadísticos F con datos de genomas haploides y diploides, tomando en cuenta por la estructura de las poblaciones. Las notas de la clase están [aquí](Prac_Uni7/bin/Hierfstat_cocci.html).
+
+
+## SNPstats
+Es un paquete de R muy utilizado. Dentro de las estimaciones que pueden obtenerse se encuentran:
+
+- Fst
+- LD
+- Imputación
+- Filtro de SNPs
+
+
+# 7.6 PCA y estructura poblacional
+
+## SNPRelate
+
+[SNPRelate](https://bioconductor.org/packages/release/bioc/html/SNPRelate.html) es un paquete de Bioconductor muy bueno y rápido para hacer PCA, asociación genómica, análisis de parentesco y exploraciones básicas de datos genómicos. Puedes ver sus tutoriales [aquí](https://bioconductor.org/packages/release/bioc/vignettes/SNPRelate/inst/doc/SNPRelateTutorial.html), y seguiremos [estas notas en clase](Prac_Uni7/bin/Ejemplo_SNPRelate.html).
+
+## Admixture
+
+
+# 7.7 Ejemplo filogenias con Phytools
+
+[phytools: Phylogenetic Tools for Comparative Biology (and Other Things)](https://cran.r-project.org/web/packages/phytools/index.html) es un paquete de R desarrollado por [Lian Revell](http://faculty.umb.edu/liam.revell/) que consta de decenas de funciones para analizar y graficar árboles filogenéticos. El paquete cuenta con un excelente blog: [http://blog.phytools.org/](http://blog.phytools.org/), que vale la pena pasar las tardes leyendo.
+
+Vamos a ver unos ejemplos de uso tomado de su blog en [estas notas](Prac_Uni7/bin/Ejemplo_phytools.html).
 
 
