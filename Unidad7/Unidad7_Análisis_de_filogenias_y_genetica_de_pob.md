@@ -170,7 +170,9 @@ Paqueterías de Bioconductor
 
 **Paquete 3:** [Chromplot](https://www.bioconductor.org/packages/release/bioc/html/chromPlot.html). Se utilizará para ubicar y graficar regiones, genes de expresión y sintenia entre especies y en cromosomas. **Input**: Formato bed 
 
+
 **Equipo delimitación de especies**
+
 **Integrantes** Ofelia Jimenéz, Alejandro Manzanero, Marisol De la Mora y Myriam Campos  
 
 * Bedassle
