@@ -49,7 +49,7 @@ Nidia Mendoza Díaz [avance 1](https://github.com/Lieiad/ProyectoFinalBioinf2017
 
 Víctor Jorge Taracena Morales [avance 1](https://github.com/Anecarat/Proyecto_Final_Bioinf2017-II/blob/master/Avances/Avances1.md), [avance 2](https://github.com/Anecarat/Proyecto_Final_Bioinf2017-II/blob/master/Avances/Avances2.md)
 
-Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%201%20proyecto%20bioinformatica.md) [Avance 2](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%202%20del%20proyecto%20bioinformatico.md)
+Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%201%20proyecto%20bioinformatica.md) [Avance 2](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%202%20del%20proyecto%20bioinformatico.md)[avance 3](https://github.com/NanBarcenas/Trabajo-final-BioinfRepro-2017-2/blob/master/AVANCE%203.md)
 
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd) [avance 2] (https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance2.md)
 
