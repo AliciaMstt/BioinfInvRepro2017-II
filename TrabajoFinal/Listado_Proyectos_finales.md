@@ -36,8 +36,7 @@ Jessica Raquel Hernández Pérez: [avance 1](https://github.com/RaquelHdz/Proyec
 
 Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%201.md), [avance 2](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md) 
 
-Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avances%201.md) [Avance 2](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%202.md)
-
+Gerardo Torres Carrera [avance 1](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avances%201.md) [Avance 2](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%202.md)[Avance3](https://github.com/GerTorres/Trabajo-final-BioinfRepro-2017-2/blob/master/avance%203.md)
 Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md) [Avance 2](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/Brenda%20Mu%C3%B1oz%20Vazquez:%20avance2.md)
 
 Sebastián Arenas Jimenez [avance 1](https://github.com/sebastian-13/ProyectoFinalBioinf2017-II/blob/master/avance%201.md) ,
