@@ -55,6 +55,7 @@ Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiin
 
 Lisandro Hernandez Anaya [Avance1](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
                          [Avance2](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md)
+                         [Avance3](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance3.md)
                          
 
 José Rubén Montes Montiel [avance 1](https://github.com/JR-Montes/ProyectoFinalBioinf2017-II/blob/master/Avance_1.md)
