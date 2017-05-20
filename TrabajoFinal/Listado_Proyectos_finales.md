@@ -54,7 +54,7 @@ Nancy Y. Bárcenas De Los Santos [avance 1](https://github.com/NanBarcenas/Traba
 Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiinn/proyecto_final_Bennjamin_Corona_Comunidad/blob/master/avance%201%20Proyecto%20bioinfo.mkd)
 
 
-Estefania Cano Schz [avance 1](https://github.com/ecanos/Proyecto-final), [Avance 2](https://github.com/ecanos/Avance-2/blob/master/Avance%202.md)
+Estefania Cano Schz [avance 1](https://github.com/ecanos/Proyecto-final), [Avance 2](https://github.com/ecanos/Avance-2/blob/master/Avance%202.md), [avance 3](https://github.com/ecanos/Proyecto-final/blob/master/Avance%203.md)
 
 Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss/blob/master/Primer%20Avance)
 
