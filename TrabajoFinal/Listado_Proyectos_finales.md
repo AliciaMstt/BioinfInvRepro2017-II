@@ -62,7 +62,7 @@ Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss
 
 
 
-Nelly Jazmín Pacheco Cruz [avance 1](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance1.md)  [avance 2](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance2_N3L.md)
+Nelly Jazmín Pacheco Cruz [avance 1](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance1.md)  [avance 2](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance2_N3L.md) [avance 3](https://github.com/n311pc/Tareas-Curso-BioinfInvRepro/blob/master/Avance3_N3L.md)
 
 
 Lisandro Hernandez Anaya [Avance1](https://github.com/LisandroHernan/ProyectoFinalBioinf2017-II/blob/master/Avance1.md)
