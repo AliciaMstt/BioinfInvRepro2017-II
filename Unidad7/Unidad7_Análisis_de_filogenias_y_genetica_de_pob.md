@@ -164,6 +164,27 @@ Paqueterías de Bioconductor
 
 **Paquete 1**: [ggtree](http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12628/epdf) Se utilizaría para realizar anotaciones, modificaciones o editar nodos o ramas y/o para extraer información del árbol filogenético. **Input**: Formatos newick, nexus, NHX, phylip y jplace  **Output**: Árbol filogenético 
 
+**EQUIPO COCHIS =@** MaryJo Contreras y Mariana Pérez Rivera
+
+*Los paquetes que necesitaremos son:*
+
+-- **Paquete 1. MSA** (Multiple Sequence Alignment )
+ https://https://www.bioconductor.org/packages/release/bioc/html/msa.html
+
+ 
+ La ventaja es que alinea con los algoritmos de ClustalW, ClustalOmega y Muscle en un solo paquete. Se usaría para el análisis de las secuencias obtenidas con base en la de referencia. No requiere paquetes adicionales. 
+
+El input es en formato FASTA
+
+
+
+--**Paquete 2. ggtree**
+https://www.bioconducor.org/packages/release/bioc/html/ggtree.html
+
+
+Para la edición de los árboles filogenéticos, manipulación de clados y darles formato más chulo
+
+newick, nexus, NHX, phylip y jplace
 
 **Paquete 2:** [Biostrings](https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html) Se utilizaría para construir el alinemiento múltiple de los exones que hayan ensamblado a nuestra referencia. 
 **Input**: fastq y fasta
@@ -328,4 +349,7 @@ Es un paquete de R muy utilizado. Dentro de las estimaciones que pueden obteners
 
 Vamos a ver unos ejemplos de uso tomado de su blog en [estas notas](Prac_Uni7/bin/Ejemplo_phytools.html).
 
+
+
+Puedes revisar el Rmdown [aquí](../Practicas/Uni7/bin/Ejemplo_SNPRelate.Rmd).
 
