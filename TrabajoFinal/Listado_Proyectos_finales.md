@@ -26,7 +26,7 @@ Guillermo Huerta Ramos: [avance 1](https://github.com/ghuertaramos/ProyectoFinal
 
 Gissella Pineda Sanchez: [avance 1](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance1.md) , [avance 2](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance2.md), [avance 3](https://github.com/GissellaPineda/Proyec_Final_Bioinfo_2017_II/blob/master/Avance3.md)
 
-Alejandro Rodríguez Agular: [avance 1](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE1.md), [avance 2](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE2.md)
+Alejandro Rodríguez Agular: [avance 1](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE1.md), [avance 2](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE2.md), [avance 3](https://github.com/Alexscaleb/Tareas-Curso-BioinfInvRepro/blob/master/AVANCE3.md)
 
 Erandi Ramírez Aguirre: [avance 1](https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_1_Erandi_Ramirez_Aguirre.md)  [avance 2](https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_2_Erandi_Ramirez_Aguirre.md), [avance 3](https://github.com/Amanecer1/Trabajo-Final_Bioinfo2017/blob/master/Avances_3_Erandi_Ram%C3%ADrez_Aguirre.md)
 
