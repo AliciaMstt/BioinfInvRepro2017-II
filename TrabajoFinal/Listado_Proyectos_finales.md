@@ -34,7 +34,7 @@ Marisol De la Mora Curiel: [avance 1](https://github.com/MarisollDC/ProyectoFina
  
 Jessica Raquel Hernández Pérez: [avance 1](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/Avance1.md), [avance 2](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/avance%202.md), [avance 3](https://github.com/RaquelHdz/Proyecto_Final_Bioinf2017-II/blob/master/Avance3.md)  
 
-Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%201.md), [avance 2](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md) 
+Ofelia Abigail Jiménez Barrón [avance 1](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%201.md), [avance 2](https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md) [avance 3] (https://github.com/Ofeabi/ProyectoFinalBioinf2017-II/blob/master/Avance3.md) 
 
 Brenda Muñoz Vazquez [avance 1](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/avance1.md), [Avance 2](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/Brenda%20Mu%C3%B1oz%20Vazquez:%20avance2.md), [Avance 3](https://github.com/bren2801/ProyectoFinalBioinf2017/blob/master/Avance%203.md)
 
