@@ -385,7 +385,9 @@ mis.col <- palette(c("#edad2f", "#774ddd", "#bc0021", "#2cb25d"))
 
 ##Plot admixture K=4
 barplot(t(as.matrix(cocci.admix.4[,2:5])), col= mis.col, names.arg = cocci.admix.4$pop, las=2, cex.names = .5,
-       ylab="Ancestría", border=NA, cex.axis = 1.5, axisnames = T)
+       ylab="Ancestría", border=NA, cex.axis = 1.5, axisnames = T)
+       
+```
 
 # 7.7 Ejemplo filogenias con Phytools
 
