@@ -131,7 +131,7 @@ Notas recomendadas: [Running R in batch mode on Linux](http://www.cureffi.org/20
 
 ## Correr cualquier programa desde R
 
-De forma similar, cualquier comando de bash (o programa que corra en bash) pude correrse desde R con la función `system()`. Por ejemplo el script `Practicas/Uni8/bin/system_ejemplo.R` que contiene:
+De forma similar, cualquier comando de bash (o programa que corra en bash) pude correrse desde R con la función `system()`. Por ejemplo el script `Unidad8/Prac_Uni8/bin/system_ejemplo.R` que contiene:
 
 
 ```
