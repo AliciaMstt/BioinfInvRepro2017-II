@@ -75,7 +75,7 @@ Arturo Morales Lopez: [avance 1](https://github.com/ArturoMoLo90/Proyecto_Final_
 
 Israel Moreno Contreras [avance 1](https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance1.md), [avance 2] (https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance%202.md), [avance 3](https://github.com/Israelornis/ProyectoFinalBioinf2017-II/blob/master/Avance%203.md)
 
-Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/ProyectoFinalVillafranco.md) [avance 2](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/Avances2.md)
+Oscar Villafranco Gutiérrez [avance 1](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/ProyectoFinalVillafranco.md) [avance 2](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/Avances2.md) [avance 3](https://github.com/oskarotenks/TareasCursoBioinfInvRepro/blob/master/Avances3.md)
 
 Contreras Luna Maria J. [avance1](https://github.com/maryjomvz/ProyectoFinalBioinf2017-II-Majo-Contreras/blob/avance-1/AVANCE1.md)
 
