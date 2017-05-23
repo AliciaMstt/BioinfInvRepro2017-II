@@ -57,7 +57,7 @@ Benjamin Cristian Corona Comunidad [avance 1](https://github.com/bbeennjjaammiin
 
 Estefania Cano Schz [avance 1](https://github.com/ecanos/Proyecto-final), [Avance 2](https://github.com/ecanos/Avance-2/blob/master/Avance%202.md), [avance 3](https://github.com/ecanos/Proyecto-final/blob/master/Avance%203.md)
 
-Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss/blob/master/Primer%20Avance), [Avance 2](https://github.com/JOSSJA/ProyectoJoss/blob/master/Avances2_Joss.md)
+Diego Jossué Jiménez Armenta [avance 1](https://github.com/JOSSJA/ProyectoJoss/blob/master/Primer%20Avance), [Avance 2](https://github.com/JOSSJA/ProyectoJoss/blob/master/Avances2_Joss.md), [Avance 3](https://github.com/JOSSJA/ProyectoJoss/blob/master/Proyecto_Joss/querido_diario.md)
 
 
 
